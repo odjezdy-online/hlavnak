@@ -1,0 +1,165 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Odjezdy.online - Odjezdy autobusů",
+    "description": "",
+    "home_page_url": "https://odjezdy.online",
+    "feed_url": "https://odjezdy.online/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "mxnticek"
+    },
+    "items": [
+        {
+            "id": "https://odjezdy.online/bytelixir/",
+            "url": "https://odjezdy.online/bytelixir/",
+            "title": "Bytelixir",
+            "content_html": "<figure class=\"post__image post__image--center\"><a href=\"https://bytelixir.com/r/M8DLGKSKIM5T\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\"  src=\"https://odjezdy.online/media/posts/18/ByteLixir-640-x-200.png\" alt=\"\" width=\"747\" height=\"233\" sizes=\"(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)\" srcset=\"https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-lg.png 1024w\"></figure></a></p>\n<figure class=\"post__image post__image--center\"><a href=\"https://bytelixir.com/r/M8DLGKSKIM5T\"><img loading=\"lazy\"  src=\"https://odjezdy.online/media/posts/18/ByteLixir-480-x-60.png\" alt=\"\" width=\"704\" height=\"88\" sizes=\"(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)\" srcset=\"https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-lg.png 1024w\"></figure></a></p>\n<figure class=\"post__image post__image--center\"><a href=\"https://bytelixir.com/r/M8DLGKSKIM5T\"><img loading=\"lazy\"  src=\"https://odjezdy.online/media/posts/18/ByteLixir-960-x-640.png\" alt=\"\" width=\"960\" height=\"640\" sizes=\"(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)\" srcset=\"https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-lg.png 1024w\"></figure></a></p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-05-23T20:49:44+02:00",
+            "date_modified": "2024-05-23T20:53:41+02:00"
+        },
+        {
+            "id": "https://odjezdy.online/bilina-vyluka-linky-508/",
+            "url": "https://odjezdy.online/bilina-vyluka-linky-508/",
+            "title": "Bílina - výluka linky 508",
+            "summary": "Z důvodu úplné uzavírky ulice Wolkerova v Bílině dochází od 2. 4. do 2. 8. 2024 k výluce autobusové linky 508. Je zrušená obsluha zastávek&hellip;",
+            "content_html": "<p>Z důvodu úplné uzavírky ulice Wolkerova v Bílině dochází od 2. 4. do 2. 8. 2024 k výluce autobusové linky 508. Je zrušená obsluha zastávek Bílina, pož. zbroj. a Bílina, nám. po dobu uzavírky. Potřebujete-li na Bílina, nám., vystupte na Bílina, Lidl a 300 metrů jděte.</p>\n<p> </p>\n<p>Zdroj: <a href=\"https://www.kr-ustecky.cz/bilina%2Dvyluka%2Dlinky%2D508/d-1785278\">kr-ustecky.cz</a></p>\n<p> </p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=140992\" alt=\"DÚK - papír\" width=\"720\" height=\"1040\" data-is-external-image=\"true\"><figcaption>DÚK - papír</figcaption></figure>\n<p> </p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "From my area",
+                   "Closures"
+            ],
+            "date_published": "2024-05-02T19:32:38+02:00",
+            "date_modified": "2024-05-02T19:35:03+02:00"
+        },
+        {
+            "id": "https://odjezdy.online/teplice-uzavirka-ul-spojenecka/",
+            "url": "https://odjezdy.online/teplice-uzavirka-ul-spojenecka/",
+            "title": "Teplice - uzavírka ul. Spojenecká",
+            "summary": "Z důvodu úplné uzavírky ulice Spojenecká v Teplicích dochází od 8. 4. do 31. 10. 2024 k výluce autobusových linek DÚK 481, 482, 489, 490,&hellip;",
+            "content_html": "<p>Z důvodu úplné uzavírky ulice Spojenecká v Teplicích dochází od 8. 4. do 31. 10. 2024 k výluce autobusových linek DÚK 481, 482, 489, 490, 802 a MHD 106.</p>\n<p>Objízdná trasa pro MHD 106 je vedena: Školní, Rokycanova, E55, Hřbitovní z důvodu stavebních prací na mostě v ulici Spojenecká.<br>Pro DÚK linky je objízdná trasa přes zastávky: Novosedlická (481,482 a 802) a Dubská (489,490). Trasa vede přes ulice: Hřbitovní, E55, Jateční, Na Hrázi.</p>\n<p>Zdroj: <a href=\"https://mdteplice.cz/component/content/article/objizdna-trasa-na-lince-106-do-31-10-2024?catid=2&amp;Itemid=101\">mdteplice.cz</a>, <a href=\"https://www.kr-ustecky.cz/teplice%2Duzavirka%2Dul%2Dspojenecka/d-1785375\">kr-ustecky.cz</a></p>\n<p> </p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=141061\" alt=\"DÚK - papír\" width=\"720\" height=\"1040\" data-is-external-image=\"true\"><figcaption>DÚK - papír</figcaption></figure>\n<p> </p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "From my area",
+                   "Closures"
+            ],
+            "date_published": "2024-05-02T19:29:19+02:00",
+            "date_modified": "2024-05-02T19:32:43+02:00"
+        },
+        {
+            "id": "https://odjezdy.online/odkazy-pro-cr-a-sk/",
+            "url": "https://odjezdy.online/odkazy-pro-cr-a-sk/",
+            "title": "Odkazy pro ČR a SK",
+            "summary": "<p>Všechny odkazy vedou na Hamty nebo respektivě e-shopy, na které je odkazováno přes Hamty<strong>*</strong>, pokud není u nich napsáno jinak. URL odkazy začínají doménou go.odjezdy.online, která je na rebrandly.com jako doména pro shortener. Použitím těchto odkazů při objednávce se připíše část peněz z vašeho nákupu zpět, aniž by jste museli něco platit navíc! (výjma hamty.cz, kde je nutná registrace a získání 200kč cashbacku do roku od registrace. Prosím, registrujte se výhradně v stejném prohlížeči, na kterém jste kliknuli na odkaz. Děkuji!)</p>\n<p class=\"msg msg--warning\">Odkazy se můžou v jakýkoliv čas měnit, přidávat, nebo vymazat.</p>\n<p class=\"msg msg--info\"><strong>*:</strong> Je tomu tak, protože jinak nebudou moci připsat cashback. Asi víte proč.. Protože by jste si mohli vymyslet že jste nakoupili, ale zároveň nenakoupili :´)</p>\n",
+            "content_html": "<p>Všechny odkazy vedou na Hamty nebo respektivě e-shopy, na které je odkazováno přes Hamty<strong>*</strong>, pokud není u nich napsáno jinak. URL odkazy začínají doménou go.odjezdy.online, která je na rebrandly.com jako doména pro shortener. Použitím těchto odkazů při objednávce se připíše část peněz z vašeho nákupu zpět, aniž by jste museli něco platit navíc! (výjma hamty.cz, kde je nutná registrace a získání 200kč cashbacku do roku od registrace. Prosím, registrujte se výhradně v stejném prohlížeči, na kterém jste kliknuli na odkaz. Děkuji!)</p>\n<p class=\"msg msg--warning\">Odkazy se můžou v jakýkoliv čas měnit, přidávat, nebo vymazat.</p>\n<p class=\"msg msg--info\"><strong>*:</strong> Je tomu tak, protože jinak nebudou moci připsat cashback. Asi víte proč.. Protože by jste si mohli vymyslet že jste nakoupili, ale zároveň nenakoupili :´)</p>\n\n<p>All links lead to Hamty or to e-shops that are linked via Hamty<strong>*</strong>, unless otherwise stated. URL links start with the domain go.odjezdy.online, which is on rebrandly.com as the domain for the shortener. Using these links when ordering will credit back a portion of your purchase without you having to pay anything extra! (Except for hamty.cz, where registration is required, and to get 200CZK cashback within a year of registration for your account to be considered as Invited. Please register only in the same browser where you clicked on the link. Thank you!)</p>\n<p class=\"msg msg--warning\">Links can at any time be changed, added or removed.</p>\n<p class=\"msg msg--info\"><strong>*:</strong> I guess you know why... Because you could make up a story that you made a purchase but didn't at the same time :´) </p>\n<hr>\n<figure class=\"post__image\"><a href=\"https://go.odjezdy.online/hamty\"><img  src=\"https://www.hamty.cz/templates/assets/img/logo.png\" alt=\"\" width=\"285\" height=\"100\" data-is-external-image=\"true\"></figure></a>     <a href=\"https://go.odjezdy.online/r3g\"><figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.hamty.cz/images/merchant/1480687765aliexpress.png\" alt=\"\" width=\"289\" height=\"118\" data-is-external-image=\"true\"></figure></a>   <a href=\"https://go.odjezdy.online/1e3437\"><figure class=\"post__image\"><img  src=\"https://www.hamty.cz/images/merchant/1684157607allegro.jpg\" alt=\"\" width=\"289\" height=\"118\" data-is-external-image=\"true\"></figure></a>     <a href=\"https://go.odjezdy.online/7d8\"><figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.hamty.cz/images/merchant/1487078054drmax.png\" alt=\"\" width=\"289\" height=\"118\" data-is-external-image=\"true\"></figure></a></p>\n<figure class=\"post__image\"><a href=\"https://go.odjezdy.online/q9i\"><img  src=\"https://www.hamty.cz/images/merchant/1667143706lidl.png\" alt=\"\" width=\"289\" height=\"118\" data-is-external-image=\"true\"></figure></a>     <a href=\"https://go.odjezdy.online/tr1\"><figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.hamty.cz/images/merchant/1483710862dhgate.png\" alt=\"\" width=\"289\" height=\"118\" data-is-external-image=\"true\"></figure></a></p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "Affiliate"
+            ],
+            "date_published": "2024-05-01T18:00:00+02:00",
+            "date_modified": "2024-05-07T18:02:43+02:00"
+        },
+        {
+            "id": "https://odjezdy.online/tuchlov-uzavirka-mostu/",
+            "url": "https://odjezdy.online/tuchlov-uzavirka-mostu/",
+            "title": "Tuchlov - uzavírka mostu",
+            "summary": "Z důvodu úplné uzavírky mostu nad silnicí I/13 u Tuchlova dochází od 19. 4. do 15. 10. k výluce autobusové linky 503. Vlivem délky objízdné&hellip;",
+            "content_html": "<p>Z důvodu úplné uzavírky mostu nad silnicí I/13 u Tuchlova dochází od 19. 4. do 15. 10. k výluce autobusové linky 503.</p>\n<p>Vlivem délky objízdné trasy dochází u spojů jedoucích z Teplic do Bíliny k časovým posunům o cca 4 minuty. V opačném směru zůstávají časy odjezdů zachované. Zachovaná zůstává také obsluha všech zastávek.<br><br></p>\n<p>Zdroj: <a href=\"https://www.kr-ustecky.cz/tuchlov%2Duzavirka%2Dmostu/d-1785933\">kr-ustecky.cz</a></p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=141407\" alt=\"DÚK - papír\" width=\"720\" height=\"1040\" data-is-external-image=\"true\"><figcaption>DÚK - papír</figcaption></figure>\n<p> </p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "From my area",
+                   "Closures"
+            ],
+            "date_published": "2024-04-18T19:16:00+02:00",
+            "date_modified": "2024-05-02T19:32:51+02:00"
+        },
+        {
+            "id": "https://odjezdy.online/vyluka-uzavirka-ul-28rijna-v-teplicich/",
+            "url": "https://odjezdy.online/vyluka-uzavirka-ul-28rijna-v-teplicich/",
+            "title": "Výluka - Uzavírka ul. 28.října v Teplicích",
+            "summary": "POZOR, VÝLUKA! Informace o mimořádných změnách na linkách DÚK Platnost od: 11. 3. 2024 Do: 30. 6. 2024 Teplice – uzavírka ul. 28.října Jsou dotčeny&hellip;",
+            "content_html": "<div class=\"alert\"><strong>POZOR, VÝLUKA!</strong><br>Informace o mimořádných změnách na linkách DÚK<br>Platnost od: 11. 3. 2024 Do: 30. 6. 2024</div>\n<div class=\"info\">\n<p><strong>Teplice – uzavírka ul. 28.října</strong></p>\n<p><strong>Jsou dotčeny linky:</strong><br>480, 482, 483, 484, 488, 490, 491, 493, 494, 495, 502, 503, 504, 802, 803, 804</p>\n<p><strong>Náhradní opatření:</strong></p>\n<ul>\n<li>Z důvodu úplné uzavírky ul. 28.října v Teplicích dochází od 11. 3. 2024 do 30. 6. 2024 k výluce autobusové dopravy. Zastávka Benešovo náměstí v ul. 28.října se dočasně ruší. Vybrané linky obsluhují zastávku Benešovo náměstí umístěnou před oční optikou. Vybrané linky dočasně začínají i v zastávce Hlavní nádraží.</li>\n</ul>\n<br>\n<ul>\n<li>Linky 480, 491 – zastávka Benešovo náměstí je pro nástup cestujících zrušena.</li>\n<li>Spoje končící v zastávce Benešovo náměstí neobsluhují zastávku Hlavní nádraží.</li>\n<li>Náhradními zastávkami jsou Masarykova a Hotel de Saxe.</li>\n<li>Linka 484 – spoje jedoucí z Duchcova do Krupky zastavují v zastávce Benešovo náměstí umístěné před oční optikou.</li>\n<li>Spoje začínající v Teplicích a jedoucí do Krupky začínají v zastávce Hlavní nádraží.</li>\n<li>Spoje končící v zastávce Benešovo náměstí neobsluhují zastávku Hlavní nádraží.</li>\n<li>Náhradními zastávkami jsou Masarykova a Hotel de Saxe.</li>\n<li>Linky 488, 490, 493, 495, 502, 503, 504, 802 a 803 – zastávka Benešovo náměstí se neobsluhuje.</li>\n</ul>\n<p>Omlouváme se za dočasné ztížené podmínky cestování.</p>\n</div>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"600\" height=\"400\" src=\"https://odjezdy.online/vyluka.teplice.html\">\n\t\tVáš prohlížeč nepodporuje rámce. Přejděte manuálně na\n\t\t<a href=\"https://odjezdy.online/vyluka.teplice.html\">obsah rámce</a>.</iframe></div>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "From my area",
+                   "Closures"
+            ],
+            "date_published": "2024-03-06T19:56:21+01:00",
+            "date_modified": "2024-03-07T15:15:59+01:00"
+        },
+        {
+            "id": "https://odjezdy.online/komplexni-prehled-zmen-v-mhd-teplice-od-1-ledna-2024/",
+            "url": "https://odjezdy.online/komplexni-prehled-zmen-v-mhd-teplice-od-1-ledna-2024/",
+            "title": "Přehled Změn v MHD Teplice od 1. ledna 2024",
+            "summary": "<p>V Teplicích došlo od 1. ledna 2024 k významným změnám v systému městské hromadné dopravy (MHD), které zahrnovaly přechod na bezplatný režim dopravy, zpoždění v zavedení nového odbavovacího systému a nakonec obnovení placení za dopravu. Tento dokument poskytuje přehled klíčových událostí a změn.</p>\n",
+            "content_html": "<p>V Teplicích došlo od 1. ledna 2024 k významným změnám v systému městské hromadné dopravy (MHD), které zahrnovaly přechod na bezplatný režim dopravy, zpoždění v zavedení nového odbavovacího systému a nakonec obnovení placení za dopravu. Tento dokument poskytuje přehled klíčových událostí a změn.</p>\n\n\n<h2 id=\"zavedení-bezplatného-režimu\">Zavedení Bezplatného Režimu</h2>\n<p>Od 1. ledna 2024 bya v MHD Teplice zavedena dočasná bezplatná přeprava cestujících. Tento krok byl reakcí na zpoždění dodávky odbavovacího zařízení od společnosti Mikroelektronika a dovolenou klíčového pracovníka, který měl software opravit.</p>\n<h2 id=\"technické-potíže-a-reakce-města\">Technické Potíže a Reakce Města</h2>\n<p>Zpoždění v dodávce odbavovacího zařízení vedlo k dočasnému vypnutí systému odbavení, což mělo za následek, že cestující nemohli být odbavováni běžným způsobem. Město reagovalo zavedením bezplatného režimu a omluvilo se cestujícím za zhoršený komfort cestování.</p>\n<h2 id=\"obnovení-placení-za-dopravu\">Obnovení Placení za Dopravu</h2>\n<ol start=\"3\">\n<li>února 2024 bylo v MHD Teplice obnoveno placení. Ačkoliv odbavovací systém byl zprovozněn, informační panely ve vozidlech nefungovaly ve všech vozech plně, což vyvolalo smíšené reakce mezi cestujícími.</li>\n</ol>\n<h2 id=\"reakce-veřejnosti\">Reakce Veřejnosti</h2>\n<p>Veřejnost reagovala na obnovení placení smíšeně, přičemž někteří občané vyjádřili preferenci pro pokračování bezplatného režimu. Diskuze se točila kolem hodnoty služeb MHD a srovnání s jinými městy, kde je doprava zdarma.</p>\n<h2 id=\"důvody-a-motivace-za-změnami\">Důvody a Motivace za Změnami</h2>\n<p>Primárním cílem změn v MHD Teplice bylo zlepšit služby pro občany a získat větší kontrolu nad městskou dopravou. Město vyjádřilo nespokojenost s předchozím provozovatelem a usilovalo o poskytnutí kvalitnější a modernější dopravy pro své občany.</p>\n<h2 id=\"výhled-do-budoucnosti\">Výhled do Budoucnosti</h2>\n<p>Město Teplice plánuje pokračovat ve vylepšování služeb MHD, včetně úplného zprovoznění informačních panelů ve vozidlech a zajištění plynulého chodu nového odbavovacího systému. Cílem je poskytnout občanům efektivní, spolehlivou a přístupnou městskou hromadnou dopravu.</p>\n<h4 id=\"proč-nejsou-data-mhd-teplice-na-odjezdyonline\">Proč nejsou data MHD Teplice na Odjezdy.online?</h4>\n<p>Důvodem je, že jsem cca na začátku ledna dával na MDT dopis, který je pod tímto textem:</p>\n<blockquote>\n<p>Vlastimil Novotný<br>Sídliště u Nového Nádraží 679<br>41801 Bílina</p>\n<p>Městská doprava Teplice, p.o.<br>Náměstí Svobody 2/2<br>415 95 Teplice</p>\n<p>Vážení,</p>\n<p><strong>Věc: Žádost o Poskytnutí Dat o Polohách Autobusů a Trolejbusů</strong></p>\n<p>Rád bych Vás oslovil s žádostí o poskytnutí dat o polohách autobusů a trolejbusů, které jsou součástí Vaší městské dopravy v Teplicích.</p>\n<p>Jsem tvůrce a správce webové stránky odjezdy.online, která v současné době nabízí informace o odjezdech vozů MHD a PAD společnosti ARRIVA. Mým záměrem je rozšířit obsah webu a přidat na samostatnou stránku odjezdy z Teplic.</p>\n<p>Tento projekt jsem vytvořil jako hobby s pomocí technologie ChatGPT4 od OpenAI, s cílem usnadnit sledování a plánování cest s využitím městské hromadné dopravy.</p>\n<p>Byl bych velmi vděčný za jakékoli informace, které by mi pomohly implementovat tuto funkci, a zajímaly by mne podmínky pro získání a použití těchto dat.</p>\n<p>Děkuji Vám za zvážení mé žádosti a těším se na možnou spolupráci.</p>\n<p>S pozdravem,</p>\n<p>Vlastimil Novotný  </p>\n</blockquote>\n<p>Do dnes (19.2.2024) se podnik neozval, a podle dispečinku MDT ještě nemají udělaný v vozidlech systém GPS. Takže doufám že bude <strong>co nejdříve :)</strong></p>\n<h2 id=\"zdroje\">Zdroje</h2>\n<ul>\n<li><a href=\"https://www.idnes.cz/usti/zpravy/mhd-teplice-problemy.A231230_101353_usti-zpravy_jan\">iDNES.cz, 30. prosince 2023</a></li>\n<li><a href=\"https://www.idnes.cz/usti/zpravy/mhd-teplice-placeni-listky-chyba-zdarma.A240203_113641_usti-zpravy_zdo\">iDNES.cz, 3. února února 2024</a>.</li>\n</ul>\n<p>Tento komplexní přehled ukazuje na významné změny, kterými prošla MHD Teplice od začátku roku 2024, včetně období bezplatné přepravy způsobené technickými potížemi, a následné obnovení placení za dopravní služby. Město se snaží reagovat na potřeby a přání svých občanů a směřuje k poskytování kvalitnější, efektivnější a přístupnější městské dopravy.</p>\n<p>Pro další informace navštivte příslušné odkazy.</p>\n",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "From my area"
+            ],
+            "date_published": "2024-02-19T12:35:12+01:00",
+            "date_modified": "2024-03-07T11:23:50+01:00"
+        },
+        {
+            "id": "https://odjezdy.online/kontakt/",
+            "url": "https://odjezdy.online/kontakt/",
+            "title": "Kontakt",
+            "summary": "Kontaktujte nás Máte otázky, návrhy, nebo chcete mi s něčím pomoci? Jsme tu pro vás! Klikněte na odkaz níže a otevře se váš výchozí e-mailový&hellip;",
+            "content_html": "<div class=\"contact-section\">\n<h1>Kontaktujte nás</h1>\n<p>Máte otázky, návrhy, nebo chcete mi s něčím pomoci? Jsme tu pro vás! Klikněte na odkaz níže a otevře se váš výchozí e-mailový klient, abyste nám mohli přímo napsat.</p>\n<p class=\"msg msg--warning\"><span style=\"text-decoration: underline;\"><strong>Pozor!</strong></span><br><strong>Nepřijímám </strong><span style=\"text-decoration: underline;\"><strong>žádné </strong>nabídky spolupráce</span>. <strong>ŽÁDNÉ</strong>.</p>\n<h2>Email</h2>\n<p><a href=\"mailto:info@odjezdy.online\">info@odjezdy.online</a></p>\n<h2>Sociální sítě</h2>\n<p>Najdete nás také na:</p>\n<ul>\n<li><a href=\"https://twitter.com/plainrock127\" target=\"_blank\" rel=\"noopener\">Twitter</a></li>\n<li><a href=\"https://instagram.com/odjezdy.online/\" target=\"_blank\" rel=\"noopener\">Instagram</a></li>\n</ul>\n</div>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "Info / Update"
+            ],
+            "date_published": "2024-02-16T17:31:37+01:00",
+            "date_modified": "2024-03-07T11:23:59+01:00"
+        },
+        {
+            "id": "https://odjezdy.online/zasady-ochrany-osobnich-udaju-odjezdyonline/",
+            "url": "https://odjezdy.online/zasady-ochrany-osobnich-udaju-odjezdyonline/",
+            "title": "Zásady ochrany osobních údajů - Odjezdy.online",
+            "summary": "Úvod Vítejte na Odjezdy.online, webovou stránku poskytující informace o odjezdech autobusů. Naše zásady ochrany osobních údajů vysvětlují, jaké informace shromažďujeme, jak je používáme a jaká&hellip;",
+            "content_html": "<h2>Úvod</h2>\n<p>Vítejte na Odjezdy.online, webovou stránku poskytující informace o odjezdech autobusů. Naše zásady ochrany osobních údajů vysvětlují, jaké informace shromažďujeme, jak je používáme a jaká jsou vaše práva.</p>\n<h2>Jaké informace shromažďujeme</h2>\n<p>Shromažďujeme informace, které nám poskytnete při registraci, přihlášení nebo při používání našich služeb. Používáme také Google Analytics a Google AdSense pro zlepšení našich služeb a zobrazování reklam.</p>\n<h2>Cookies</h2>\n<p>Používáme cookies a podobné technologie pro sledování vaší aktivity na našem webu a shromažďování určitých informací.</p>\n<h2>Jak používáme shromážděné informace</h2>\n<p>Informace shromažďované prostřednictvím Google Analytics a AdSense používáme k analýze trendů, správě webu, sledování pohybu uživatelů na webu a shromažďování demografických informací.</p>\n<h2>Jak chráníme vaše údaje</h2>\n<p>Zavázali jsme se chránit bezpečnost vašich údajů. Přijímáme přiměřená technická a organizační opatření pro ochranu osobních údajů, které zpracováváme.</p>\n<h2>Vaše práva</h2>\n<p>Máte právo požadovat přístup k vašim osobním údajům, jejich opravu, vymazání nebo omezení zpracování.</p>\n<h2>Sdílení údajů s třetími stranami</h2>\n<p>Osobní údaje mohou být sdíleny s třetími stranami pouze v souladu s právními předpisy a v případě, že k tomu dáte souhlas.</p>\n<h2>E-mailová komunikace</h2>\n<p>Při zasílání e-mailů prostřednictvím našeho systému logujeme, na jakou e-mailovou adresu byla zpráva odeslána. Uchováváme pouze část e-mailové adresy pro ochranu vašeho soukromí. Příklad jak je ukládána emailová adresa: m***@domena.cz</p>\n<h2>Sběr a použití IP adres</h2>\n<p class=\"msg msg--info\">Tato část nyní není funkční. Způsob jak je nastavený celý hosting, tak hosting neposkytuje IP adresy přístupů.</p>\n<p><span style=\"text-decoration: line-through;\">Pro zajištění bezpečnosti našich služeb a ochranu před zneužitím, jako je spam, můžeme shromažďovat IP adresy našich uživatelů. Tyto informace nám pomáhají identifikovat a reagovat na nežádoucí aktivity a zneužití našich služeb. IP adresy jsou shromažďovány pouze v nezbytně nutném rozsahu a jsou zpracovávány v souladu s platnými zákony o ochraně osobních údajů.</span></p>\n<h2>Změny v Privacy Policy</h2>\n<p>Vyhražujeme si právo občas aktualizovat naše zásady ochrany osobních údajů. Jakékoliv změny budou zveřejněny na této stránce.</p>\n<h2>Kontaktní informace</h2>\n<p>Pokud máte jakékoli dotazy nebo obavy ohledně našich zásad ochrany osobních údajů, neváhejte nás kontaktovat na: <a href=\"mailto:info@odjezdy.online\">info@odjezdy.online</a></p>\n<footer>\n<p>© 2024 Odjezdy.online</p>\n</footer>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "Info / Update"
+            ],
+            "date_published": "2024-02-13T21:01:59+01:00",
+            "date_modified": "2024-03-07T11:24:07+01:00"
+        },
+        {
+            "id": "https://odjezdy.online/links/",
+            "url": "https://odjezdy.online/links/",
+            "title": "Links",
+            "summary": "(NEW) NordVPN - Purchase a plan, get 1 or 3 months free! (NEW) SpeedShare Slice - You browse, they pay. WEDOS - Discover a wide&hellip;",
+            "content_html": "<ul>\n<li><strong>(NEW)</strong> <a href=\"https://ref.nordvpn.com/gVaWKlQbMMH\">NordVPN</a> - Purchase a plan, get 1 or 3 months free!</li>\n<li><strong>(NEW)</strong> <a href=\"https://speedshare.app/?ref=mxnticek\">SpeedShare</a></li>\n<li><a href=\"https://addslice.com/?crew=c1H4b\"><strong>Slice</strong></a> - You browse, they pay. </li>\n<li><strong><a href=\"https://www.wedos.com/?ap=RoGo9k\">WEDOS</a></strong> - Discover a wide range of web services for your online needs. (Trusted domain provider in Czechia. Can recommend) </li>\n<li><a href=\"http://url.wz.sk/ref1\"><strong>EarnApp (Link might not work on Chrome since my URL Shortener doesn’t use HTTPS.)</strong></a> -  <a href=\"https://earnapp.com/i/6jkmuis\"><strong>EarnApp</strong></a></li>\n<li><a href=\"https://link.repocket.co/PxPW\"><strong>Repocket</strong></a></li>\n<li><strong><a href=\"https://partner.wedos.as/affiliate-system?ap=RoGo9k\">WEDOS Affiliate</a></strong> - Partner with WEDOS and start earning. (Minimal payout 500CZK to either your bank, or your WEDOS account for paying services) </li>\n<li><a href=\"https://app.adjust.com/cqmly3t?deep_link=rita://?referral_code=dd21ad1e68\"><strong>Rita</strong></a></li>\n<li><a href=\"https://go.odjezdy.online/2e0160\"><strong>Honeygain</strong></a></li>\n<li><strong>(LINK IS BACK!)</strong> <a href=\"https://brightvpn.com/?r=6jkmuis\">BrightVPN</a></li>\n<li><a href=\"https://earn.fm/ref/VLASNV1I\"><strong>Earn.fm</strong></a></li>\n<li><a href=\"https://proxylite.ru/?r=CAUE8ULU&utm_source=discord_pits\"><strong>ProxyLite</strong></a></li>\n</ul>\n<p>**For more links, visit <a href=\"http://url.wz.sk/profile\">this link</a> or <a href=\"http://url.wz.sk/profile1\">this link</a> 👌😊😊😊😊😊😊😍🙌👍 **</p>\n",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+                   "Affiliate"
+            ],
+            "date_published": "2024-02-03T23:52:17+01:00",
+            "date_modified": "2024-05-11T20:37:28+02:00"
+        }
+    ]
+}
