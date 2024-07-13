@@ -3,12 +3,79 @@
     <title>Odjezdy.online - Odjezdy autobusů</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2024-07-07T14:37:56+02:00</updated>
+    <updated>2024-07-13T17:02:00+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>OMSI - Jak používat letecké mapy z mapy.cz v OMSI</title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/omsi-jak-pouzivat-letecke-mapy-z-mapycz-v-omsi/"/>
+        <id>https://odjezdy.online/omsi-jak-pouzivat-letecke-mapy-z-mapycz-v-omsi/</id>
+        <media:content url="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" medium="image" />
+            <category term="OMSI"/>
+
+        <updated>2024-07-13T17:02:00+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" alt="" />
+                    Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do simulátoru OMSI. Použijte následující URL formáty s vaším API klíčem pro různé typy mapových dlaždic: [Editor_LinkAerial] https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY Aktivace leteckých map v editoru Spusťte OMSI editor a otevřete nebo vytvořte novou mapu. Přejděte na&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" class="type:primaryImage" alt="" /></p>
+                <p>Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do simulátoru OMSI.</p>
+<h2 id="krok-1-získání-api-klíče">Krok 1: Získání API klíče</h2>
+<ol>
+<li>Navštivte <a href="https://developer.mapy.cz">mapy.cz developerskou stránku</a>.</li>
+<li>Zaregistrujte se a přihlaste se do svého účtu.</li>
+<li>Vytvořte nový projekt a získejte API klíč.</li>
+</ol>
+<h2 id="krok-2-url-pro-mapové-dlaždice">Krok 2: URL pro mapové dlaždice</h2>
+<p>Použijte následující URL formáty s vaším API klíčem pro různé typy mapových dlaždic:</p>
+<ul>
+<li><strong>Basic</strong>: <code>https://api.mapy.cz/v1/maptiles/basic/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
+<li><strong>Outdoor</strong>: <code>https://api.mapy.cz/v1/maptiles/outdoor/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
+<li><strong>Winter</strong>: <code>https://api.mapy.cz/v1/maptiles/winter/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
+<li><strong>Aerial</strong>: <code>https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
+</ul>
+<h2 id="krok-3-nastavení-omsi">Krok 3: Nastavení OMSI</h2>
+<h3 id="příprava-adresáře">Příprava adresáře</h3>
+<ol>
+<li>Otevřete složku <code>/OMSI 2/maps/</code>.</li>
+<li>Vytvořte nový adresář nazvaný <code>aerials</code>.</li>
+</ol>
+<h3 id="úprava-souboru-optionscfg">Úprava souboru <code>options.cfg</code></h3>
+<ol>
+<li>Otevřete soubor <code>/OMSI 2/options.cfg</code>.</li>
+<li>Na konec souboru přidejte následující řádek:</li>
+</ol>
+<pre><code class="language-cfg">[Editor_LinkAerial]
+https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
+</code></pre>
+<h3 id="aktivace-leteckých-map-v-editoru">Aktivace leteckých map v editoru</h3>
+<ol>
+<li>Spusťte OMSI editor a otevřete nebo vytvořte novou mapu.</li>
+<li>Přejděte na záložku “Tiles” a zaškrtněte “Use tile aerials”.</li>
+<li>Klikněte na “Dnl. current Tile” pro stažení aktuální dlaždice.</li>
+</ol>
+<h3 id="uložení-a-kontrola">Uložení a kontrola</h3>
+<ol>
+<li>Uložte změny a zkontrolujte, zda se letecké snímky správně zobrazují na mapě.</li>
+</ol>
+<h2 id="původní-github-issue">Původní GitHub Issue</h2>
+<p>Pro původní GitHub issue ohledně mapy.cz a jejich podkladů naleznete <a href="https://github.com/TomasMahdal/MapyCZAerials/issues/5">zde</a>. </p>
+<h2 id="další-odkazy">Další odkazy</h2>
+<p>Další informace, postupy a případné fixy můžete najít také na <a href="https://fellowsfilm.com/threads/editor-aerial-imagery.614/">FellowsFilm fóru</a>.</p>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>The Best Free VPN: Protect Your Privacy with Bright VPN 🛡️</title>
         <author>
@@ -265,32 +332,6 @@
 <hr>
 <figure class="post__image"><a href="https://go.odjezdy.online/hamty"><img  src="https://www.hamty.cz/templates/assets/img/logo.png" alt="" width="285" height="100" data-is-external-image="true"></figure></a>     <a href="https://go.odjezdy.online/r3g"><figure class="post__image"><img loading="lazy"  src="https://www.hamty.cz/images/merchant/1480687765aliexpress.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a>   <a href="https://go.odjezdy.online/1e3437"><figure class="post__image"><img  src="https://www.hamty.cz/images/merchant/1684157607allegro.jpg" alt="" width="289" height="118" data-is-external-image="true"></figure></a>     <a href="https://go.odjezdy.online/7d8"><figure class="post__image"><img loading="lazy"  src="https://www.hamty.cz/images/merchant/1487078054drmax.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a></p>
 <figure class="post__image"><a href="https://go.odjezdy.online/q9i"><img  src="https://www.hamty.cz/images/merchant/1667143706lidl.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a>     <a href="https://go.odjezdy.online/tr1"><figure class="post__image"><img loading="lazy"  src="https://www.hamty.cz/images/merchant/1483710862dhgate.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Tuchlov - uzavírka mostu</title>
-        <author>
-            <name>mxnticek</name>
-        </author>
-        <link href="https://odjezdy.online/tuchlov-uzavirka-mostu/"/>
-        <id>https://odjezdy.online/tuchlov-uzavirka-mostu/</id>
-            <category term="From my area"/>
-            <category term="Closures"/>
-
-        <updated>2024-05-02T19:32:51+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Z důvodu úplné uzavírky mostu nad silnicí I/13 u Tuchlova dochází od 19. 4. do 15. 10. k výluce autobusové linky 503. Vlivem délky objízdné trasy dochází u spojů jedoucích z Teplic do Bíliny k časovým posunům o cca 4 minuty. V opačném směru zůstávají&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Z důvodu úplné uzavírky mostu nad silnicí I/13 u Tuchlova dochází od 19. 4. do 15. 10. k výluce autobusové linky 503.</p>
-<p>Vlivem délky objízdné trasy dochází u spojů jedoucích z Teplic do Bíliny k časovým posunům o cca 4 minuty. V opačném směru zůstávají časy odjezdů zachované. Zachovaná zůstává také obsluha všech zastávek.<br><br></p>
-<p>Zdroj: <a href="https://www.kr-ustecky.cz/tuchlov%2Duzavirka%2Dmostu/d-1785933">kr-ustecky.cz</a></p>
-<figure class="post__image"><img loading="lazy"  src="https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=141407" alt="DÚK - papír" width="720" height="1040" data-is-external-image="true"><figcaption>DÚK - papír</figcaption></figure>
-<p> </p>
             ]]>
         </content>
     </entry>
