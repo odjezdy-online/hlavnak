@@ -3,12 +3,42 @@
     <title>Odjezdy.online - Odjezdy autobusů</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2024-07-13T17:03:49+02:00</updated>
+    <updated>2024-08-11T21:44:17+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>Fotky z Nikon Coolpix L29 ze dne 9.8.24 </title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/fotky-z-nikon-coolpix-l29-ze-dne-9824/"/>
+        <id>https://odjezdy.online/fotky-z-nikon-coolpix-l29-ze-dne-9824/</id>
+
+        <updated>2024-08-11T21:44:17+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Zde jsou všechny fotky, které jsou ohledně dopravy (jedna je fotka hory/skály Bořeň) které jsem vyfotil na Nikon Coolpix L29. Hodněkrát spíš fotím na mobil iPhone 12, případně na zrcadlovku Olympus OM-D E-M10 II, jenom na zrcadlovce nechce fungovat objektiv, takže zatím to mám jako&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Zde jsou všechny fotky, které jsou ohledně dopravy (jedna je fotka hory/skály Bořeň) které jsem vyfotil na Nikon Coolpix L29. Hodněkrát spíš fotím na mobil iPhone 12, případně na zrcadlovku Olympus OM-D E-M10 II, jenom na zrcadlovce nechce fungovat objektiv, takže zatím to mám jako držák papíru :kek:<br><br>Pokuď budete chtít přispět na nový objektiv, můžete přes můj <a href="https://ko-fi.com/vlastimilnovotny/goal?g=0">ko-fi</a></p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0055.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0055-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0059.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0059-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0061.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0061-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0062.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0062-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0063.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0063-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0065.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0065-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0066.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0066-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0067.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0067-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
+</div></div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>OMSI - Jak používat letecké mapy z mapy.cz v OMSI</title>
         <author>
@@ -299,39 +329,6 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
 <p> </p>
 <figure class="post__image"><img loading="lazy"  src="https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=141061" alt="DÚK - papír" width="720" height="1040" data-is-external-image="true"><figcaption>DÚK - papír</figcaption></figure>
 <p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Odkazy pro ČR a SK</title>
-        <author>
-            <name>mxnticek</name>
-        </author>
-        <link href="https://odjezdy.online/odkazy-pro-cr-a-sk/"/>
-        <id>https://odjezdy.online/odkazy-pro-cr-a-sk/</id>
-            <category term="Affiliate"/>
-
-        <updated>2024-07-07T14:37:48+02:00</updated>
-            <summary>
-                <![CDATA[
-                    <p>Všechny odkazy vedou na Hamty nebo respektivě e-shopy, na které je odkazováno přes Hamty<strong>*</strong>, pokud není u nich napsáno jinak. URL odkazy začínají doménou go.odjezdy.online, která je na rebrandly.com jako doména pro shortener. Použitím těchto odkazů při objednávce se připíše část peněz z vašeho nákupu zpět, aniž by jste museli něco platit navíc! (výjma hamty.cz, kde je nutná registrace a získání 200kč cashbacku do roku od registrace. Prosím, registrujte se výhradně v stejném prohlížeči, na kterém jste kliknuli na odkaz. Děkuji!)</p>
-<p class="msg msg--warning">Odkazy se můžou v jakýkoliv čas měnit, přidávat, nebo vymazat.</p>
-<p class="msg msg--info"><strong>*:</strong> Je tomu tak, protože jinak nebudou moci připsat cashback. Asi víte proč.. Protože by jste si mohli vymyslet že jste nakoupili, ale zároveň nenakoupili :´)</p>
-
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Všechny odkazy vedou na Hamty nebo respektivě e-shopy, na které je odkazováno přes Hamty<strong>*</strong>, pokud není u nich napsáno jinak. URL odkazy začínají doménou go.odjezdy.online, která je na rebrandly.com jako doména pro shortener. Použitím těchto odkazů při objednávce se připíše část peněz z vašeho nákupu zpět, aniž by jste museli něco platit navíc! (výjma hamty.cz, kde je nutná registrace a získání 200kč cashbacku do roku od registrace. Prosím, registrujte se výhradně v stejném prohlížeči, na kterém jste kliknuli na odkaz. Děkuji!)</p>
-<p class="msg msg--warning">Odkazy se můžou v jakýkoliv čas měnit, přidávat, nebo vymazat.</p>
-<p class="msg msg--info"><strong>*:</strong> Je tomu tak, protože jinak nebudou moci připsat cashback. Asi víte proč.. Protože by jste si mohli vymyslet že jste nakoupili, ale zároveň nenakoupili :´)</p>
-
-<p>All links lead to Hamty or to e-shops that are linked via Hamty<strong>*</strong>, unless otherwise stated. URL links start with the domain go.odjezdy.online, which is on rebrandly.com as the domain for the shortener. Using these links when ordering will credit back a portion of your purchase without you having to pay anything extra! (Except for hamty.cz, where registration is required, and to get 200CZK cashback within a year of registration for your account to be considered as Invited. Please register only in the same browser where you clicked on the link. Thank you!)</p>
-<p class="msg msg--warning">Links can at any time be changed, added or removed.</p>
-<p class="msg msg--info"><strong>*:</strong> I guess you know why... Because you could make up a story that you made a purchase but didn't at the same time :´) </p>
-<hr>
-<figure class="post__image"><a href="https://go.odjezdy.online/hamty"><img  src="https://www.hamty.cz/templates/assets/img/logo.png" alt="" width="285" height="100" data-is-external-image="true"></figure></a>     <a href="https://go.odjezdy.online/r3g"><figure class="post__image"><img loading="lazy"  src="https://www.hamty.cz/images/merchant/1480687765aliexpress.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a>   <a href="https://go.odjezdy.online/1e3437"><figure class="post__image"><img  src="https://www.hamty.cz/images/merchant/1684157607allegro.jpg" alt="" width="289" height="118" data-is-external-image="true"></figure></a>     <a href="https://go.odjezdy.online/7d8"><figure class="post__image"><img loading="lazy"  src="https://www.hamty.cz/images/merchant/1487078054drmax.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a></p>
-<figure class="post__image"><a href="https://go.odjezdy.online/q9i"><img  src="https://www.hamty.cz/images/merchant/1667143706lidl.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a>     <a href="https://go.odjezdy.online/tr1"><figure class="post__image"><img loading="lazy"  src="https://www.hamty.cz/images/merchant/1483710862dhgate.png" alt="" width="289" height="118" data-is-external-image="true"></figure></a></p>
             ]]>
         </content>
     </entry>
