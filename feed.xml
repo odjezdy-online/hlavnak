@@ -3,7 +3,7 @@
     <title>Odjezdy.online - Odjezdy autobusů</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2024-08-11T21:44:17+02:00</updated>
+    <updated>2024-08-28T13:33:19+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
@@ -16,8 +16,10 @@
         </author>
         <link href="https://odjezdy.online/fotky-z-nikon-coolpix-l29-ze-dne-9824/"/>
         <id>https://odjezdy.online/fotky-z-nikon-coolpix-l29-ze-dne-9824/</id>
+            <category term="Info / Update"/>
+            <category term="From my area"/>
 
-        <updated>2024-08-11T21:44:17+02:00</updated>
+        <updated>2024-08-28T13:32:49+02:00</updated>
             <summary>
                 <![CDATA[
                     Zde jsou všechny fotky, které jsou ohledně dopravy (jedna je fotka hory/skály Bořeň) které jsem vyfotil na Nikon Coolpix L29. Hodněkrát spíš fotím na mobil iPhone 12, případně na zrcadlovku Olympus OM-D E-M10 II, jenom na zrcadlovce nechce fungovat objektiv, takže zatím to mám jako&hellip;
@@ -167,8 +169,9 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
         </author>
         <link href="https://odjezdy.online/update/"/>
         <id>https://odjezdy.online/update/</id>
+            <category term="Info / Update"/>
 
-        <updated>2024-06-30T01:54:02+02:00</updated>
+        <updated>2024-08-28T13:32:54+02:00</updated>
             <summary>
                 <![CDATA[
                     Ahoj! Přeji všem, jestli zde vůbec někdo kouká, příjemné prazdniny! Dnešní update by měl být ohledně změny theme a ostatních věcí. Podstránka arriva.odjezdy.online už pravděpodobně nebude funkční, protože server na kterým byla hostovaná expiroval, a já přemýšlím že bych ten kód přepsal. Theme se měl&hellip;
@@ -191,8 +194,9 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
         </author>
         <link href="https://odjezdy.online/affiliate-1/"/>
         <id>https://odjezdy.online/affiliate-1/</id>
+            <category term="Affiliate"/>
 
-        <updated>2024-07-13T17:03:49+02:00</updated>
+        <updated>2024-08-28T13:33:19+02:00</updated>
             <summary>
                 <![CDATA[
                     AFFILIATE. I AM USING PLATI.MARKET TO EARN COMMISION ON IT. If you want robux, buy from below, but first check the description! If you want to buy something else, for cheap, use this link.
@@ -245,8 +249,9 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
         </author>
         <link href="https://odjezdy.online/update-2352024/"/>
         <id>https://odjezdy.online/update-2352024/</id>
+            <category term="Info / Update"/>
 
-        <updated>2024-05-24T10:59:45+02:00</updated>
+        <updated>2024-08-28T13:33:02+02:00</updated>
             <summary>
                 <![CDATA[
                     Ahoj! Máme tu takový menší "update". Přešli jsme z pomalýho VPS v americe na CloudFlare Pages s hlavní stránkou. Podstránka ARRIVA je furt na VPS v americe, ale nemělo by se to tak sekat. Hey! Hey! We have a little "update". We switched from a&hellip;
@@ -267,8 +272,9 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
         </author>
         <link href="https://odjezdy.online/bytelixir/"/>
         <id>https://odjezdy.online/bytelixir/</id>
+            <category term="Affiliate"/>
 
-        <updated>2024-07-07T14:37:56+02:00</updated>
+        <updated>2024-08-28T13:33:08+02:00</updated>
             <summary></summary>
         <content type="html">
             <![CDATA[
