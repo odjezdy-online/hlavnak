@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://odjezdy.online/update-2092024/",
+            "url": "https://odjezdy.online/update-2092024/",
+            "title": "Update 20.9.2024",
+            "summary": "Ahoj! Zdravím po dlouhé době. Další update, a tím bude odstranění té píčoviny co je úplně dole ve footeru. Nevím proč tam je. Jo a, chystá se ještě jeden projektík, podobný tomu co bylo na arriva.odjezdy.online (což zprovozním znovu taky :D), ale nebudu prozrazovat :)&hellip;",
+            "content_html": "<p>Ahoj! Zdravím po dlouhé době. <br><br>Další update, a tím bude odstranění té píčoviny co je úplně dole ve footeru. Nevím proč tam je. Jo a, chystá se ještě jeden projektík, podobný tomu co bylo na arriva.odjezdy.online (což zprovozním znovu taky :D), ale nebudu prozrazovat :)</p>\n<hr>\n<p>Hey! Hey! Hello after a long time. <br><br>Next update, and that will be removing that shit that's at the bottom of the footer. I don't know why it's there. Oh and, there is another project coming up, similar to what was on arriva.odjezdy.online (which I will get working again too :D), but I won't reveal :)</p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-09-20T20:07:00+02:00",
+            "date_modified": "2024-09-20T20:07:00+02:00"
+        },
+        {
             "id": "https://odjezdy.online/fotky-z-nikon-coolpix-l29-ze-dne-9824/",
             "url": "https://odjezdy.online/fotky-z-nikon-coolpix-l29-ze-dne-9824/",
             "title": "Fotky z Nikon Coolpix L29 ze dne 9.8.24 ",
@@ -145,22 +159,6 @@
             ],
             "date_published": "2024-05-02T19:32:38+02:00",
             "date_modified": "2024-05-02T19:35:03+02:00"
-        },
-        {
-            "id": "https://odjezdy.online/teplice-uzavirka-ul-spojenecka/",
-            "url": "https://odjezdy.online/teplice-uzavirka-ul-spojenecka/",
-            "title": "Teplice - uzavírka ul. Spojenecká",
-            "summary": "Z důvodu úplné uzavírky ulice Spojenecká v Teplicích dochází od 8. 4. do 31. 10. 2024 k výluce autobusových linek DÚK 481, 482, 489, 490, 802 a MHD 106. Objízdná trasa pro MHD 106 je vedena: Školní, Rokycanova, E55, Hřbitovní z důvodu stavebních prací na&hellip;",
-            "content_html": "<p>Z důvodu úplné uzavírky ulice Spojenecká v Teplicích dochází od 8. 4. do 31. 10. 2024 k výluce autobusových linek DÚK 481, 482, 489, 490, 802 a MHD 106.</p>\n<p>Objízdná trasa pro MHD 106 je vedena: Školní, Rokycanova, E55, Hřbitovní z důvodu stavebních prací na mostě v ulici Spojenecká.<br>Pro DÚK linky je objízdná trasa přes zastávky: Novosedlická (481,482 a 802) a Dubská (489,490). Trasa vede přes ulice: Hřbitovní, E55, Jateční, Na Hrázi.</p>\n<p>Zdroj: <a href=\"https://mdteplice.cz/component/content/article/objizdna-trasa-na-lince-106-do-31-10-2024?catid=2&amp;Itemid=101\">mdteplice.cz</a>, <a href=\"https://www.kr-ustecky.cz/teplice%2Duzavirka%2Dul%2Dspojenecka/d-1785375\">kr-ustecky.cz</a></p>\n<p> </p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=141061\" alt=\"DÚK - papír\" width=\"720\" height=\"1040\" data-is-external-image=\"true\"><figcaption>DÚK - papír</figcaption></figure>\n<p> </p>",
-            "author": {
-                "name": "mxnticek"
-            },
-            "tags": [
-                   "From my area",
-                   "Closures"
-            ],
-            "date_published": "2024-05-02T19:29:19+02:00",
-            "date_modified": "2024-05-02T19:32:43+02:00"
         }
     ]
 }
