@@ -3,12 +3,49 @@
     <title>Odjezdy.online - Odjezdy autobusů</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2024-09-20T20:07:00+02:00</updated>
+    <updated>2024-09-22T11:59:58+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>Fotky z Nikon Coolpix L29 ze dne 21.9.24 </title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/fotky-z-cool/"/>
+        <id>https://odjezdy.online/fotky-z-cool/</id>
+
+        <updated>2024-09-22T11:59:58+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Ahoj! Zde jsou všechny fotky, které jsou ohledně spuštění "Kozí dráhy" do Krupky-město, které jsem vyfotil na Nikon Coolpix L29. Hodněkrát spíš fotím na mobil iPhone 12, případně na zrcadlovku Olympus OM-D E-M10 II, jenom na zrcadlovce nechce fungovat objektiv, takže zatím to mám jako&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ahoj! Zde jsou všechny fotky, které jsou ohledně spuštění "Kozí dráhy" do Krupky-město, které jsem vyfotil na Nikon Coolpix L29. Hodněkrát spíš fotím na mobil iPhone 12, případně na zrcadlovku Olympus OM-D E-M10 II, jenom na zrcadlovce nechce fungovat objektiv, takže zatím to mám jako držák papíru xD<br><br>Pokuď budete chtít přispět na nový objektiv, můžete přes můj <a href="https://ko-fi.com/vlastimilnovotny/goal?g=0">ko-fi</a></p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/27/gallery/DSCN0206.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/27/gallery/DSCN0206-thumbnail.JPG" alt="Zadní pohled na autobus ev.č. 832 linky 210, který stojí na stanovišti 3 stanice Děčín, hl. nádr. v ulici Čsl. mládeže. Na zadní straně autobusu je reklama na Lázně Děčín s adresou U Plovárny 1264/10c, 405 02 Děčín a webovou stránkou www.laznedecin.cz. SPZ autobusu je 7U7 8832." width="720" height="540"></a>
+<figcaption>Autobus ev.č. 832 linky 210 v Děčíně s reklamou na Lázně Děčín zaparkovaný na ulici.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/27/gallery/DSCN0220.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/27/gallery/DSCN0220-thumbnail.JPG" alt="Pohled z okna vlaku na budovu nádraží Chlumec u Chabařovic. Skrz okno je vidět nápis na budově a část modré oblohy." width="720" height="540"></a>
+<figcaption>Výhled z vlaku na nádraží Chlumec u Chabařovic s nápisem na budově, zachycený přes okno vlaku.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/27/gallery/DSCN0226.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/27/gallery/DSCN0226-thumbnail.JPG" alt="Pohled na budovu s šedou a bílou fasádou, s kovovou střechou, před kterou stojí několik lidí. Jedná se o zastávku nebo budovu nádraží (Pravděpodobně " width="720" height="540"></a>
+<figcaption>Budova nádraží nebo zastávky (Pravděpodobně "Unčín") s několika lidmi před ní, zachycena za jasného dne.</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/27/gallery/DSCN0232.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/27/gallery/DSCN0232-thumbnail.JPG" alt="Brzy doplněno" width="720" height="540"></a>
+<figcaption>Brzy doplněno</figcaption>
+</figure>
+<figure class="gallery__item"><a href="https://odjezdy.online/media/posts/27/gallery/DSCN0235.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/27/gallery/DSCN0235-thumbnail.JPG" alt="Brzy doplněno" width="720" height="540"></a>
+<figcaption>Brzy doplněno</figcaption>
+</figure>
+</div></div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Update 20.9.2024</title>
         <author>
@@ -303,33 +340,6 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
                 <figure class="post__image post__image--center"><a href="https://bytelixir.com/r/M8DLGKSKIM5T" target="_blank" rel="noopener noreferrer"><img loading="lazy"  src="https://odjezdy.online/media/posts/18/ByteLixir-640-x-200.png" alt="" width="747" height="233" sizes="100vw" srcset="https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-2xl.png 1600w"></figure></a></p>
 <figure class="post__image post__image--center"><a href="https://bytelixir.com/r/M8DLGKSKIM5T"><img loading="lazy"  src="https://odjezdy.online/media/posts/18/ByteLixir-480-x-60.png" alt="" width="704" height="88" sizes="100vw" srcset="https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-2xl.png 1600w"></figure></a></p>
 <figure class="post__image post__image--center"><a href="https://bytelixir.com/r/M8DLGKSKIM5T"><img loading="lazy"  src="https://odjezdy.online/media/posts/18/ByteLixir-960-x-640.png" alt="" width="960" height="640" sizes="100vw" srcset="https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-2xl.png 1600w"></figure></a></p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bílina - výluka linky 508</title>
-        <author>
-            <name>mxnticek</name>
-        </author>
-        <link href="https://odjezdy.online/bilina-vyluka-linky-508/"/>
-        <id>https://odjezdy.online/bilina-vyluka-linky-508/</id>
-            <category term="From my area"/>
-            <category term="Closures"/>
-
-        <updated>2024-05-02T19:35:03+02:00</updated>
-            <summary>
-                <![CDATA[
-                    Z důvodu úplné uzavírky ulice Wolkerova v Bílině dochází od 2. 4. do 2. 8. 2024 k výluce autobusové linky 508. Je zrušená obsluha zastávek Bílina, pož. zbroj. a Bílina, nám. po dobu uzavírky. Potřebujete-li na Bílina, nám., vystupte na Bílina, Lidl a 300 metrů&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Z důvodu úplné uzavírky ulice Wolkerova v Bílině dochází od 2. 4. do 2. 8. 2024 k výluce autobusové linky 508. Je zrušená obsluha zastávek Bílina, pož. zbroj. a Bílina, nám. po dobu uzavírky. Potřebujete-li na Bílina, nám., vystupte na Bílina, Lidl a 300 metrů jděte.</p>
-<p> </p>
-<p>Zdroj: <a href="https://www.kr-ustecky.cz/bilina%2Dvyluka%2Dlinky%2D508/d-1785278">kr-ustecky.cz</a></p>
-<p> </p>
-<figure class="post__image"><img loading="lazy"  src="https://www.kr-ustecky.cz/assets/Image.ashx?id_org=450018&amp;id_obrazky=140992" alt="DÚK - papír" width="720" height="1040" data-is-external-image="true"><figcaption>DÚK - papír</figcaption></figure>
-<p> </p>
             ]]>
         </content>
     </entry>
