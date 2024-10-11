@@ -3,12 +3,36 @@
     <title>Odjezdy.online - Odjezdy autobusů</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2024-09-22T11:59:58+02:00</updated>
+    <updated>2024-10-11T18:24:08+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>UPDATE 11.10.2024</title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/update-11102024/"/>
+        <id>https://odjezdy.online/update-11102024/</id>
+
+        <updated>2024-10-11T18:24:08+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Ahoj! Je tu další update, který přináší dvě nové stránky. 1. stránka je ohledně IDS DÚK. Byla inspirována Sap1kovo DUKFinder, API využito přávě od Sap1ka. 2. stránka je spíš takový monitor předplatných a kolik za ně utratíte za měsíc atd. U obou stránek bylo využito&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ahoj! <br>Je tu další update, který přináší dvě nové stránky.<br><br>1. stránka je ohledně IDS DÚK. Byla inspirována Sap1kovo DUKFinder, API využito přávě od Sap1ka. <br>2. stránka je spíš takový monitor předplatných a kolik za ně utratíte za měsíc atd.</p>
+<p>U obou stránek bylo využito umělé inteligence Claude 3.5, přes platformu Kodu.ai. Pokuď budete chtít využít Claude, a chcete i nějaký kredity na začátek, klikněte na <a href="https://kodu.ai/r/odjezdy.online">tento odkaz</a>.</p>
+<p> </p>
+<hr>
+<p>Hey! Hey! <br>There is another update which brings two new pages.<br><br>The 1st page is about the IDS DÚK. It was inspired by Sap1k's DUKFinder, API used by Sap1k. <br>The 2nd page is more of a sort of monitor of subscriptions and how much you spend per month etc.<br>For both pages, Claude 3.5 AI was used, via the Kodu.ai platform. If you want to use Claude, and want some credits to start with, click <a href="https://kodu.ai/r/odjezdy.online">this link</a>.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Fotky z Nikon Coolpix L29 ze dne 21.9.24 </title>
         <author>
@@ -230,7 +254,7 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
         <id>https://odjezdy.online/update/</id>
             <category term="Info / Update"/>
 
-        <updated>2024-08-28T13:32:54+02:00</updated>
+        <updated>2024-10-11T18:17:11+02:00</updated>
             <summary>
                 <![CDATA[
                     Ahoj! Přeji všem, jestli zde vůbec někdo kouká, příjemné prazdniny! Dnešní update by měl být ohledně změny theme a ostatních věcí. Podstránka arriva.odjezdy.online už pravděpodobně nebude funkční, protože server na kterým byla hostovaná expiroval, a já přemýšlím že bych ten kód přepsal. Theme se měl&hellip;
@@ -321,25 +345,6 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
                 <p>Ahoj!<br><br>Máme tu takový menší "update". Přešli jsme z pomalýho VPS v americe na CloudFlare Pages s hlavní stránkou. Podstránka ARRIVA je furt na VPS v americe, ale nemělo by se to tak sekat.</p>
 <hr>
 <p>Hey! Hey!<br><br>We have a little "update". We switched from a slow VPS in the US to CloudFlare Pages with a main page. The ARRIVA page is still on the VPS in the US, but it shouldn't be that slow.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bytelixir</title>
-        <author>
-            <name>mxnticek</name>
-        </author>
-        <link href="https://odjezdy.online/bytelixir/"/>
-        <id>https://odjezdy.online/bytelixir/</id>
-            <category term="Affiliate"/>
-
-        <updated>2024-08-28T13:33:08+02:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                <figure class="post__image post__image--center"><a href="https://bytelixir.com/r/M8DLGKSKIM5T" target="_blank" rel="noopener noreferrer"><img loading="lazy"  src="https://odjezdy.online/media/posts/18/ByteLixir-640-x-200.png" alt="" width="747" height="233" sizes="100vw" srcset="https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-2xl.png 1600w"></figure></a></p>
-<figure class="post__image post__image--center"><a href="https://bytelixir.com/r/M8DLGKSKIM5T"><img loading="lazy"  src="https://odjezdy.online/media/posts/18/ByteLixir-480-x-60.png" alt="" width="704" height="88" sizes="100vw" srcset="https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-2xl.png 1600w"></figure></a></p>
-<figure class="post__image post__image--center"><a href="https://bytelixir.com/r/M8DLGKSKIM5T"><img loading="lazy"  src="https://odjezdy.online/media/posts/18/ByteLixir-960-x-640.png" alt="" width="960" height="640" sizes="100vw" srcset="https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-2xl.png 1600w"></figure></a></p>
             ]]>
         </content>
     </entry>

@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://odjezdy.online/update-11102024/",
+            "url": "https://odjezdy.online/update-11102024/",
+            "title": "UPDATE 11.10.2024",
+            "summary": "Ahoj! Je tu další update, který přináší dvě nové stránky. 1. stránka je ohledně IDS DÚK. Byla inspirována Sap1kovo DUKFinder, API využito přávě od Sap1ka. 2. stránka je spíš takový monitor předplatných a kolik za ně utratíte za měsíc atd. U obou stránek bylo využito&hellip;",
+            "content_html": "<p>Ahoj! <br>Je tu další update, který přináší dvě nové stránky.<br><br>1. stránka je ohledně IDS DÚK. Byla inspirována Sap1kovo DUKFinder, API využito přávě od Sap1ka. <br>2. stránka je spíš takový monitor předplatných a kolik za ně utratíte za měsíc atd.</p>\n<p>U obou stránek bylo využito umělé inteligence Claude 3.5, přes platformu Kodu.ai. Pokuď budete chtít využít Claude, a chcete i nějaký kredity na začátek, klikněte na <a href=\"https://kodu.ai/r/odjezdy.online\">tento odkaz</a>.</p>\n<p> </p>\n<hr>\n<p>Hey! Hey! <br>There is another update which brings two new pages.<br><br>The 1st page is about the IDS DÚK. It was inspired by Sap1k's DUKFinder, API used by Sap1k. <br>The 2nd page is more of a sort of monitor of subscriptions and how much you spend per month etc.<br>For both pages, Claude 3.5 AI was used, via the Kodu.ai platform. If you want to use Claude, and want some credits to start with, click <a href=\"https://kodu.ai/r/odjezdy.online\">this link</a>.</p>",
+            "author": {
+                "name": "mxnticek"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-10-11T18:24:08+02:00",
+            "date_modified": "2024-10-11T18:24:08+02:00"
+        },
+        {
             "id": "https://odjezdy.online/fotky-z-cool/",
             "url": "https://odjezdy.online/fotky-z-cool/",
             "title": "Fotky z Nikon Coolpix L29 ze dne 21.9.24 ",
@@ -97,7 +111,7 @@
                    "Info / Update"
             ],
             "date_published": "2024-06-30T01:54:02+02:00",
-            "date_modified": "2024-08-28T13:32:54+02:00"
+            "date_modified": "2024-10-11T18:17:11+02:00"
         },
         {
             "id": "https://odjezdy.online/affiliate-1/",
@@ -143,20 +157,6 @@
             ],
             "date_published": "2024-05-24T10:59:45+02:00",
             "date_modified": "2024-08-28T13:33:02+02:00"
-        },
-        {
-            "id": "https://odjezdy.online/bytelixir/",
-            "url": "https://odjezdy.online/bytelixir/",
-            "title": "Bytelixir",
-            "content_html": "<figure class=\"post__image post__image--center\"><a href=\"https://bytelixir.com/r/M8DLGKSKIM5T\" target=\"_blank\" rel=\"noopener noreferrer\"><img loading=\"lazy\"  src=\"https://odjezdy.online/media/posts/18/ByteLixir-640-x-200.png\" alt=\"\" width=\"747\" height=\"233\" sizes=\"100vw\" srcset=\"https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-640-x-200-2xl.png 1600w\"></figure></a></p>\n<figure class=\"post__image post__image--center\"><a href=\"https://bytelixir.com/r/M8DLGKSKIM5T\"><img loading=\"lazy\"  src=\"https://odjezdy.online/media/posts/18/ByteLixir-480-x-60.png\" alt=\"\" width=\"704\" height=\"88\" sizes=\"100vw\" srcset=\"https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-480-x-60-2xl.png 1600w\"></figure></a></p>\n<figure class=\"post__image post__image--center\"><a href=\"https://bytelixir.com/r/M8DLGKSKIM5T\"><img loading=\"lazy\"  src=\"https://odjezdy.online/media/posts/18/ByteLixir-960-x-640.png\" alt=\"\" width=\"960\" height=\"640\" sizes=\"100vw\" srcset=\"https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xs.png 300w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-sm.png 480w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-md.png 768w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-lg.png 1024w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-xl.png 1360w ,https://odjezdy.online/media/posts/18/responsive/ByteLixir-960-x-640-2xl.png 1600w\"></figure></a></p>",
-            "author": {
-                "name": "mxnticek"
-            },
-            "tags": [
-                   "Affiliate"
-            ],
-            "date_published": "2024-05-23T20:49:44+02:00",
-            "date_modified": "2024-08-28T13:33:08+02:00"
         }
     ]
 }
