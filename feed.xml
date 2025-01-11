@@ -3,12 +3,38 @@
     <title>Odjezdy.online</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2024-12-23T12:28:13+01:00</updated>
+    <updated>2025-01-11T12:48:48+01:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>BLOG #4? - Random topic</title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/blog-4-random-topic/"/>
+        <id>https://odjezdy.online/blog-4-random-topic/</id>
+
+        <updated>2025-01-11T12:48:48+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Ahoj, a zdravím všechny v novém roce 2025! Omlouvám se všem za&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ahoj, a zdravím všechny v novém roce 2025!<br><br>Omlouvám se všem za menší neaktivitu na stránkách, chození do služby a ještě lítání po doktorech nejde moc dohromady s sepisováním blogů :D<br><br></p>
+<h2>1. Menší vyčerpání</h2>
+<p>Ano, každý jednou má vyčerpání, a mě to chytlo ihned hodinu po novém roce... Ani nevím jak či proč, ale prostě se cítím strašně, nejde mi pořádně spát, a ještě k tomu problémy s serverem mě možná za chvíli odvezou na psychiatrii. xD</p>
+<h2>2. Co jsem udělal?</h2>
+<p>Mezi posledním blog postem #3 &amp; #3.5 jsem upravil trosičku ARRIVA mapku aby nějak fungovala lépe, a zároveň se snažil zprovoznit mapu na DÚK aby byla správně.<br>Zároveň jsem aktualizoval moje <a href="https://odjezdy.online/links/">affiliate odkazy</a> kam jsem přidal novou aplikaci. Nic víc, nic míň.. :D</p>
+<h2>3. Co plánuji?</h2>
+<p>No, plánuji si rozsířit "portfolio" domén které vlastním. Důvodem je prostě protože už mě docela vadí že na skoro všechno co je moje a netýká se tohodle projektu, mám na doméně <a href="https://plainrock127.xyz">plainrock127.xyz</a>, a ta doména je stará asi 3 roky, a já už se takhle cca 2 a půl roku nejmenuju nikde jinde než na tiktoku, takže prostě chci změnu.<br>Zároveň plánuji opravit nějaké chybičky které najdu zde, a případně rozsířit DÚK věci. Ono totiž to co je nyní na DÚK, je jaksi takový divný ve smyslu toho, že polovina věcí mi tam nefunguje z ničeho nic T_T</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Blog Post #3.5 - Menší blahopřání k vánocům</title>
         <author>
@@ -180,7 +206,7 @@
 <li>Dar ve formě hry</li>
 <li>Libovolný finanční nebo věcný příspěvek</li>
 </ul>
-<p><strong>Kontakt:</strong> <a href="mailto:&#110;&#x6f;&#x76;&#x6f;&#x74;&#110;&#x79;&#x2e;&#x76;&#108;&#97;&#x73;&#x74;&#x69;&#x6d;&#105;&#108;&#x40;&#x6f;&#100;&#106;&#101;&#122;&#x64;&#x79;&#46;&#x6f;&#110;&#108;&#x69;&#110;&#x65;">&#110;&#x6f;&#x76;&#x6f;&#x74;&#110;&#x79;&#x2e;&#x76;&#108;&#97;&#x73;&#x74;&#x69;&#x6d;&#105;&#108;&#x40;&#x6f;&#100;&#106;&#101;&#122;&#x64;&#x79;&#46;&#x6f;&#110;&#108;&#x69;&#110;&#x65;</a></p>
+<p><strong>Kontakt:</strong> <a href="mailto:&#x6e;&#x6f;&#x76;&#x6f;&#x74;&#x6e;&#121;&#46;&#118;&#x6c;&#x61;&#115;&#x74;&#x69;&#109;&#x69;&#x6c;&#x40;&#111;&#x64;&#x6a;&#101;&#x7a;&#100;&#x79;&#x2e;&#111;&#110;&#108;&#105;&#110;&#x65;">&#x6e;&#x6f;&#x76;&#x6f;&#x74;&#x6e;&#121;&#46;&#118;&#x6c;&#x61;&#115;&#x74;&#x69;&#109;&#x69;&#x6c;&#x40;&#111;&#x64;&#x6a;&#101;&#x7a;&#100;&#x79;&#x2e;&#111;&#110;&#108;&#105;&#110;&#x65;</a></p>
 <p>Předem děkuji za jakoukoliv pomoc.</p>
 
             ]]>
@@ -338,73 +364,6 @@
 <figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0066.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0066-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
 <figure class="gallery__item"><a href="https://odjezdy.online/media/posts/25/gallery/DSCN0067.JPG" data-size="4608x3456"><img loading="lazy" src="https://odjezdy.online/media/posts/25/gallery/DSCN0067-thumbnail.JPG" alt="" width="720" height="540"></a></figure>
 </div></div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>OMSI - Jak používat letecké mapy z mapy.cz v OMSI</title>
-        <author>
-            <name>mxnticek</name>
-        </author>
-        <link href="https://odjezdy.online/omsi-mapy-cz-aerial/"/>
-        <id>https://odjezdy.online/omsi-mapy-cz-aerial/</id>
-        <media:content url="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" medium="image" />
-            <category term="OMSI"/>
-
-        <updated>2024-07-13T17:03:35+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" alt="" />
-                    Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" class="type:primaryImage" alt="" /></p>
-                <p>Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do simulátoru OMSI.</p>
-<h2 id="krok-1-získání-api-klíče">Krok 1: Získání API klíče</h2>
-<ol>
-<li>Navštivte <a href="https://developer.mapy.cz">mapy.cz developerskou stránku</a>.</li>
-<li>Zaregistrujte se a přihlaste se do svého účtu.</li>
-<li>Vytvořte nový projekt a získejte API klíč.</li>
-</ol>
-<h2 id="krok-2-url-pro-mapové-dlaždice">Krok 2: URL pro mapové dlaždice</h2>
-<p>Použijte následující URL formáty s vaším API klíčem pro různé typy mapových dlaždic:</p>
-<ul>
-<li><strong>Basic</strong>: <code>https://api.mapy.cz/v1/maptiles/basic/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
-<li><strong>Outdoor</strong>: <code>https://api.mapy.cz/v1/maptiles/outdoor/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
-<li><strong>Winter</strong>: <code>https://api.mapy.cz/v1/maptiles/winter/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
-<li><strong>Aerial</strong>: <code>https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
-</ul>
-<h2 id="krok-3-nastavení-omsi">Krok 3: Nastavení OMSI</h2>
-<h3 id="příprava-adresáře">Příprava adresáře</h3>
-<ol>
-<li>Otevřete složku <code>/OMSI 2/maps/</code>.</li>
-<li>Vytvořte nový adresář nazvaný <code>aerials</code>.</li>
-</ol>
-<h3 id="úprava-souboru-optionscfg">Úprava souboru <code>options.cfg</code></h3>
-<ol>
-<li>Otevřete soubor <code>/OMSI 2/options.cfg</code>.</li>
-<li>Na konec souboru přidejte následující řádek:</li>
-</ol>
-<pre><code class="language-cfg">[Editor_LinkAerial]
-https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
-</code></pre>
-<h3 id="aktivace-leteckých-map-v-editoru">Aktivace leteckých map v editoru</h3>
-<ol>
-<li>Spusťte OMSI editor a otevřete nebo vytvořte novou mapu.</li>
-<li>Přejděte na záložku “Tiles” a zaškrtněte “Use tile aerials”.</li>
-<li>Klikněte na “Dnl. current Tile” pro stažení aktuální dlaždice.</li>
-</ol>
-<h3 id="uložení-a-kontrola">Uložení a kontrola</h3>
-<ol>
-<li>Uložte změny a zkontrolujte, zda se letecké snímky správně zobrazují na mapě.</li>
-</ol>
-<h2 id="původní-github-issue">Původní GitHub Issue</h2>
-<p>Pro původní GitHub issue ohledně mapy.cz a jejich podkladů naleznete <a href="https://github.com/TomasMahdal/MapyCZAerials/issues/5">zde</a>. </p>
-<h2 id="další-odkazy">Další odkazy</h2>
-<p>Další informace, postupy a případné fixy můžete najít také na <a href="https://fellowsfilm.com/threads/editor-aerial-imagery.614/">FellowsFilm fóru</a>.</p>
-
             ]]>
         </content>
     </entry>
