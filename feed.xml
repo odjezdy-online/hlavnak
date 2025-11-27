@@ -3,7 +3,7 @@
     <title>Odjezdy.online</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2025-11-20T12:12:22+01:00</updated>
+    <updated>2025-11-27T13:31:19+01:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
@@ -374,21 +374,28 @@ Můj starý dobrý server <strong>CZ01 (Core 2 Duo)</strong> je nyní v režimu 
             <summary>
                 <![CDATA[
                         <img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" alt="" />
-                    Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do&hellip;
+                    OMSI - Tutoriál na aerial podklady od mapy.cz Shrnutí videa: Video tutoriál&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <p><img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" class="type:primaryImage" alt="" /></p>
-                <p>Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do simulátoru OMSI.</p><h2 id="krok-1-získání-api-klíče">Krok 1: Získání API klíče</h2>
+                <h1 id="omsi---tutoriál-na-aerial-podklady-od-mapycz"><a href="https://www.youtube.com/watch?v=9Irvyj0MyVc">OMSI - Tutoriál na aerial podklady od mapy.cz</a></h1>
+<p><strong>Shrnutí videa:</strong>
+Video tutoriál názorně ukazuje proces integrace leteckých snímků z Mapy.cz do OMSI 2 editoru. Autor provádí diváka následujícími kroky:</p><ul>
+<li>Registrace na portálu pro vývojáře Mapy.cz a vytvoření projektu pro získání unikátního API klíče.</li>
+<li>Úprava konfiguračního souboru <code>options.cfg</code> ve složce s hrou, kam se vkládá odkaz na mapové podklady.</li>
+<li>Praktická ukázka v editoru: aktivace volby “Use tile aerials” a stažení dlaždic pro aktuální polohu.</li>
+<li><em>Důležitý tip z konce videa [04:26]</em>: Pokud toto děláte poprvé, je nutné ve složce <code>Maps</code> ručně vytvořit složku <code>aerials</code>, aby editor nehlásil chybu.</li>
+</ul>
+<hr>
+<h2 id="tento-tutoriál-vás-provede-získáním-a-nastavením-leteckých-map-z-mapycz-do-simulátoru-omsi">Tento tutoriál vás provede získáním a nastavením leteckých map z mapy.cz do simulátoru OMSI.</h2>
+<h2 id="krok-1-získání-api-klíče">Krok 1: Získání API klíče</h2>
 <ol>
 <li>Navštivte <a href="https://developer.mapy.cz">mapy.cz developerskou stránku</a>.</li>
 <li>Zaregistrujte se a přihlaste se do svého účtu.</li>
 <li>Vytvořte nový projekt a získejte API klíč.</li>
 </ol>
-<blockquote>
-<p>Je možné, že vás budou mapy.cz stránky žádat o vložení IP adresy která je povolená k používání API pomocí toho klíče. Vyplňte si tam svojí IP adresu. O tomto jsem úplně zapomněl napsat :D
-<figure class="post__image"><img loading="lazy" src="https://amz.odjezdy.online/xbackbone/VUne9/PuhavIBo28.png/raw" alt="Image" data-is-external-image="true"></figure></p></blockquote>
 <h2 id="krok-2-url-pro-mapové-dlaždice">Krok 2: URL pro mapové dlaždice</h2>
 <p>Použijte následující URL formáty s vaším API klíčem pro různé typy mapových dlaždic:</p><ul>
 <li><strong>Basic</strong>: <code>https://api.mapy.cz/v1/maptiles/basic/256/~z/~x/~y?apikey=YOUR_API_KEY</code></li>
@@ -421,7 +428,7 @@ https://api.mapy.cz/v1/maptiles/aerial/256/~z/~x/~y?apikey=YOUR_API_KEY
 <li>Uložte změny a zkontrolujte, zda se letecké snímky správně zobrazují na mapě.</li>
 </ol>
 <h2 id="původní-github-issue">Původní GitHub Issue</h2>
-<p>Pro původní GitHub issue ohledně mapy.cz a jejich podkladů naleznete <a href="https://github.com/TomasMahdal/MapyCZAerials/issues/5">zde</a>. </p><h2 id="další-odkazy">Další odkazy</h2>
+<p>Pro původní GitHub issue ohledně mapy.cz a jejich podkladů naleznete <a href="https://github.com/TomasMahdal/MapyCZAerials/issues/5">zde</a>.</p><h2 id="další-odkazy">Další odkazy</h2>
 <p>Další informace, postupy a případné fixy můžete najít také na <a href="https://fellowsfilm.com/threads/editor-aerial-imagery.614/">FellowsFilm fóru</a>.</p>
             ]]>
         </content>
