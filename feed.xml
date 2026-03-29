@@ -3,12 +3,38 @@
     <title>Odjezdy.online</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2025-11-27T13:31:19+01:00</updated>
+    <updated>2026-03-29T10:23:25+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>Omluva za neaktivitu a nové plány do budoucna!</title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/omluva-za-neaktivitu-a-nove-plany-do-budoucna/"/>
+        <id>https://odjezdy.online/omluva-za-neaktivitu-a-nove-plany-do-budoucna/</id>
+
+        <updated>2026-03-29T10:23:25+02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Ahoj všem návštěvníkům odjezdy.online! Rád bych se vám v první řadě upřímně&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ahoj všem návštěvníkům <strong>odjezdy.online</strong>!</p><p>Rád bych se vám v první řadě upřímně omluvil za nedávnou neaktivitu a nedostatek nového obsahu na stránce. Občas se věci sejdou tak, že na tvorbu nezbývá tolik času, kolik bych si představoval. Velmi si ale vážím toho, že web i nadále sledujete a používáte.</p><p>Abych vám toto čekání vynahradil, mám pro vás dobrou zprávu: <strong>připravuji novou sérii tutoriálů pro OMSI 2!</strong> Zaměříme se v nich na pokročilejší techniky stavby a tvorby, na které se často ptáte.</p><h3 id="na-co-se-můžete-v-nejbližší-době-těšit">Na co se můžete v nejbližší době těšit:</h3>
+<ul>
+<li><strong>Satelitní podklady z maptiles.com:</strong> Detailní návod, jak do editoru úspěšně dostat kvalitní aerials fotky, aby se vám reálné mapy stavěly mnohem lépe.</li>
+<li><strong>Skutečný terén (Real Terrain):</strong> Konec plochým mapám. Ukážeme si krok za krokem, jak do hry správně importovat reálná výšková data (DEM).</li>
+<li><strong>Tvorba repaintů včetně reklam na oknech:</strong> Projdeme si tvorbu nátěrů pro autobusy od A do Z, a to včetně záludností, jako je správné nastavení průhlednosti pro reklamy lepené přes sklo.</li>
+</ul>
+<p>První z těchto návodů se tu objeví už brzy. Děkuji vám za trpělivost a podporu!</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Blog #10 / Tech - Xiaomi sága: Od cihel k tramvajím a mrtvým čtečkám</title>
         <author>
@@ -19,7 +45,7 @@
             <category term="BLOG"/>
 
         <updated>2025-11-20T12:12:17+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Čauko, hlásím se s pokračováním mého boje s “cihlou” jménem Redmi Note&hellip;
                 ]]>
@@ -62,7 +88,7 @@ Mám funkční Redmi Note 13 Pro. Nestál mě 5 tisíc za opravu. Ale mám z ně
             <category term="BLOG"/>
 
         <updated>2025-11-05T17:42:47+01:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Blog #9 - Rant: Zásilkovna a umění, jak proměnit SSD v helmu&hellip;
                 ]]>
@@ -95,7 +121,7 @@ Mám funkční Redmi Note 13 Pro. Nestál mě 5 tisíc za opravu. Ale mám z ně
             <category term="BLOG"/>
 
         <updated>2025-08-01T20:57:39+02:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Blog #8 - Menší rantík o Xiaomi Čauko, vítejte u dalšího, tentokrát&hellip;
                 ]]>
@@ -130,7 +156,7 @@ Mám funkční Redmi Note 13 Pro. Nestál mě 5 tisíc za opravu. Ale mám z ně
             <category term="BLOG"/>
 
         <updated>2025-07-22T17:57:20+02:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Blog #7 / Info - Upgrade serverů a změny v síti Čauko,&hellip;
                 ]]>
@@ -208,7 +234,7 @@ Můj starý dobrý server <strong>CZ01 (Core 2 Duo)</strong> je nyní v režimu 
             <category term="BLOG"/>
 
         <updated>2025-07-08T18:28:26+02:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     Velký návrat po 5 měsících: Nové projekty, plány a tip, jak ušetřit&hellip;
                 ]]>
@@ -266,7 +292,7 @@ Můj starý dobrý server <strong>CZ01 (Core 2 Duo)</strong> je nyní v režimu 
         <id>https://odjezdy.online/prehled-zmen-v-mhd-teplice-leden-2024-kveten-2025/</id>
 
         <updated>2025-05-04T13:58:30+02:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                     🚌 Přehled změn v MHD Teplice (leden 2024 – květen 2025) 🚍&hellip;
                 ]]>
@@ -371,7 +397,7 @@ Můj starý dobrý server <strong>CZ01 (Core 2 Duo)</strong> je nyní v režimu 
             <category term="OMSI"/>
 
         <updated>2024-07-13T16:59:32+02:00</updated>
-            <summary>
+            <summary type="html">
                 <![CDATA[
                         <img src="https://odjezdy.online/media/posts/24/OMSI2_20240706_165830.jpg" alt="" />
                     OMSI - Tutoriál na aerial podklady od mapy.cz Shrnutí videa: Video tutoriál&hellip;
