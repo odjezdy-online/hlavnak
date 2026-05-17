@@ -3,12 +3,114 @@
     <title>Odjezdy.online</title>
     <link href="https://odjezdy.online/feed.xml" rel="self" />
     <link href="https://odjezdy.online" />
-    <updated>2026-03-29T10:23:25+02:00</updated>
+    <updated>2026-05-17T19:22:03+02:00</updated>
     <author>
         <name>mxnticek</name>
     </author>
     <id>https://odjezdy.online</id>
 
+    <entry>
+        <title>OMSI 2 - Mapové podklady z MapTiler do editoru</title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/omsi-2-mapove-podklady-z-maptiler-do-editoru/"/>
+        <id>https://odjezdy.online/omsi-2-mapove-podklady-z-maptiler-do-editoru/</id>
+            <category term="OMSI"/>
+
+        <updated>2026-05-17T19:20:26+02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Návod: Mapové podklady z MapTiler do editoru OMSI 2 Tento tutoriál vás&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="návod-mapové-podklady-z-maptiler-do-editoru-omsi-2">Návod: Mapové podklady z MapTiler do editoru OMSI 2</h1>
+<p>Tento tutoriál vás provede integrací alternativních mapových podkladů z platformy MapTiler do editoru simulátoru OMSI. MapTiler nabízí širokou škálu mapových stylů, od satelitních snímků až po klasické uliční mapy.</p><hr>
+<h2 id="krok-1-vytvoření-účtu-a-přihlášení">Krok 1: Vytvoření účtu a přihlášení</h2>
+<ol>
+<li>Navštivte domovskou stránku <a href="https://www.maptiler.com/">MapTiler</a>.</li>
+<li>Klikněte na tlačítko <strong>Create Account</strong> (nebo se přihlaste, pokud již účet máte).</li>
+<li>Po úspěšné registraci a přihlášení budete přesměrováni do administračního rozhraní MapTiler Cloud.</li>
+</ol>
+<h2 id="krok-2-výběr-mapového-podkladu-a-pozor-na-hidpi">Krok 2: Výběr mapového podkladu a pozor na HiDPI</h2>
+<ol>
+<li>V levém menu nebo na hlavní nástěnce přejděte do sekce <strong>Maps</strong> (Moje mapy / Standard maps).</li>
+<li>Uvidíte galerii různých mapových podkladů (např. <em>Satellite Hybrid</em>, <em>Streets</em>, <em>Outdoor</em>, atd.). Rozklikněte ten styl, který chcete používat.</li>
+<li>Na stránce detailu mapy sjeďte níže k sekci <strong>Raster Tiles</strong>.</li>
+<li>Zde si můžete vybrat buď výchozí odkaz (512x512), nebo ten pro kompatibilitu (256x256). Oba v OMSI fungují, ale <strong>DŮLEŽITÉ JE:</strong> ujistěte se, že <strong>nemáte zaškrtnutou volbu HiDPI</strong>.
+<em>(HiDPI přidává do odkazu parametr <code>@2x</code>. Tento parametr způsobuje, že editor OMSI nedokáže dlaždice správně zařadit do mřížky a obrázky se „rozbijí“ a rozhodí po celé mapě!)</em></li>
+<li>Zkopírujte si vybraný odkaz bez HiDPI.</li>
+</ol>
+<h2 id="krok-3-úprava-url-adresy-pro-omsi">Krok 3: Úprava URL adresy pro OMSI</h2>
+<p>Váš zkopírovaný odkaz (například ve verzi 512x512) bude vypadat zhruba takto:
+<code>https://api.maptiler.com/maps/satellite-v4/{z}/{x}/{y}.jpg?key=VAS_API_KLIC</code></p><p>OMSI ale nepoužívá pro proměnné souřadnic složené závorky <code>{ }</code>, nýbrž vlnovky <code>~</code>. Musíte tedy ručně přepsat konec adresy:</p><ul>
+<li><strong>Změňte:</strong> <code>{z}/{x}/{y}</code></li>
+<li><strong>Na:</strong> <code>~z/~x/~y</code></li>
+</ul>
+<p><strong>Výsledný upravený odkaz připravený pro OMSI bude vypadat takto:</strong>
+<code>https://api.maptiler.com/maps/satellite-v4/~z/~x/~y.jpg?key=VAS_API_KLIC</code></p><p><em>(Poznámka: Nikdy s nikým veřejně nesdílejte svůj osobní API klíč, který se nachází na konci URL).</em></p><h2 id="krok-4-nastavení-omsi-2">Krok 4: Nastavení OMSI 2</h2>
+<p>Jakmile máte připravený správný odkaz, postup je stejný jako u jiných poskytovatelů map:</p><h3 id="1-úprava-souboru-optionscfg">1. Úprava souboru options.cfg</h3>
+<ol>
+<li>Otevřete konfigurační soubor <code>options.cfg</code>, který se nachází přímo v hlavní složce <code>\OMSI 2\</code>.</li>
+<li>Sjeďte úplně na konec souboru a přidejte následující blok s vaším upraveným odkazem z MapTileru:</li>
+</ol>
+<pre><code class="language-cfg">[Editor_LinkAerial]
+[https://api.maptiler.com/maps/satellite-v4/~z/~x/~y.jpg?key=VAS_API_KLIC](https://api.maptiler.com/maps/satellite-v4/~z/~x/~y.jpg?key=VAS_API_KLIC)
+</code></pre>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Nastupování „na pípák“: Proč vás v Ústí může řidič vyhodit a jak je to jinde?</title>
+        <author>
+            <name>mxnticek</name>
+        </author>
+        <link href="https://odjezdy.online/nastupovani-na-pipak-mhd-usti/"/>
+        <id>https://odjezdy.online/nastupovani-na-pipak-mhd-usti/</id>
+        <media:content url="https://odjezdy.online/media/posts/46/MJA7b8cef161d_fronta.jpg" medium="image" />
+            <category term="Z mého okolí"/>
+            <category term="MHD"/>
+
+        <updated>2026-05-17T18:37:36+02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://odjezdy.online/media/posts/46/MJA7b8cef161d_fronta.jpg" alt="Dlouhá fronta do autobusu linky 344 v Praze na Černém Mostě." />
+                    Představte si běžnou situaci v Ústí nad Labem: Stojíte na frekventované zastávce&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://odjezdy.online/media/posts/46/MJA7b8cef161d_fronta.jpg" class="type:primaryImage" alt="Dlouhá fronta do autobusu linky 344 v Praze na Černém Mostě." /></p>
+                <p>Představte si běžnou situaci v Ústí nad Labem: Stojíte na frekventované zastávce Revoluční, vidíte přijíždět svou „osmičku“ a v momentě, kdy se už už natahujete po madle, ozve se pronikavé pípání signalizace. Hodně lidí v tu chvíli zrychlí a do dveří doslova skočí. Následně se z kabiny ozve křik řidiče a hrozba vyloučením z přepravy. </p><p>Mnoho cestujících to vnímá jako aroganci nebo zbytečnou „buzeraci“. Pravda je ale taková, že v ten moment porušujete přepravní podmínky, ohrožujete sebe i ostatní a řidič má plné právo vás z vozu vykázat. Pojďme se podívat, proč se boj o vteřiny nevyplácí a jak se na tento problém dívají pravidla u nás i ve zbytku republiky.</p><h2 id="zákaz-platí-všude-co-říká-zákon-a-přepravní-řád">Zákaz platí všude: Co říká zákon a přepravní řád?</h2>
+<p>Zákaz nastupování po zaznění signalizace není jen nějaký výmysl Dopravního podniku města Ústí nad Labem (DPMÚL). Vychází přímo z celostátní legislativy, konkrétně z <strong>Vyhlášky Ministerstva dopravy č. 175/2000 Sb. (Přepravní řád pro veřejnou drážní a silniční osobní dopravu)</strong>.</p><p>V § 14 této vyhlášky je jasně definováno, že <strong>cestující nesmí nastupovat nebo vystupovat, jakmile je dávána zvuková nebo světelná návěst</strong>. Smluvní přepravní podmínky (SPP) všech dopravců v ČR z tohoto dokumentu vycházejí a specifikují jej pro své potřeby. </p><p>Jakmile tedy zazní signál nebo se rozsvítí červené světlo nad dveřmi, platí tři zlatá pravidla:</p><ol>
+<li><strong>Nenastupovat.</strong></li>
+<li><strong>Nevystupovat.</strong></li>
+<li><strong>Okamžitě uvolnit dveřní prostor.</strong></li>
+</ol>
+<h2 id="proč-řidiči-občas-reagují-tak-ostře">Proč řidiči občas reagují tak ostře?</h2>
+<p>Když vás řidič „seřve“, většinou to nedělá proto, že by si chtěl zchladit žáhu. Má to své logické a velmi praktické důvody:</p><h3 id="1-extrémní-bezpečnostní-riziko">1. Extrémní bezpečnostní riziko</h3>
+<p>Moderní autobusy a trolejbusy mají senzory proti přiskřípnutí, které dveře znovu otevřou, pokud narazí na překážku. Problém je, že <strong>tyto senzory nejsou neomylné</strong> (např. nemusejí zachytit tenký popruh batohu, hůl nebo vodítko psa). Starší vozy navíc zavírají dveře s poměrně velkou silou. Pokud dobíhající cestující na schodech uklouzne v momentě, kdy se dveře zavřou a vůz se dává do pohybu, řidič, který už očima fixuje levé zrcátko a provoz na silnici, si toho nemusí všimnout. Následky mohou být fatální a zodpovědnost padá plně na řidiče.</p><h3 id="2-dominový-efekt-zpoždění">2. Dominový efekt zpoždění</h3>
+<p>Linky jako 88 nebo páteřní trolejbusové spoje mívají napjaté jízdní řády. Pokud na zastávce typu Mírové náměstí nebo Revoluční zdrží odjezd dobíhající cestující o 10 vteřin, nezdá se to jako problém. Pokud se to ale stane na pěti zastávkách po sobě a proces zavírání dveří se musí kvůli senzorům třikrát opakovat, spoj nabere minutová zpoždění. To následně „rozbije“ návaznosti a naštve desítky dalších cestujících ve voze.</p><h2 id="jak-je-to-v-jiných-městech-a-ids">Jak je to v jiných městech a IDS?</h2>
+<p>Pravidlo je v celé České republice naprosto stejné, liší se jen míra tolerance řidičů a technické vybavení vozů v jednotlivých integrovaných dopravních systémech.</p><ul>
+<li><strong>Praha a Středočeský kraj (PID / DPP):</strong> V Praze je situace nejvíce vyhrocená v metru a u tramvají. Dveře pražského metra zavírají obrovskou silou a pokusy o proskočení na poslední chvíli končí modřinami nebo rozbitými brýlemi. U tramvají a autobusů platí přísný zákaz, přičemž DPP pravidelně vede osvětové kampaně (např. „Neskákej mi do úsměvu“), kde před dobíháním důrazně varuje. Vyloučení z přepravy za blokování dveří je v Praze poměrně běžnou praxí.</li>
+<li><strong>Brno (DPMB / IDS JMK):</strong> Jihomoravský systém má v přepravních podmínkách zcela totožnou formulaci. Brněnští řidiči tramvají mají často pokyn odjíždět na vteřinu přesně a zdržování u dveří je tvrdě trestáno pokutami ze strany revizorů, pokud zrovna probíhá kontrola a cestující odmítá prostor opustit.</li>
+<li><strong>Ostrava (DPO / ODIS):</strong> V Ostravě dopravní podnik dlouhodobě apeluje na cestující, aby po zaznění výstrahy ustoupili od dveří. Moderní ostravské vozy jsou navíc vybaveny vnějšími kamerami, přes které dispečink případné nehody pečlivě analyzuje. Řidiči jsou proto pod tlakem, aby pravidla striktně vymáhali.</li>
+<li><strong>Regionální autobusy:</strong> U meziměstských spojů (například linky DÚK, které brázdí kraj), kde se nastupuje pouze předními dveřmi, k těmto situacím dochází méně, protože odbavení probíhá pod přímým dohledem řidiče. I tam ale platí, že jakmile řidič zavírá dveře a začne vyjíždět ze zálivu, nemá povinnost – a často kvůli provozu ani nesmí – znovu zastavovat.</li>
+</ul>
+<h2 id="co-vám-reálně-hrozí">Co vám reálně hrozí?</h2>
+<p>Ignorování signalizace není jen o tom, že se na vás někdo zlobí. Důsledky mohou být odstupňované:</p><ol>
+<li><strong>Ústní napomenutí:</strong> Řidič na vás přes mikrofon (nebo napřímo) křikne a upozorní vás na porušení předpisů.</li>
+<li><strong>Vyloučení z vozu:</strong> Řidič má plné legislativní právo odmítnout vás přepravit. Jednoduše nechá otevřené dveře a nepohne se z místa, dokud nevystoupíte.</li>
+<li><strong>Pokuta a asistence policie:</strong> Pokud byste zablokovali dveře, odmítali vystoupit a bránili vozu v odjezdu, řidič zavolá dispečink či policii. Následně vám hrozí pokuta za nedodržení přepravního řádu a narušení plynulosti dopravy.</li>
+</ol>
+<h2 id="stojí-to-za-ten-stres">Stojí to za ten stres?</h2>
+<p>V centru Ústí nad Labem jezdí MHD v takových intervalech, že další spoj stejným nebo podobným směrem jede většinou za pár minut. Dobíhání do zavírajících se dveří je adrenalinový sport, u kterého riskujete zdraví, konflikt s řidičem a zdržení všech ostatních cestujících. </p><p>Až příště uslyšíte signalizaci, prostě se zastavte. Řidič není váš nepřítel – jen dělá svou práci a chrání sebe i vás.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Omluva za neaktivitu a nové plány do budoucna!</title>
         <author>
@@ -16,6 +118,7 @@
         </author>
         <link href="https://odjezdy.online/omluva-za-neaktivitu-a-nove-plany-do-budoucna/"/>
         <id>https://odjezdy.online/omluva-za-neaktivitu-a-nove-plany-do-budoucna/</id>
+            <category term="BLOG"/>
 
         <updated>2026-03-29T10:23:25+02:00</updated>
             <summary type="html">
@@ -290,6 +393,8 @@ Můj starý dobrý server <strong>CZ01 (Core 2 Duo)</strong> je nyní v režimu 
         </author>
         <link href="https://odjezdy.online/prehled-zmen-v-mhd-teplice-leden-2024-kveten-2025/"/>
         <id>https://odjezdy.online/prehled-zmen-v-mhd-teplice-leden-2024-kveten-2025/</id>
+            <category term="Z mého okolí"/>
+            <category term="MHD"/>
 
         <updated>2025-05-04T13:58:30+02:00</updated>
             <summary type="html">
