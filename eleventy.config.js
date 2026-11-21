@@ -76,6 +76,7 @@ export default function (cfg) {
   cfg.addFilter('sortByUrl', (arr) => [...(arr || [])].sort((a, b) => { const x = a.url.replace(/\/$/, ''), y = b.url.replace(/\/$/, ''); return x < y ? -1 : x > y ? 1 : 0; }));
   cfg.addFilter('head', (arr, n) => (arr || []).slice(0, n));
   cfg.addFilter('isUrl', (s) => /^https?:\/\//.test(String(s || '')));
+  cfg.addFilter('shortUrl', (s) => String(s || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''));
   cfg.addFilter('host', (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return s; } });
 
   // {% linka "501" %} → a line-number box, styled per look

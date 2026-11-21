@@ -9,7 +9,7 @@
     { "label": "Příspěvky", "url": "/" },
     { "label": "Rubriky", "url": "/tags/" },
     { "label": "Odjezdy", "url": "https://app.odjezdy.online" },
-    { "label": "Projekty + donate", "url": "https://donate.odjezdy.online/" },
+    { "label": "Projekty + donate", "url": "/projekty/" },
     { "label": "O projektu", "url": "/informace-o-projektech-odjezdyonline/" },
     { "label": "Kontakt", "url": "/kontakt/" }
   ],

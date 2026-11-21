@@ -46,3 +46,5 @@ Imported posts carry `templateEngineOverride: md`, so `{% linka %}` does not wor
 ## Settings
 
 `src/_data/site.json`: menu, footer links, ticker text, donations embed, and third-party code. Google Analytics and AdSense are off (empty) by default; put the IDs there to turn them on.
+
+`src/_data/projects.json`: the /projekty/ page (donate links, crypto address, project groups with status live / beta / vývoj).

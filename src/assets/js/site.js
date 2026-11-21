@@ -80,6 +80,15 @@
   });
   window.odjezdySupporters = renderSupporters; // for previewing with sample data
 
+  // "Kopírovat adresu" on /projekty/; if the clipboard is refused, select the address instead
+  document.addEventListener('click', (ev) => {
+    const b = ev.target.closest('button[data-copy]');
+    if (!b) return;
+    const done = () => { const t = b.textContent; b.textContent = 'Zkopírováno'; setTimeout(() => { b.textContent = t; }, 1600); };
+    const select = () => { const c = b.parentElement.querySelector('.p-addr'); if (c) { const r = document.createRange(); r.selectNodeContents(c); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } };
+    if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(done, select); else select();
+  });
+
   let saved = '';
   try { saved = localStorage.getItem('odjezdy-look') || ''; } catch (_) {}
   applyLook(saved || root.dataset.look);
