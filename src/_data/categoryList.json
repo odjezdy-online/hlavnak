@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Affiliate",
+    "slug": "affiliate",
+    "description": ""
+  },
+  {
+    "name": "INFO",
+    "slug": "info",
+    "description": ""
+  },
+  {
+    "name": "Radio",
+    "slug": "radio",
+    "description": ""
+  },
+  {
+    "name": "Info / Update",
+    "slug": "info-updates",
+    "description": ""
+  },
+  {
+    "name": "Uzavírky",
+    "slug": "closures",
+    "description": ""
+  },
+  {
+    "name": "Z mého okolí",
+    "slug": "from-my-area",
+    "description": ""
+  },
+  {
+    "name": "OMSI",
+    "slug": "omsi-things",
+    "description": ""
+  },
+  {
+    "name": "BLOG",
+    "slug": "blog",
+    "description": ""
+  },
+  {
+    "name": "Murder Drones",
+    "slug": "murder-drones",
+    "description": ""
+  },
+  {
+    "name": "MHD",
+    "slug": "mhd",
+    "description": ""
+  }
+]

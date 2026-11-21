@@ -1,0 +1,16 @@
+---
+layout: base.njk
+permalink: /tags/
+title: Rubriky
+boardTitle: "RUBRIKY"
+---
+<h1 class="list-title">Vyber: Rubrika</h1>
+<ol class="cat-list">
+{%- for c in categoryList | withCounts(collections.listed) %}
+<li class="cat-row{% if c.name == 'Uzavírky' %} is-closure{% endif %}">
+  <span class="c-cat box {{ c.name | codeClass }}">{{ c.name | code }}</span>
+  <a class="c-title" href="/tags/{{ c.slug }}/">{% if c.name == 'Uzavírky' %}{% warn %}{% endif %}<span class="t">{{ c.name }}</span></a>
+  <span class="c-count">{{ c.n }}</span>
+</li>
+{%- endfor %}
+</ol>

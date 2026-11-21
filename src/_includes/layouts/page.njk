@@ -1,0 +1,11 @@
+---
+layout: base.njk
+boardTitle: "INFORMACE"
+---
+<article class="post">
+  <h1 class="post-title"><span>{{ title }}</span></h1>
+  {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+  <div class="prose">
+{{ content | safe }}
+  </div>
+</article>

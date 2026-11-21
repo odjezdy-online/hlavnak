@@ -1,0 +1,19 @@
+---
+layout: base.njk
+pagination:
+  data: collections.home
+  size: 10
+  alias: list
+permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+eleventyComputed:
+  boardTitle: "PŘÍSPĚVKY"
+---
+<h1 class="sr-only">Příspěvky{% if pagination.pageNumber > 0 %}, strana {{ pagination.pageNumber + 1 }}{% endif %}</h1>
+{% include "post-list.njk" %}
+{% if pagination.pages.length > 1 %}
+<nav class="pager" aria-label="Stránkování">
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev">&lt; Novější</a>{% else %}<span></span>{% endif %}
+  <span class="pg">{{ pagination.pageNumber + 1 }}/{{ pagination.pages.length }}</span>
+  {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next">Starší &gt;</a>{% else %}<span></span>{% endif %}
+</nav>
+{% endif %}

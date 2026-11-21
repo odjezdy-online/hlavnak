@@ -1,0 +1,19 @@
+{# expects `list` (posts) #}
+<div class="list-head" aria-hidden="true"><span class="c-cat">Rubrika</span><span class="c-date">Datum</span><span class="c-title">Příspěvek</span><span class="c-read">Čtení</span><span class="c-catname">Rubrika</span></div>
+<ol class="post-list">
+{%- for post in list %}
+{%- set cat = (post.data.categories or [])[0] %}
+<li class="post-row{% if post.data.categories | isClosure %} is-closure{% endif %}{% if post.data.image %} has-thumb{% endif %}">
+  <span class="c-cat box {{ cat | codeClass }}">{{ cat | code }}</span>
+  <span class="c-date">{{ post.date | ledDate }}</span>
+  <a class="c-title" href="{{ post.url }}">
+    {%- if post.data.image %}<img class="th" src="{{ post.data.image.src }}" alt="" loading="lazy" decoding="async">{% endif -%}
+    {%- if post.data.categories | isClosure %}{% warn %}{% endif -%}
+    <span class="t">{{ post.data.title }}</span>
+  </a>
+  <span class="c-read">{{ post.content | readMin }} min</span>
+  <span class="c-catname">{{ cat }}</span>
+  <span class="c-sub">{{ post.date | ledDate }} · {{ cat }}</span>
+</li>
+{%- endfor %}
+</ol>

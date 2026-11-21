@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="{{ site.lang }}" data-look="buse">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if metaTitle or title %}{{ metaTitle or title }} - {% endif %}{{ site.name }}</title>
+<meta name="description" content="{{ description or lead or site.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ metaTitle or title or site.name }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{% if image and image.src %}<meta property="og:image" content="{% if image.src | isUrl %}{{ image.src }}{% else %}{{ site.url }}{{ image.src }}{% endif %}">{% endif %}
+<meta name="theme-color" content="#000000">
+{# the visitor's look is applied before first paint, so the page never flashes the other one #}
+<script>try{var l=localStorage.getItem('odjezdy-look');if(l==='pid'||l==='buse')document.documentElement.dataset.look=l}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="preload" href="/assets/fonts/buse-small.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/buse-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="{{ site.name }}" href="/feed.json">
+{% if site.thirdParty.seznamVerification %}<meta name="seznam-wmt" content="{{ site.thirdParty.seznamVerification }}">{% endif %}
+{% if site.thirdParty.googleAnalytics %}<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.thirdParty.googleAnalytics }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.thirdParty.googleAnalytics }}');</script>{% endif %}
+{% if site.thirdParty.adsenseClient %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.thirdParty.adsenseClient }}" crossorigin="anonymous"></script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">Přeskočit na obsah</a>
+<div class="frame">
+  <header class="board site-head">
+    <a class="brand" href="/"><span class="b-cap">O</span><span class="b-low">o</span>djezdy<span class="b-tld">.online</span></a>
+    <div class="head-mid"><b>{{ boardTitle or "PŘÍSPĚVKY" }}</b><span>{{ boardSub or site.tagline }}</span></div>
+    <div class="head-clock"><b class="clk" aria-hidden="true">--:--</b><span class="dte" aria-hidden="true"></span></div>
+  </header>
+  <nav class="board site-nav" aria-label="Hlavní menu">
+    <ul>{% for item in site.nav %}<li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>{% endfor %}</ul>
+  </nav>
+  <main id="main" class="board">
+{{ content | safe }}
+  </main>
+  <footer class="board site-foot">
+    <section class="supporters" aria-labelledby="sup-h">
+      <h2 id="sup-h">Podporovatelé</h2>
+      <iframe class="donos" title="Podporovatelé odjezdy.online" loading="lazy" src="{{ site.donationsEmbed }}&accent=%23ff8800" data-base="{{ site.donationsEmbed }}"></iframe>
+      <p><a href="https://donate.odjezdy.online/">Podpořit projekt</a></p>
+    </section>
+    <div class="look-switch" role="group" aria-label="Vzhled webu">
+      <span>Vzhled:</span>
+      <button type="button" data-switch="buse" aria-pressed="true">BUSE</button>
+      <button type="button" data-switch="pid" aria-pressed="false">PID tablo</button>
+    </div>
+    <ul class="foot-nav">{% for item in site.footerNav %}<li><a href="{{ item.url }}">{{ item.label }}</a></li>{% endfor %}</ul>
+    <div class="ticker" aria-hidden="true"><span>{{ site.ticker }} · </span><span>{{ site.ticker }} · </span></div>
+  </footer>
+</div>
+<dialog class="photo" id="photo" aria-label="Fotka">
+  <img id="photo-img" alt="">
+  <p id="photo-cap"></p>
+  <form method="dialog"><button>Zavřít</button></form>
+</dialog>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

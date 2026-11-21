@@ -1,0 +1,62 @@
+import fs from 'node:fs';
+
+// short labels for category boxes (PID) and the category column (BUSE)
+const CODES = {
+  'Info / Update': 'INFO', 'MHD': 'MHD', 'Uzavírky': 'UZ', 'OMSI': 'OMSI', 'Blog': 'BLOG', 'BLOG': 'BLOG',
+  'Z mého okolí': 'OKOLÍ', 'Affiliate': 'AFF', 'Murder Drones': 'MD', 'Radio': 'RÁDIO', 'INFO': 'INFO',
+};
+// categories that mark a closure / diversion: the post gets the warning triangle
+const CLOSURE = new Set(['Uzavírky']);
+
+// warning triangle: glyph '#' of the BUSE "line" face (odjezdy-system font.json), as dot squares
+const WARN = ['0', '6000', 'f000', '1f800', '39c00', '70e00', 'e6700', '1c6380', '3861c0', '7060e0', 'e06070', '1c06038', '380001c', '700600e', 'e000007', 'fffffff', '7fffffe'];
+const WARN_SVG = (() => {
+  let r = '';
+  WARN.forEach((h, y) => { const v = parseInt(h, 16); for (let x = 0; x < 28; x++) if ((v >> (27 - x)) & 1) r += `<rect x="${x + 0.1}" y="${y + 0.1}" width=".8" height=".8"/>`; });
+  return `<svg class="warn" viewBox="0 1 28 16" role="img" aria-label="Uzavírka"><title>Uzavírka</title><g fill="currentColor">${r}</g></svg>`;
+})();
+
+let catCache = null;
+const categories = () => { if (!catCache) { try { catCache = JSON.parse(fs.readFileSync('src/_data/categoryList.json', 'utf8')); } catch { return []; } } return catCache; };
+const stripHtml = (s) => String(s || '').replace(/<[^>]+>/g, ' ');
+
+export default function (cfg) {
+  cfg.addPassthroughCopy({ 'src/assets': 'assets', 'src/media': 'media' });
+  cfg.addPassthroughCopy('src/robots.txt');
+  cfg.addWatchTarget('src/assets/');
+
+  const byDate = (a, b) => b.date - a.date;
+  cfg.addCollection('posts', (api) => api.getFilteredByGlob('src/posts/*.md').sort(byDate));
+  cfg.addCollection('listed', (api) => api.getFilteredByGlob('src/posts/*.md').filter((p) => !p.data.hidden).sort(byDate));
+  cfg.addCollection('home', (api) => api.getFilteredByGlob('src/posts/*.md').filter((p) => !p.data.hidden && p.data.homepage !== false).sort(byDate));
+
+  cfg.addFilter('shortDate', (d) => { d = new Date(d); return `${d.getDate()}. ${d.getMonth() + 1}.`; });
+  cfg.addFilter('ledDate', (d) => { d = new Date(d); return `${d.getDate()}.${d.getMonth() + 1}.`; });
+  cfg.addFilter('csDate', (d) => { d = new Date(d); return `${d.getDate()}. ${d.getMonth() + 1}. ${d.getFullYear()}`; });
+  cfg.addFilter('isoDate', (d) => new Date(d).toISOString());
+  cfg.addFilter('rfcDate', (d) => new Date(d).toUTCString());
+  cfg.addFilter('code', (name) => CODES[name] || String(name || '').toUpperCase().slice(0, 5));
+  cfg.addFilter('codeClass', (name) => 'c-' + (CODES[name] || 'x').toLowerCase().normalize('NFD').replace(/[^a-z]/g, ''));
+  cfg.addFilter('catSlug', (name) => categories().find((c) => c.name === name)?.slug || '');
+  cfg.addFilter('isClosure', (cats) => (cats || []).some((c) => CLOSURE.has(c)));
+  cfg.addFilter('inCategory', (posts, name) => posts.filter((p) => (p.data.categories || []).includes(name)));
+  cfg.addFilter('withCounts', (list, posts) => (list || []).map((c) => ({ ...c, n: posts.filter((p) => (p.data.categories || []).includes(c.name)).length })).filter((c) => c.n).sort((a, b) => b.n - a.n));
+  cfg.addFilter('byAuthor', (posts, user) => posts.filter((p) => p.data.author === user));
+  cfg.addFilter('readMin', (html) => Math.max(1, Math.round(stripHtml(html).split(/\s+/).filter(Boolean).length / 200)));
+  cfg.addFilter('excerpt', (html, n = 180) => { const t = stripHtml(html).replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n).replace(/\s\S*$/, '') + '…' : t; });
+  cfg.addFilter('absUrls', (html, base) => String(html).replace(/(src|href)="\//g, `$1="${base}/`));
+  cfg.addFilter('head', (arr, n) => (arr || []).slice(0, n));
+  cfg.addFilter('isUrl', (s) => /^https?:\/\//.test(String(s || '')));
+  cfg.addFilter('host', (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return s; } });
+
+  // {% linka "501" %} → a line-number box, styled per look
+  cfg.addShortcode('linka', (n) => `<span class="ln">${String(n).replace(/[<>&"]/g, '')}</span>`);
+  cfg.addShortcode('warn', () => WARN_SVG);
+
+  return {
+    dir: { input: 'src', output: '_site', includes: '_includes', layouts: '_includes/layouts', data: '_data' },
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
+    templateFormats: ['md', 'njk', 'html'],
+  };
+}

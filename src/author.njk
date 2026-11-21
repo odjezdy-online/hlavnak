@@ -1,0 +1,15 @@
+---
+layout: base.njk
+pagination:
+  data: authors
+  size: 1
+  alias: who
+permalink: "/authors/{{ who.username }}/"
+eleventyComputed:
+  title: "{{ who.name }}"
+  boardTitle: "AUTOR"
+  boardSub: "{{ who.name }}"
+---
+<h1 class="list-title">{{ who.name }}</h1>
+{% set list = collections.listed | byAuthor(who.username) %}
+{% if list.length %}{% include "post-list.njk" %}{% else %}<p class="list-desc">Zatím žádné příspěvky.</p>{% endif %}

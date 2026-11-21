@@ -1,0 +1,25 @@
+---
+layout: base.njk
+boardTitle: "PŘÍSPĚVEK"
+---
+{%- set cat = (categories or [])[0] %}
+<article class="post">
+  <p class="crumbs"><a href="/">Příspěvky</a>{% if cat %} / <a href="/tags/{{ cat | catSlug }}/">{{ cat }}</a>{% endif %}</p>
+  <h1 class="post-title">{% if categories | isClosure %}{% warn %}{% endif %}<span>{{ title }}</span></h1>
+  <dl class="post-meta">
+    {% if categories and categories.length %}<div><dt>Rubrika</dt><dd>{% for c in categories %}<a class="chip {{ c | codeClass }}" href="/tags/{{ c | catSlug }}/">{% if c == "Uzavírky" %}{% warn %}{% endif %}{{ c }}</a>{% endfor %}</dd></div>{% endif %}
+    {% if lines and lines.length %}<div><dt>Linky</dt><dd>{% for n in lines %}{% linka n %}{% endfor %}</dd></div>{% endif %}
+    <div><dt>Vydáno</dt><dd class="when"><time datetime="{{ page.date | isoDate }}">{{ page.date | csDate }}</time></dd></div>
+    <div><dt>Čtení</dt><dd>{{ content | readMin }} min</dd></div>
+  </dl>
+  {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+  {% if image and image.src %}
+  <figure class="feat">
+    <img src="{{ image.src }}" alt="{{ image.alt or '' }}" decoding="async">
+    {% if image.caption or image.credits %}<figcaption>{% if image.caption %}<span>{{ image.caption }}</span>{% endif %}{% if image.credits %}<small>Foto: {% if image.credits | isUrl %}<a href="{{ image.credits }}" rel="nofollow noopener">{{ image.credits | host }}</a>{% else %}{{ image.credits }}{% endif %}</small>{% endif %}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+  <div class="prose">
+{{ content | safe }}
+  </div>
+</article>

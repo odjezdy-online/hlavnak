@@ -1,0 +1,30 @@
+{
+  "name": "Odjezdy.online",
+  "url": "https://odjezdy.online",
+  "lang": "cs",
+  "description": "Odjezdy.online - Projekty Vlastimila Novotného ohledně tématiky MHD",
+  "tagline": "Most · Bílina · Ústí · Teplice",
+  "author": "mxnticek",
+  "perPage": 10,
+  "nav": [
+    { "label": "Příspěvky", "url": "/" },
+    { "label": "Rubriky", "url": "/tags/" },
+    { "label": "Odjezdy", "url": "https://app.odjezdy.online" },
+    { "label": "Projekty + donate", "url": "https://donate.odjezdy.online/" },
+    { "label": "O projektu", "url": "/informace-o-projektech-odjezdyonline/" },
+    { "label": "Kontakt", "url": "/kontakt/" }
+  ],
+  "footerNav": [
+    { "label": "Zásady ochrany osobních údajů", "url": "/zasady-ochrany-osobnich-udaju-odjezdyonline/" },
+    { "label": "Finance counter", "url": "https://amz.odjezdy.online/subs-manager" },
+    { "label": "Server CZ03", "url": "https://amz.odjezdy.online" },
+    { "label": "RSS", "url": "/feed.xml" }
+  ],
+  "ticker": "data odjezdy.online · živé odjezdy na app.odjezdy.online · Odjezdy OS na GitHubu · podpořte projekt",
+  "donationsEmbed": "https://donos.mxnticek.eu/embed?lang=cs&theme=dark&show=top&limit=10&compact=1",
+  "thirdParty": {
+    "seznamVerification": "eMYVtxRwTb8XbcGZCEg3TvPAovK0xzhZ",
+    "googleAnalytics": "",
+    "adsenseClient": ""
+  }
+}

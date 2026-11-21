@@ -1,0 +1,16 @@
+---
+layout: base.njk
+pagination:
+  data: categoryList
+  size: 1
+  alias: cat
+permalink: "/tags/{{ cat.slug }}/"
+eleventyComputed:
+  title: "{{ cat.name }}"
+  boardTitle: "RUBRIKA"
+  boardSub: "{{ cat.name }}"
+---
+<h1 class="list-title">{% if cat.name == 'Uzavírky' %}{% warn %}{% endif %}{{ cat.name }}</h1>
+{% if cat.description %}<p class="list-desc">{{ cat.description }}</p>{% endif %}
+{% set list = collections.listed | inCategory(cat.name) %}
+{% if list.length %}{% include "post-list.njk" %}{% else %}<p class="list-desc">V této rubrice zatím nic není.</p>{% endif %}
