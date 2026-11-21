@@ -1,7 +1,7 @@
 ---
 title: "Zásady ochrany osobních údajů - Odjezdy.online"
 date: "2024-02-13T20:01:59.588Z"
-updated: "2024-10-11T16:16:19.763Z"
+updated: "2026-11-21T18:30:00.000Z"
 categories: ["Info / Update"]
 author: "mxnticek"
 homepage: false
@@ -12,19 +12,36 @@ templateEngineOverride: "md"
 
 ## Úvod
 
-Vítejte na Odjezdy.online, webovou stránku a projekt poskytující informace o odjezdech autobusů. Naše zásady ochrany osobních údajů vysvětlují, jaké informace shromažďujeme, jak je používáme a jaká jsou vaše práva.
+Vítejte na Odjezdy.online, webové stránce a projektu o veřejné dopravě. Tyto zásady vysvětlují, jaké údaje se při návštěvě tohoto webu (odjezdy.online) zpracovávají, kdo je zpracovává a jaká máte práva.
 
-## Jaké informace shromažďujeme
+Ostatní projekty, například aplikace na app.odjezdy.online nebo Euroklíč Mapa, jsou samostatné služby a mohou mít vlastní pravidla.
 
-Shromažďujeme informace, které nám poskytnete při registraci, přihlášení nebo při používání našich služeb. Používáme také Google Analytics a Google AdSense pro zlepšení našich služeb a zobrazování reklam.
+## Jaké údaje shromažďujeme
 
-## Cookies
+Na tomto webu se nijak neregistrujete ani nepřihlašujete a nevyplňujete tu žádné formuláře. Nepoužíváme Google Analytics ani žádnou jinou analytiku a nezobrazujeme reklamy.
 
-Používáme cookies a podobné technologie pro sledování vaší aktivity na našem webu a shromažďování určitých informací.
+## Cookies a úložiště prohlížeče
 
-## Jak používáme shromážděné informace
+Tento web nepoužívá cookies. Do úložiště vašeho prohlížeče (localStorage) si ukládá jen jednu věc: zvolený vzhled webu (BUSE nebo PID tablo), aby vám zůstal i při další návštěvě. Tato hodnota se nikam neodesílá a smažete ji vymazáním dat stránky v prohlížeči.
 
-Informace shromažďované prostřednictvím Google Analytics používáme k analýze trendů, správě webu, sledování pohybu uživatelů na webu a shromažďování demografických informací.
+## Služby třetích stran
+
+Při načtení stránky se váš prohlížeč připojuje i k těmto službám. Každá z nich tak vidí vaši IP adresu a údaje o prohlížeči, jako u každé návštěvy webu:
+
+- **Cloudflare**: hosting tohoto webu (Cloudflare Pages). Cloudflare zpracovává technické údaje o požadavcích, aby web doručil a chránil ho před útoky.
+- **Google Fonts**: načítá písmo Fira Sans pro vzhled PID tablo.
+- **donos.mxnticek.eu**: můj vlastní server, ze kterého se načítá seznam podporovatelů v patičce.
+- **Obrázky a vložený obsah v příspěvcích**: některé příspěvky zobrazují obrázky nebo vložené prvky z jiných webů (například image.cyn.cz, mapy.com nebo stránky dopravců a úřadů). Ty se načítají přímo z těchto webů.
+
+Odkazy na Patreon, Ko-fi, PayPal a další weby otevírají jejich stránky až po kliknutí. Platby a údaje k nim zpracovávají tyto služby podle svých pravidel, já k údajům o vaší kartě nebo účtu přístup nemám.
+
+## Seznam podporovatelů
+
+Seznam podporovatelů v patičce ukazuje jen to, co je veřejné: zobrazované jméno, částku a platformu (Patreon, Ko-fi, krypto). Pokud nechcete být v seznamu uvedeni, napište mi.
+
+## Sběr a použití IP adres
+
+Tento web sám IP adresy návštěvníků neukládá, technické záznamy o přístupech vede jen hosting (Cloudflare). U ostatních projektů mohu pro zajištění bezpečnosti a ochranu před zneužitím, jako je spam, shromažďovat IP adresy. Ty jsou shromažďovány pouze v nezbytně nutném rozsahu a zpracovávány v souladu s platnými zákony o ochraně osobních údajů.
 
 ## Jak chráníme vaše údaje
 
@@ -36,24 +53,14 @@ Máte právo požadovat přístup k vašim osobním údajům, jejich opravu, vym
 
 ## Sdílení údajů s třetími stranami
 
-Osobní údaje mohou být sdíleny s třetími stranami pouze v souladu s právními předpisy a v případě, že k tomu dáte souhlas.
+Osobní údaje mohou být sdíleny s třetími stranami pouze v souladu s právními předpisy a v případě, že k tomu dáte souhlas, s výjimkou služeb uvedených výše, bez kterých by web nefungoval.
 
-## E-mailová komunikace
+## Změny v zásadách
 
-Při zasílání e-mailů prostřednictvím našeho systému logujeme, na jakou e-mailovou adresu byla zpráva odeslána. Uchováváme pouze část e-mailové adresy pro ochranu vašeho soukromí. Příklad jak je ukládána emailová adresa: m\*\*\*@domena.cz
-
-## Sběr a použití IP adres
-
-Tato část nyní není funkční na ARRIVA doméně. Způsob jak je nastavený celý hosting, tak hosting neposkytuje IP adresy přístupů. Pro ostatní projekty (mimo doménu amz.odjezdy.online kde to odmítá dávat logy), je to funkční.
-
-Pro zajištění bezpečnosti našich služeb a ochranu před zneužitím, jako je spam, můžeme shromažďovat IP adresy našich uživatelů. Tyto informace nám pomáhají identifikovat a reagovat na nežádoucí aktivity a zneužití našich služeb. IP adresy jsou shromažďovány pouze v nezbytně nutném rozsahu a jsou zpracovávány v souladu s platnými zákony o ochraně osobních údajů.
-
-## Změny v Privacy Policy
-
-Vyhražujeme si právo občas aktualizovat naše zásady ochrany osobních údajů. Jakékoliv změny budou zveřejněny na této stránce.
+Vyhrazujeme si právo občas aktualizovat tyto zásady ochrany osobních údajů. Jakékoliv změny budou zveřejněny na této stránce. Poslední změna: 21. 11. 2026 (přechod na nový web bez reklam a analytiky).
 
 ## Kontaktní informace
 
-Pokud máte jakékoli dotazy nebo obavy ohledně našich zásad ochrany osobních údajů, neváhejte nás kontaktovat na: [info@odjezdy.online](mailto:info@odjezdy.online)
+Pokud máte jakékoli dotazy nebo obavy ohledně našich zásad ochrany osobních údajů, neváhejte nás kontaktovat na: [info@odjezdy.online](mailto:info@odjezdy.online)
 
-<footer><p>© 2024 Odjezdy.online</p></footer>
+<footer><p>© 2024–2026 Odjezdy.online</p></footer>
