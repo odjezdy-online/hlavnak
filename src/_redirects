@@ -1,0 +1,29 @@
+# Cloudflare Pages redirects: old Publii addresses that no longer exist as files.
+# Publii's resized image copies -> the one image the new site keeps
+/media/posts/18/responsive/ByteLixir-480-x-60-md.png /media/posts/18/ByteLixir-480-x-60.png 301
+/media/posts/18/responsive/ByteLixir-480-x-60-sm.png /media/posts/18/ByteLixir-480-x-60.png 301
+/media/posts/18/responsive/ByteLixir-480-x-60-xl.png /media/posts/18/ByteLixir-480-x-60.png 301
+/media/posts/18/responsive/ByteLixir-480-x-60-xs.png /media/posts/18/ByteLixir-480-x-60.png 301
+/media/posts/18/responsive/ByteLixir-640-x-200-md.png /media/posts/18/ByteLixir-640-x-200.png 301
+/media/posts/18/responsive/ByteLixir-640-x-200-sm.png /media/posts/18/ByteLixir-640-x-200.png 301
+/media/posts/18/responsive/ByteLixir-640-x-200-xl.png /media/posts/18/ByteLixir-640-x-200.png 301
+/media/posts/18/responsive/ByteLixir-640-x-200-xs.png /media/posts/18/ByteLixir-640-x-200.png 301
+/media/posts/18/responsive/ByteLixir-960-x-640-md.png /media/posts/18/ByteLixir-960-x-640.png 301
+/media/posts/18/responsive/ByteLixir-960-x-640-sm.png /media/posts/18/ByteLixir-960-x-640.png 301
+/media/posts/18/responsive/ByteLixir-960-x-640-xl.png /media/posts/18/ByteLixir-960-x-640.png 301
+/media/posts/18/responsive/ByteLixir-960-x-640-xs.png /media/posts/18/ByteLixir-960-x-640.png 301
+/media/posts/24/responsive/OMSI2_20240706_165830-md.jpg /media/posts/24/OMSI2_20240706_165830.jpg 301
+/media/posts/24/responsive/OMSI2_20240706_165830-sm.jpg /media/posts/24/OMSI2_20240706_165830.jpg 301
+/media/posts/24/responsive/OMSI2_20240706_165830-xl.jpg /media/posts/24/OMSI2_20240706_165830.jpg 301
+/media/posts/24/responsive/OMSI2_20240706_165830-xs.jpg /media/posts/24/OMSI2_20240706_165830.jpg 301
+/media/posts/46/responsive/MJA7b8cef161d_fronta-md.jpg /media/posts/46/MJA7b8cef161d_fronta.jpg 301
+/media/posts/46/responsive/MJA7b8cef161d_fronta-sm.jpg /media/posts/46/MJA7b8cef161d_fronta.jpg 301
+/media/posts/46/responsive/MJA7b8cef161d_fronta-xl.jpg /media/posts/46/MJA7b8cef161d_fronta.jpg 301
+/media/posts/46/responsive/MJA7b8cef161d_fronta-xs.jpg /media/posts/46/MJA7b8cef161d_fronta.jpg 301
+/media/tags/7/responsive/OMSI2_20240623_210446-sm.jpg /media/tags/7/OMSI2_20240623_210446.jpg 301
+/media/tags/7/responsive/OMSI2_20240623_210446-xs.jpg /media/tags/7/OMSI2_20240623_210446.jpg 301
+# category and author lists are one page now
+/tags/:slug/page/* /tags/:slug/ 301
+/authors/:user/page/* /authors/:user/ 301
+# the old Publii theme files
+/assets/css/style.css /assets/css/site.css 301

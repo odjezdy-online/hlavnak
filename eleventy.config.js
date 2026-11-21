@@ -25,6 +25,7 @@ export default function (cfg) {
   cfg.addPassthroughCopy({ 'src/assets': 'assets', 'src/media': 'media' });
   cfg.addPassthroughCopy('src/robots.txt');
   cfg.addPassthroughCopy('src/sitemap.xsl');
+  cfg.addPassthroughCopy('src/_redirects'); // Cloudflare Pages: old Publii addresses
   cfg.addWatchTarget('src/assets/');
 
   const byDate = (a, b) => b.date - a.date;

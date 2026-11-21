@@ -15,7 +15,7 @@ npm run fonts    # rebuild src/assets/fonts/*.otf from data/buse-font.json
 npm run import   # re-import everything from Publii (overwrites src/posts, src/pages, media)
 ```
 
-`npm run import` reads `C:/Users/plain/Documents/Publii/sites/odjezdyonline-obnova/input` read-only; pass another path as an argument to import a different Publii site.
+`npm run import` (one-off; it refuses to run once `src/posts` has posts unless you add `-- --force`, because it would overwrite edits) reads `C:/Users/plain/Documents/Publii/sites/odjezdyonline-obnova/input` read-only; pass another path as an argument to import a different Publii site.
 
 ## Writing a post
 

@@ -7,7 +7,16 @@ import path from 'node:path';
 import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 
-const PUBLII = process.argv[2] || 'C:/Users/plain/Documents/Publii/sites/odjezdyonline-obnova/input';
+const args = process.argv.slice(2);
+const FORCE = args.includes('--force');
+const PUBLII = args.find((a) => !a.startsWith('--')) || 'C:/Users/plain/Documents/Publii/sites/odjezdyonline-obnova/input';
+
+// Posts are edited in this repo now (and new ones are written here), and the import
+// replaces src/posts and src/pages completely. Refuse unless asked explicitly.
+if (fs.existsSync('src/posts') && fs.readdirSync('src/posts').some((f) => f.endsWith('.md')) && !FORCE) {
+  console.error('src/posts already has posts; importing would overwrite every edit and delete posts written since.\nRun with --force only if that is what you want.');
+  process.exit(1);
+}
 const db = new DatabaseSync(path.join(PUBLII, 'db.sqlite'), { readOnly: true });
 
 // only the columns we need (the authors table also holds a password hash; it is never read)
