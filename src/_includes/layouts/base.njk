@@ -49,9 +49,9 @@
         <div class="sup-col" data-list="recent" hidden><h3>Nedávno</h3></div>
       </div>
       <p class="sup-links"><span>Podpořit:</span>
-        <a href="{{ site.supporters.links.patreon }}" data-link="patreon" rel="noopener">Patreon</a>
-        <a href="{{ site.supporters.links.kofi }}" data-link="kofi" rel="noopener">Ko-fi</a>
-        <a href="#" data-link="crypto" rel="noopener" hidden>Krypto</a>
+        <a href="{{ site.supporters.links.patreon }}" data-link="patreon" target="_blank" rel="noopener">Patreon</a>
+        <a href="{{ site.supporters.links.kofi }}" data-link="kofi" target="_blank" rel="noopener">Ko-fi</a>
+        <a href="{{ site.supporters.links.crypto or '#' }}" data-link="crypto" target="_blank" rel="noopener"{% if not site.supporters.links.crypto %} hidden{% endif %}>Krypto</a>
         <a href="/projekty/">Všechny projekty</a>
       </p>
     </section>

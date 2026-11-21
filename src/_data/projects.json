@@ -11,6 +11,11 @@
       "desc": "Jednorázově, kupte mi kávu"
     },
     {
+      "name": "Krypto (NOWPayments)",
+      "url": "https://nowpayments.io/donation/mxnticek",
+      "desc": "Platba v kryptoměnách přes NOWPayments"
+    },
+    {
       "name": "PayPal",
       "url": "https://paypal.me/mxnticek",
       "desc": "Rychlá platba přes PayPal"

@@ -22,7 +22,7 @@
   "ticker": "data odjezdy.online · živé odjezdy na app.odjezdy.online · Odjezdy OS na GitHubu · podpořte projekt",
   "supporters": {
     "feed": "https://donos.mxnticek.eu/embed.json?limit=10",
-    "links": { "patreon": "https://www.patreon.com/mxnticek", "kofi": "https://ko-fi.com/vlastimilnovotny" }
+    "links": { "patreon": "https://www.patreon.com/mxnticek", "kofi": "https://ko-fi.com/vlastimilnovotny", "crypto": "https://nowpayments.io/donation/mxnticek" }
   },
   "thirdParty": {
     "seznamVerification": "eMYVtxRwTb8XbcGZCEg3TvPAovK0xzhZ",

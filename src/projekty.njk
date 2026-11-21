@@ -12,7 +12,7 @@ description: "Všechny projekty kolem odjezdy.online a jak je podpořit."
   <h2 id="give-h" class="group-head"><span class="c-cat box c-give">PODPORA</span><span>Podpořit</span></h2>
   <ul class="give-list">
     {%- for d in projects.donate %}
-    <li class="proj-row"><a class="c-title" href="{{ d.url }}" rel="noopener"><span class="t">{{ d.name }}</span></a><span class="p-desc">{{ d.desc }}</span><span class="p-host">{{ d.url | shortUrl }}</span></li>
+    <li class="proj-row"><a class="c-title" href="{{ d.url }}" target="_blank" rel="noopener"><span class="t">{{ d.name }}</span></a><span class="p-desc">{{ d.desc }}</span><span class="p-host">{{ d.url | shortUrl }}</span></li>
     {%- endfor %}
     {%- for c in projects.crypto %}
     <li class="proj-row crypto"><span class="c-title"><span class="t">{{ c.name }}</span></span><code class="p-addr">{{ c.address }}</code><button type="button" class="copy" data-copy="{{ c.address }}">Kopírovat adresu</button></li>

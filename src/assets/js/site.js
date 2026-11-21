@@ -72,7 +72,7 @@
     const links = data.links || {};
     document.querySelectorAll('.sup-links [data-link]').forEach((a) => {
       const url = links[a.dataset.link];
-      if (url) { a.href = url; a.hidden = false; } else if (a.dataset.link === 'crypto') a.hidden = true;
+      if (url) { a.href = url; a.hidden = false; } else if (a.dataset.link === 'crypto' && a.getAttribute('href') === '#') a.hidden = true;
     });
   }
   document.querySelectorAll('.sup[data-feed]').forEach((box) => {
