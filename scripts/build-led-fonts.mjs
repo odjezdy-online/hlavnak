@@ -54,7 +54,10 @@ const NAMES = {
   letadlo: ['font', 3, 247, 'letadlo'], vozik: ['font', 3, 175, 'bezbariérový'], nemocnice: ['font', 3, 250, 'nemocnice'],
   vlevo: ['font', 3, 252, 'šipka vlevo'], nahoru: ['font', 3, 253, 'šipka nahoru'], vpravo: ['font', 3, 254, 'šipka vpravo'],
   // in the text faces '%' is the ČD logo and '`' the word "Praha," (the text fonts get real % and ` drawn instead)
-  logocd: ['font', 1, 37, 'logo Českých drah'], praha: ['font', 1, 96, 'Praha,'],
+  // the ČD logo is code 37 in every text face (small, normal, big): 'inherit' draws it in the font of the
+  // surrounding text, so it is as big as the line it sits in; -male / -velke fix the size
+  logocd: ['inherit', 0, 37, 'logo Českých drah'], 'logocd-male': ['font', 1, 37, 'logo Českých drah (10 bodů)'],
+  'logocd-velke': ['font', 5, 37, 'logo Českých drah (19 bodů)'], praha: ['font', 1, 96, 'Praha,'],
   sipky: ['teplice', 7, 240, 'logo se šipkami (Teplice)'], sipky2: ['brno-2005-09-adcel0', 15, 174, 'logo se šipkami (Brno)'],
   sipky3: ['teplice', 8, 240, 'logo se šipkami, pruhy (Teplice)'],
   pozor: ['teplice', 7, 244, 'pozor'], kocarek: ['teplice', 7, 174, 'kočárek'], plachetnice: ['teplice', 7, 175, 'plachetnice'],
@@ -206,6 +209,7 @@ for (const def of defs) {
 }
 
 for (const [name, [file, face, code, label]] of Object.entries(NAMES)) {
+  if (file === 'inherit') { manifest.names[name] = { font: 'inherit', code, codes: [code], label, rows: 10 }; continue; }
   const id = fileFace.get(`${file}:${face}`);
   const f = manifest.fonts.find((x) => x.id === id);
   const list = [].concat(code);

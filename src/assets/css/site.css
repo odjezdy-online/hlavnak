@@ -419,3 +419,6 @@ html[data-look="pid"] { background: #000; color-scheme: dark; }
 /* very wide panel glyphs (banners up to ~230 dots) must not widen the page on a phone */
 .pk { display: inline-block; max-width: 100%; overflow: hidden; vertical-align: bottom; }
 .spec-grid li { max-width: 100%; }
+/* <logocd>: drawn in the font of the surrounding text (every BUSE text face has the ČD logo at code 37) */
+.pk-inherit { font: inherit; }
+[data-look="pid"] .pk-inherit { font-family: "BUSE Normal"; font-size: 1.2em; }

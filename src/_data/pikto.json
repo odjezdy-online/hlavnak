@@ -639,7 +639,7 @@
     255
    ],
    "letters": true,
-   "kb": 5.6
+   "kb": 5.5
   },
   {
    "id": "pikto",
@@ -1236,7 +1236,7 @@
     251
    ],
    "letters": true,
-   "kb": 5.8
+   "kb": 5.7
   },
   {
    "id": "adr-7",
@@ -2109,7 +2109,7 @@
     255
    ],
    "letters": true,
-   "kb": 4.2
+   "kb": 4.3
   },
   {
    "id": "ostrava-0",
@@ -2913,7 +2913,7 @@
    ],
    "pict": [],
    "letters": true,
-   "kb": 4
+   "kb": 3.9
   },
   {
    "id": "ostrava-6",
@@ -3219,7 +3219,7 @@
     254
    ],
    "letters": true,
-   "kb": 6
+   "kb": 6.1
   },
   {
    "id": "ostrava-9",
@@ -5412,7 +5412,7 @@
     255
    ],
    "letters": false,
-   "kb": 4.5
+   "kb": 4.6
   },
   {
    "id": "brno-cel-0",
@@ -5596,7 +5596,7 @@
     255
    ],
    "letters": true,
-   "kb": 4
+   "kb": 3.9
   },
   {
    "id": "brno-cel-1",
@@ -5965,7 +5965,7 @@
     255
    ],
    "letters": true,
-   "kb": 4.2
+   "kb": 4.1
   },
   {
    "id": "brno-cel-3",
@@ -6271,7 +6271,7 @@
     251
    ],
    "letters": true,
-   "kb": 3.3
+   "kb": 3.4
   },
   {
    "id": "brno-cel-9",
@@ -6726,7 +6726,7 @@
    ],
    "pict": [],
    "letters": true,
-   "kb": 4.2
+   "kb": 4.3
   },
   {
    "id": "decin-10",
@@ -6785,7 +6785,7 @@
     175
    ],
    "letters": true,
-   "kb": 2.7
+   "kb": 2.6
   },
   {
    "id": "decin-12",
@@ -7247,7 +7247,7 @@
     250
    ],
    "letters": true,
-   "kb": 3.6
+   "kb": 3.7
   },
   {
    "id": "kosice-disp-3",
@@ -8381,7 +8381,7 @@
     240
    ],
    "letters": true,
-   "kb": 4
+   "kb": 4.1
   },
   {
    "id": "kosice1-7",
@@ -9140,7 +9140,7 @@
     175
    ],
    "letters": true,
-   "kb": 3.7
+   "kb": 3.6
   },
   {
    "id": "kosice2-7",
@@ -9310,7 +9310,7 @@
     254
    ],
    "letters": true,
-   "kb": 5.2
+   "kb": 5.3
   },
   {
    "id": "kosice2-8",
@@ -10067,7 +10067,7 @@
     254
    ],
    "letters": true,
-   "kb": 5.2
+   "kb": 5.3
   },
   {
    "id": "kosice3-8",
@@ -10389,7 +10389,7 @@
     175
    ],
    "letters": true,
-   "kb": 3.9
+   "kb": 3.8
   }
  ],
  "names": {
@@ -10502,13 +10502,31 @@
    "rows": 10
   },
   "logocd": {
-   "font": "small",
+   "font": "inherit",
    "code": 37,
    "codes": [
     37
    ],
    "label": "logo Českých drah",
    "rows": 10
+  },
+  "logocd-male": {
+   "font": "small",
+   "code": 37,
+   "codes": [
+    37
+   ],
+   "label": "logo Českých drah (10 bodů)",
+   "rows": 10
+  },
+  "logocd-velke": {
+   "font": "big",
+   "code": 37,
+   "codes": [
+    37
+   ],
+   "label": "logo Českých drah (19 bodů)",
+   "rows": 19
   },
   "praha": {
    "font": "small",

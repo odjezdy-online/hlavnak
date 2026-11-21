@@ -23,7 +23,7 @@ node scripts/font-specimen.mjs <font id> [faces] [--pict-only]   # draw a font's
 
 In posts:
 
-- `<logocd>` (ČD logo), `<praha>`, `<bus>`, `<zastavka>`, `<metroa>`, `<idol>`, `<pozor>` … named pictograms (`NAMES` in the build script; all listed with pictures on `/pisma/`)
+- `<logocd>` (ČD logo in the font of the surrounding text; `<logocd-male>` 10 dots, `<logocd-velke>` 19 dots), `<praha>`, `<bus>`, `<zastavka>`, `<metroa>`, `<idol>`, `<pozor>` … named pictograms (`NAMES` in the build script; all listed with pictures on `/pisma/`)
 - `<pikto-FONT-CODE>` any glyph, e.g. `<pikto-vozy-246>`
 - transport emoji (🚌 🚏 🚊 🚎 🚆 ✈️ ♿ …) become the panel pictogram in BUSE; PID keeps the emoji. Other emoji are hidden in BUSE.
 
