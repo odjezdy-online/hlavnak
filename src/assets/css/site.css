@@ -377,6 +377,10 @@ html[data-look="pid"] { background: #000; color-scheme: dark; }
 [data-look="buse"] .emo { display: none; }
 /* PID keeps normal emoji; named tags still draw the panel glyph, scaled to the text */
 [data-look="pid"] .emo-pair .pk { display: none; }
+[data-look="buse"] .pk-pid, [data-look="buse"] .prose .pk-pid { display: none !important; }
+[data-look="pid"] .pk-pair > .pk, [data-look="pid"] .pk-buse-only { display: none; }
+.pk-img { display: inline-block; width: auto; vertical-align: -0.15em; }
+.pk-badge { display: inline-block; font-weight: 600; font-size: .8em; line-height: 1; padding: .2em .4em; border-radius: 3px; vertical-align: .05em; }
 [data-look="pid"] .pk-small, [data-look="pid"] .pk-normal { font-size: 1.2em; }
 [data-look="pid"] .pk-big, [data-look="pid"] .pk-vozy { font-size: 2em; line-height: 1; vertical-align: -.35em; }
 [data-look="pid"] .pk-pikto, [data-look="pid"] .pk-pikto2, [data-look="pid"] .pk-brno { font-size: 2.8em; line-height: 1; vertical-align: -.6em; }
@@ -422,3 +426,10 @@ html[data-look="pid"] { background: #000; color-scheme: dark; }
 /* <logocd>: drawn in the font of the surrounding text (every BUSE text face has the ČD logo at code 37) */
 .pk-inherit { font: inherit; }
 [data-look="pid"] .pk-inherit { font-family: "BUSE Normal"; font-size: 1.2em; }
+
+/* /pisma/ in PID: tags only (with PID icons); the panel-font specimens belong to the BUSE look */
+[data-look="pid"] .spec-fonts { display: none; }
+[data-look="buse"] .spec-pidnote { display: none; }
+[data-look="pid"] .spec-pidnote { color: #bbb; padding: 0 clamp(12px, 3vw, 20px); }
+[data-look="pid"] .spec-names { padding: 0 clamp(12px, 3vw, 20px); }
+[data-look="pid"] .spec-names .pk-pid { font-size: 1.4em; min-width: 1.6em; text-align: center; }

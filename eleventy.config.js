@@ -94,7 +94,18 @@ export default function (cfg) {
     let P; try { P = JSON.parse(fs.readFileSync('src/_data/pikto.json', 'utf8')); } catch { return content; }
     const a = content.indexOf('<main'), b = content.lastIndexOf('</main>');
     if (a < 0 || b < 0) return content;
-    const glyph = (font, code, label, hidden) => `<span class="pk pk-${font}"${hidden ? ' aria-hidden="true"' : ` role="img" aria-label="${label}"`}>&#x${(0xe000 + code).toString(16)};</span>`;
+    const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const glyph = (font, code, label, hidden) => `<span class="pk pk-${font}"${hidden ? ' aria-hidden="true"' : ` role="img" aria-label="${esc(label)}"`}>${[].concat(code).map((c) => `&#x${(0xe000 + c).toString(16)};`).join('')}</span>`;
+    // the PID look never shows gBUSE fonts: emoji, an icon, a text box or plain text instead
+    const pidPart = (p, label) => {
+      if (!p) return '';
+      if (typeof p === 'string') return `<span class="pk-pid" role="img" aria-label="${esc(label)}">${p}</span>`;
+      if (p.img) return `<img class="pk-pid pk-img" src="${p.img}" alt="${esc(label)}" style="height:${p.h || 1}em" loading="lazy" decoding="async">`;
+      if (p.badge) return `<span class="pk-pid pk-badge" style="background:${p.bg};color:${p.fg}" role="img" aria-label="${esc(label)}">${esc(p.badge)}</span>`;
+      if (p.text) return `<span class="pk-pid">${esc(p.text)}</span>`;
+      return '';
+    };
+    const named = (n) => `<span class="pk-pair">${glyph(n.font, n.codes || n.code, n.label)}${pidPart(n.pid, n.label)}</span>`;
     const fonts = new Set(P.fonts.map((f) => f.id));
     const emojiRe = /(\p{Extended_Pictographic})\uFE0F?/gu;
     let skip = 0;
@@ -105,9 +116,9 @@ export default function (cfg) {
         if (skip > 0 || !t) return tok;
         const name = t[2].toLowerCase();
         const n = P.names[name];
-        if (n) return t[1] ? '' : glyph(n.font, n.code, n.label);
+        if (n) return t[1] ? '' : named(n);
         const g = name.match(/^pikto-([a-z0-9-]+?)-(\d+)$/); // font ids may contain '-' (kosice1-7, brno-led-0)
-        if (g && fonts.has(g[1])) return t[1] ? '' : glyph(g[1], Number(g[2]), `piktogram ${g[1]} ${g[2]}`);
+        if (g && fonts.has(g[1])) return t[1] ? '' : `<span class="pk-pair pk-buse-only">${glyph(g[1], Number(g[2]), `piktogram ${g[1]} ${g[2]}`)}</span>`;
         return tok;
       }
       if (skip > 0) return tok;

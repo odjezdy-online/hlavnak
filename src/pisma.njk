@@ -8,18 +8,20 @@ description: "Písma a piktogramy z panelů BUSE: Teplice, Brno, Košice, Ostrav
 {#- glyphs come from the fonts themselves; the list is src/_data/pikto.json (scripts/build-led-fonts.mjs) -#}
 <h1 class="list-title">Písma a piktogramy</h1>
 <div class="prose">
-  <p>Všechno na tomto webu je psané písmy z panelů BUSE: {{ pikto.fonts.length }} písem z panelů z Teplic, Brna, Košic, Ostravy, Děčína a dalších. Piktogramy jde vložit do příspěvku značkou, například <code>&lt;logocd&gt;</code> nebo <code>&lt;bus&gt;</code>, a kterýkoli znak také jako <code>&lt;pikto-PÍSMO-KÓD&gt;</code>, třeba <code>&lt;pikto-vozy-246&gt;</code>. Dopravní emoji se ve vzhledu BUSE samy promění v piktogram z panelu.</p>
+  <p>Ve vzhledu BUSE je všechno na tomto webu psané písmy z panelů BUSE: {{ pikto.fonts.length }} písem z panelů z Teplic, Brna, Košic, Ostravy, Děčína a dalších. Piktogramy jde vložit do příspěvku značkou, například <code>&lt;logocd&gt;</code> nebo <code>&lt;bus&gt;</code>, a kterýkoli znak také jako <code>&lt;pikto-PÍSMO-KÓD&gt;</code>, třeba <code>&lt;pikto-vozy-246&gt;</code>. Dopravní emoji se ve vzhledu BUSE samy promění v piktogram z panelu.</p>
 </div>
 
 <section class="spec-font" aria-labelledby="names-h">
   <h2 id="names-h">Značky do příspěvků</h2>
   <ul class="spec-names">
     {%- for name, n in pikto.names %}
-    <li><span class="pk pk-{{ n.font }}" aria-hidden="true">{% for c in n.codes %}&#{{ 57344 + c }};{% endfor %}</span><span><span class="spec-name">&lt;{{ name }}&gt;</span><br><span class="spec-code">{{ n.label }}</span></span></li>
+    <li><{{ name }}><span><span class="spec-name">&lt;{{ name }}&gt;</span><br><span class="spec-code">{{ n.label }}</span></span></li>
     {%- endfor %}
   </ul>
 </section>
 
+<p class="spec-pidnote">Písma z panelů BUSE se ukazují ve vzhledu BUSE (přepínač Vzhled dole). Ve vzhledu PID tablo se značky kreslí ikonami a emoji, jak je vidět výše.</p>
+<div class="spec-fonts">
 {%- set lastGroup = "" %}
 {%- for f in pikto.fonts %}
 {%- if f.group != lastGroup %}<h2 class="spec-group">{{ f.group }}</h2>{% set lastGroup = f.group %}{% endif %}
@@ -40,3 +42,4 @@ description: "Písma a piktogramy z panelů BUSE: Teplice, Brno, Košice, Ostrav
   {%- endif %}
 </section>
 {%- endfor %}
+</div>

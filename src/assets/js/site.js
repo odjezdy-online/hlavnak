@@ -30,7 +30,7 @@
   // photos in posts open full size (on the BUSE board they are drawn in amber dots)
   const dlg = document.getElementById('photo');
   document.addEventListener('click', (ev) => {
-    const img = ev.target.closest('.feat img, .prose img');
+    const img = ev.target.closest('.feat img, .prose img:not(.pk-img)'); // icons are not photos
     if (!img || img.closest('a') || !dlg) return;
     const big = document.getElementById('photo-img');
     big.src = img.currentSrc || img.src; big.alt = img.alt || '';

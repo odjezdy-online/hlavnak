@@ -181,7 +181,7 @@
     255
    ],
    "letters": true,
-   "kb": 4.8
+   "kb": 4.9
   },
   {
    "id": "normal",
@@ -364,7 +364,7 @@
     255
    ],
    "letters": true,
-   "kb": 5.1
+   "kb": 5.2
   },
   {
    "id": "big",
@@ -639,7 +639,7 @@
     255
    ],
    "letters": true,
-   "kb": 5.5
+   "kb": 5.6
   },
   {
    "id": "pikto",
@@ -2109,7 +2109,7 @@
     255
    ],
    "letters": true,
-   "kb": 4.3
+   "kb": 4.2
   },
   {
    "id": "ostrava-0",
@@ -5087,7 +5087,7 @@
     251
    ],
    "letters": true,
-   "kb": 3.7
+   "kb": 3.8
   },
   {
    "id": "brno-bok-10",
@@ -5143,7 +5143,7 @@
     251
    ],
    "letters": true,
-   "kb": 2.3
+   "kb": 2.4
   },
   {
    "id": "brno-bok-11",
@@ -5294,7 +5294,7 @@
     251
    ],
    "letters": false,
-   "kb": 1.1
+   "kb": 1.2
   },
   {
    "id": "brno-bok-14",
@@ -5596,7 +5596,7 @@
     255
    ],
    "letters": true,
-   "kb": 3.9
+   "kb": 4
   },
   {
    "id": "brno-cel-1",
@@ -6398,7 +6398,7 @@
     251
    ],
    "letters": true,
-   "kb": 3.8
+   "kb": 3.7
   },
   {
    "id": "brno-cel-10",
@@ -6726,7 +6726,7 @@
    ],
    "pict": [],
    "letters": true,
-   "kb": 4.3
+   "kb": 4.2
   },
   {
    "id": "decin-10",
@@ -7247,7 +7247,7 @@
     250
    ],
    "letters": true,
-   "kb": 3.7
+   "kb": 3.6
   },
   {
    "id": "kosice-disp-3",
@@ -8106,7 +8106,7 @@
     175
    ],
    "letters": true,
-   "kb": 3.9
+   "kb": 4
   },
   {
    "id": "kosice1-5",
@@ -8242,7 +8242,7 @@
    ],
    "pict": [],
    "letters": true,
-   "kb": 3.7
+   "kb": 3.8
   },
   {
    "id": "kosice1-6",
@@ -8381,7 +8381,7 @@
     240
    ],
    "letters": true,
-   "kb": 4.1
+   "kb": 4
   },
   {
    "id": "kosice1-7",
@@ -8875,7 +8875,7 @@
    ],
    "pict": [],
    "letters": true,
-   "kb": 3.1
+   "kb": 3.2
   },
   {
    "id": "kosice2-1",
@@ -9770,7 +9770,7 @@
    ],
    "pict": [],
    "letters": true,
-   "kb": 3.1
+   "kb": 3.2
   },
   {
    "id": "kosice3-4",
@@ -10211,7 +10211,7 @@
     254
    ],
    "letters": true,
-   "kb": 4.8
+   "kb": 4.9
   },
   {
    "id": "kosice3-11",
@@ -10389,7 +10389,7 @@
     175
    ],
    "letters": true,
-   "kb": 3.8
+   "kb": 3.9
   }
  ],
  "names": {
@@ -10400,7 +10400,8 @@
     241
    ],
    "label": "zastávka",
-   "rows": 10
+   "rows": 10,
+   "pid": "🚏"
   },
   "bus": {
    "font": "normal",
@@ -10409,7 +10410,8 @@
     242
    ],
    "label": "autobus",
-   "rows": 10
+   "rows": 10,
+   "pid": "🚌"
   },
   "tramvaj": {
    "font": "normal",
@@ -10418,7 +10420,8 @@
     243
    ],
    "label": "tramvaj",
-   "rows": 10
+   "rows": 10,
+   "pid": "🚋"
   },
   "trolejbus": {
    "font": "normal",
@@ -10427,7 +10430,8 @@
     244
    ],
    "label": "trolejbus",
-   "rows": 10
+   "rows": 10,
+   "pid": "🚎"
   },
   "lod": {
    "font": "normal",
@@ -10436,7 +10440,8 @@
     245
    ],
    "label": "loď / přívoz",
-   "rows": 10
+   "rows": 10,
+   "pid": "⛴️"
   },
   "vlak": {
    "font": "normal",
@@ -10445,7 +10450,8 @@
     246
    ],
    "label": "vlak",
-   "rows": 10
+   "rows": 10,
+   "pid": "🚆"
   },
   "letadlo": {
    "font": "normal",
@@ -10454,7 +10460,8 @@
     247
    ],
    "label": "letadlo",
-   "rows": 10
+   "rows": 10,
+   "pid": "✈️"
   },
   "vozik": {
    "font": "normal",
@@ -10463,7 +10470,11 @@
     175
    ],
    "label": "bezbariérový",
-   "rows": 10
+   "rows": 10,
+   "pid": {
+    "img": "/assets/icons/pid/accessible.svg",
+    "h": 1.1
+   }
   },
   "nemocnice": {
    "font": "normal",
@@ -10472,7 +10483,8 @@
     250
    ],
    "label": "nemocnice",
-   "rows": 10
+   "rows": 10,
+   "pid": "🏥"
   },
   "vlevo": {
    "font": "normal",
@@ -10481,7 +10493,8 @@
     252
    ],
    "label": "šipka vlevo",
-   "rows": 10
+   "rows": 10,
+   "pid": "⬅️"
   },
   "nahoru": {
    "font": "normal",
@@ -10490,7 +10503,8 @@
     253
    ],
    "label": "šipka nahoru",
-   "rows": 10
+   "rows": 10,
+   "pid": "⬆️"
   },
   "vpravo": {
    "font": "normal",
@@ -10499,7 +10513,8 @@
     254
    ],
    "label": "šipka vpravo",
-   "rows": 10
+   "rows": 10,
+   "pid": "➡️"
   },
   "logocd": {
    "font": "inherit",
@@ -10508,7 +10523,11 @@
     37
    ],
    "label": "logo Českých drah",
-   "rows": 10
+   "rows": 10,
+   "pid": {
+    "img": "/assets/icons/cd.svg",
+    "h": 0.95
+   }
   },
   "logocd-male": {
    "font": "small",
@@ -10517,7 +10536,11 @@
     37
    ],
    "label": "logo Českých drah (10 bodů)",
-   "rows": 10
+   "rows": 10,
+   "pid": {
+    "img": "/assets/icons/cd.svg",
+    "h": 0.8
+   }
   },
   "logocd-velke": {
    "font": "big",
@@ -10526,7 +10549,11 @@
     37
    ],
    "label": "logo Českých drah (19 bodů)",
-   "rows": 19
+   "rows": 19,
+   "pid": {
+    "img": "/assets/icons/cd.svg",
+    "h": 1.7
+   }
   },
   "praha": {
    "font": "small",
@@ -10535,7 +10562,10 @@
     96
    ],
    "label": "Praha,",
-   "rows": 10
+   "rows": 10,
+   "pid": {
+    "text": "Praha,"
+   }
   },
   "sipky": {
    "font": "pikto",
@@ -10544,7 +10574,8 @@
     240
    ],
    "label": "logo se šipkami (Teplice)",
-   "rows": 28
+   "rows": 28,
+   "pid": "↔️"
   },
   "sipky2": {
    "font": "brno",
@@ -10553,7 +10584,8 @@
     174
    ],
    "label": "logo se šipkami (Brno)",
-   "rows": 28
+   "rows": 28,
+   "pid": "↔️"
   },
   "sipky3": {
    "font": "pikto2",
@@ -10562,7 +10594,8 @@
     240
    ],
    "label": "logo se šipkami, pruhy (Teplice)",
-   "rows": 28
+   "rows": 28,
+   "pid": "↔️"
   },
   "pozor": {
    "font": "pikto",
@@ -10571,7 +10604,8 @@
     244
    ],
    "label": "pozor",
-   "rows": 28
+   "rows": 28,
+   "pid": "⚠️"
   },
   "kocarek": {
    "font": "pikto",
@@ -10580,7 +10614,8 @@
     174
    ],
    "label": "kočárek",
-   "rows": 28
+   "rows": 28,
+   "pid": "🚼"
   },
   "plachetnice": {
    "font": "pikto",
@@ -10589,7 +10624,8 @@
     175
    ],
    "label": "plachetnice",
-   "rows": 28
+   "rows": 28,
+   "pid": "⛵"
   },
   "deti": {
    "font": "pikto",
@@ -10598,7 +10634,8 @@
     241
    ],
    "label": "děti",
-   "rows": 28
+   "rows": 28,
+   "pid": "🚸"
   },
   "letadlovelke": {
    "font": "pikto",
@@ -10607,7 +10644,8 @@
     242
    ],
    "label": "letadlo",
-   "rows": 28
+   "rows": 28,
+   "pid": "✈️"
   },
   "vozikvelky": {
    "font": "pikto",
@@ -10616,7 +10654,11 @@
     243
    ],
    "label": "bezbariérový",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "img": "/assets/icons/pid/accessible.svg",
+    "h": 1.6
+   }
   },
   "parnik": {
    "font": "pikto",
@@ -10625,7 +10667,8 @@
     248
    ],
    "label": "parní lokomotiva",
-   "rows": 28
+   "rows": 28,
+   "pid": "🚂"
   },
   "ikea": {
    "font": "pikto2",
@@ -10634,7 +10677,12 @@
     245
    ],
    "label": "IKEA",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "badge": "IKEA",
+    "bg": "#0058a3",
+    "fg": "#ffdb00"
+   }
   },
   "vozovna": {
    "font": "pikto2",
@@ -10643,7 +10691,12 @@
     246
    ],
    "label": "VOZ (vozovna)",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "badge": "VOZ",
+    "bg": "#ffffff",
+    "fg": "#111111"
+   }
   },
   "sluzebni": {
    "font": "pikto2",
@@ -10652,7 +10705,12 @@
     247
    ],
    "label": "SLUŽ. (služební jízda)",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "badge": "SLUŽ.",
+    "bg": "#ffffff",
+    "fg": "#111111"
+   }
   },
   "divadlo": {
    "font": "brno",
@@ -10661,7 +10719,8 @@
     249
    ],
    "label": "divadlo",
-   "rows": 28
+   "rows": 28,
+   "pid": "🎭"
   },
   "lide": {
    "font": "brno",
@@ -10670,7 +10729,8 @@
     172
    ],
    "label": "lidé",
-   "rows": 28
+   "rows": 28,
+   "pid": "👥"
   },
   "metro": {
    "font": "kosice1-2",
@@ -10679,7 +10739,8 @@
     175
    ],
    "label": "metro",
-   "rows": 10
+   "rows": 10,
+   "pid": "🚇"
   },
   "metroa": {
    "font": "kosice1-7",
@@ -10688,7 +10749,11 @@
     246
    ],
    "label": "metro A",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "img": "/assets/icons/pid/metro-a.svg",
+    "h": 1.1
+   }
   },
   "metrob": {
    "font": "kosice1-7",
@@ -10697,7 +10762,11 @@
     247
    ],
    "label": "metro B",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "img": "/assets/icons/pid/metro-b.svg",
+    "h": 1.1
+   }
   },
   "metroc": {
    "font": "kosice1-7",
@@ -10706,7 +10775,11 @@
     248
    ],
    "label": "metro C",
-   "rows": 28
+   "rows": 28,
+   "pid": {
+    "img": "/assets/icons/pid/metro-c.svg",
+    "h": 1.1
+   }
   },
   "letiste": {
    "font": "kosice1-7",
@@ -10715,7 +10788,8 @@
     242
    ],
    "label": "letiště",
-   "rows": 28
+   "rows": 28,
+   "pid": "🛫"
   },
   "dostihy": {
    "font": "kosice1-7",
@@ -10724,7 +10798,8 @@
     250
    ],
    "label": "dostihy (kůň)",
-   "rows": 28
+   "rows": 28,
+   "pid": "🏇"
   },
   "tramvajvelka": {
    "font": "kosice1-8",
@@ -10733,7 +10808,8 @@
     240
    ],
    "label": "tramvaj zepředu",
-   "rows": 28
+   "rows": 28,
+   "pid": "🚊"
   },
   "lokomotiva": {
    "font": "kosice1-8",
@@ -10742,7 +10818,8 @@
     241
    ],
    "label": "parní lokomotiva",
-   "rows": 28
+   "rows": 28,
+   "pid": "🚂"
   },
   "inv": {
    "font": "kosice-disp-3",
@@ -10751,7 +10828,11 @@
     243
    ],
    "label": "INV (invalidé)",
-   "rows": 8
+   "rows": 8,
+   "pid": {
+    "img": "/assets/icons/pid/accessible.svg",
+    "h": 1.1
+   }
   },
   "idol": {
    "font": "adr-11",
@@ -10761,7 +10842,12 @@
     255
    ],
    "label": "logo IDOL",
-   "rows": 19
+   "rows": 19,
+   "pid": {
+    "badge": "IDOL",
+    "bg": "#00a651",
+    "fg": "#ffffff"
+   }
   }
  },
  "emoji": {

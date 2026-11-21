@@ -70,6 +70,22 @@ const NAMES = {
   tramvajvelka: ['kosice-2001-01-panel1', 8, 240, 'tramvaj zepředu'], lokomotiva: ['kosice-2001-01-panel1', 8, 241, 'parní lokomotiva'],
   inv: ['kosice-2001-01-dispa', 3, 243, 'INV (invalidé)'], idol: ['adr-text-predni', 11, [254, 255], 'logo IDOL'],
 };
+// What a named tag shows in the PID tablo look, which never uses the gBUSE fonts:
+//   'emoji' | { img: '/assets/icons/…svg', h: height in em } | { badge: 'TEXT', bg, fg } | { text: 'plain text' }
+// Icons: src/assets/icons (ČD emblem from Wikimedia Commons, public domain; PID pictograms, MIT).
+const ACC = { img: '/assets/icons/pid/accessible.svg', h: 1.1 };
+const PID = {
+  zastavka: '🚏', bus: '🚌', tramvaj: '🚋', trolejbus: '🚎', lod: '⛴️', vlak: '🚆', letadlo: '✈️', vozik: ACC, nemocnice: '🏥',
+  vlevo: '⬅️', nahoru: '⬆️', vpravo: '➡️', logocd: { img: '/assets/icons/cd.svg', h: 0.95 }, 'logocd-male': { img: '/assets/icons/cd.svg', h: 0.8 },
+  'logocd-velke': { img: '/assets/icons/cd.svg', h: 1.7 }, praha: { text: 'Praha,' }, sipky: '↔️', sipky2: '↔️', sipky3: '↔️',
+  pozor: '⚠️', kocarek: '🚼', plachetnice: '⛵', deti: '🚸', letadlovelke: '✈️', vozikvelky: { ...ACC, h: 1.6 }, parnik: '🚂',
+  ikea: { badge: 'IKEA', bg: '#0058a3', fg: '#ffdb00' }, vozovna: { badge: 'VOZ', bg: '#ffffff', fg: '#111111' },
+  sluzebni: { badge: 'SLUŽ.', bg: '#ffffff', fg: '#111111' }, divadlo: '🎭', lide: '👥', metro: '🚇',
+  metroa: { img: '/assets/icons/pid/metro-a.svg', h: 1.1 }, metrob: { img: '/assets/icons/pid/metro-b.svg', h: 1.1 },
+  metroc: { img: '/assets/icons/pid/metro-c.svg', h: 1.1 }, letiste: '🛫', dostihy: '🏇', tramvajvelka: '🚊', lokomotiva: '🚂',
+  inv: ACC, idol: { badge: 'IDOL', bg: '#00a651', fg: '#ffffff' },
+};
+
 // emoji → pictogram on the BUSE board (the PID look keeps the emoji itself)
 const EMOJI = {
   '🚏': 'zastavka', '🚌': 'bus', '🚍': 'bus', '🚐': 'bus', '🚊': 'tramvaj', '🚋': 'tramvaj', '🚃': 'tramvaj', '🚎': 'trolejbus',
@@ -209,12 +225,13 @@ for (const def of defs) {
 }
 
 for (const [name, [file, face, code, label]] of Object.entries(NAMES)) {
-  if (file === 'inherit') { manifest.names[name] = { font: 'inherit', code, codes: [code], label, rows: 10 }; continue; }
+  if (!PID[name]) console.warn(`name ${name}: no PID icon`);
+  if (file === 'inherit') { manifest.names[name] = { font: 'inherit', code, codes: [code], label, rows: 10, pid: PID[name] }; continue; }
   const id = fileFace.get(`${file}:${face}`);
   const f = manifest.fonts.find((x) => x.id === id);
   const list = [].concat(code);
   if (!f || !list.every((c) => f.codes.includes(c))) { console.warn(`name ${name}: ${file} face ${face} has no ${list}, skipped`); continue; }
-  manifest.names[name] = { font: id, code: list[0], codes: list, label, rows: f.rows };
+  manifest.names[name] = { font: id, code: list[0], codes: list, label, rows: f.rows, pid: PID[name] };
 }
 
 // @font-face and sizes for every font not already declared in site.css

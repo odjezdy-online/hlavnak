@@ -12,12 +12,12 @@
 {% if image and image.src %}<meta property="og:image" content="{% if image.src | isUrl %}{{ image.src }}{% else %}{{ site.url }}{{ image.src }}{% endif %}">{% endif %}
 <meta name="theme-color" content="#000000">
 {# the visitor's look is applied before first paint, so the page never flashes the other one #}
-<script>try{var l=localStorage.getItem('odjezdy-look');if(l==='pid'||l==='buse')document.documentElement.dataset.look=l}catch(e){}</script>
+<script>try{var l=localStorage.getItem('odjezdy-look');if(l==='pid'||l==='buse')document.documentElement.dataset.look=l}catch(e){}
+{# the BUSE fonts are preloaded only for the BUSE look; PID pages never fetch them #}
+if(document.documentElement.dataset.look==='buse'){['{{ '/assets/fonts/buse-small.woff2' | v }}','{{ '/assets/fonts/buse-normal.woff2' | v }}'].forEach(function(h){var k=document.createElement('link');k.rel='preload';k.as='font';k.type='font/woff2';k.crossOrigin='anonymous';k.href=h;document.head.appendChild(k)})}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap">
-<link rel="preload" href="{{ '/assets/fonts/buse-small.woff2' | v }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ '/assets/fonts/buse-normal.woff2' | v }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/pikto-fonts.css' | v }}">
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | v }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
