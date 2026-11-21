@@ -11,9 +11,21 @@ The odjezdy.online blog without Publii. Two looks taken from [odjezdy-system](ht
 npm install
 npm run dev      # http://localhost:8080 (use --port if 8080 is taken: npx @11ty/eleventy --serve --port 8137)
 npm run build    # writes _site/
-npm run fonts    # rebuild src/assets/fonts/*.otf from data/buse-font.json
+npm run fonts    # rebuild src/assets/fonts/*.woff2 and src/_data/pikto.json
 npm run import   # re-import everything from Publii (overwrites src/posts, src/pages, media)
+node scripts/read-buse-fonts.mjs <folder>   # read every face of gBUSE .fnt/.hex files into data/fonts/*.json
+node scripts/font-specimen.mjs <font id> [faces] [--pict-only]   # draw a font's glyphs to data/fonts/specimen-*.png
 ```
+
+## BUSE fonts and pictograms
+
+`data/fonts/*.json` hold every face (0–15) and every code of the gBUSE panel files (font.fnt and the .hex memory images of real panels: Teplice, Brno 2005, Košice 2001, Ostrava, Děčín…). `scripts/build-led-fonts.mjs` turns the faces listed in its `FONTS` table into WOFF2 fonts; every glyph also sits at U+E000 + its BUSE code. In the text faces `<` and `>` are pictograms, so the build draws real chevrons there (the originals stay at `<pikto-normal-60>` / `<pikto-normal-62>`).
+
+In posts:
+
+- `<logocd>`, `<bus>`, `<zastavka>`, `<pozor>` … named pictograms (`NAMES` in the build script; all listed with pictures on `/pisma/`)
+- `<pikto-FONT-CODE>` any glyph, e.g. `<pikto-vozy-246>`
+- transport emoji (🚌 🚏 🚊 🚎 🚆 ✈️ ♿ …) become the panel pictogram in BUSE; PID keeps the emoji. Other emoji are hidden in BUSE.
 
 `npm run import` (one-off; it refuses to run once `src/posts` has posts unless you add `-- --force`, because it would overwrite edits) reads `C:/Users/plain/Documents/Publii/sites/odjezdyonline-obnova/input` read-only; pass another path as an argument to import a different Publii site.
 

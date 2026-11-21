@@ -22,6 +22,7 @@ Přepínač **Vzhled** najdete úplně dole na každé stránce. Volba se zapama
 ## Co je ještě nového
 
 - **Uzavírky a výluky** mají u nadpisu výstražný trojúhelník (v BUSE přímo ten z LED písma), takže je hned poznáte.
+- **Piktogramy z panelů**: ikonky jako autobus, zastávka nebo logo ČD jsou ve vzhledu BUSE přímo z písem skutečných panelů BUSE. Všechna písma a piktogramy si můžete prohlédnout na stránce [Písma](/pisma/).
 - **Funguje to i na mobilu**: řádky se zalamují a klepnutí na příspěvek je vidět.
 - **Podporovatelé** jsou dole na každé stránce a jdou přímo z mého systému pro dary. Podpořit můžete přes Patreon, Ko-fi, PayPal nebo krypto.
 - **Projekty**: stará stránka donate.odjezdy.online byla 7 měsíců bez aktualizace, takže je nahradila stránka [Projekty](/projekty/) se všemi projekty a odkazy na podporu.

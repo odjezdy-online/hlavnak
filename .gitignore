@@ -1,3 +1,4 @@
-node_modules/
-_site/
 .cache/
+_site/
+data/fonts/*.png
+node_modules/

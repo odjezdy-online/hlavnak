@@ -80,6 +80,42 @@ export default function (cfg) {
   cfg.addFilter('shortUrl', (s) => String(s || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''));
   cfg.addFilter('host', (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return s; } });
 
+  // BUSE pictograms in posts:
+  //   <logocd>, <bus>, <zastavka>, …   named glyphs (list in src/_data/pikto.json, shown on /pisma/)
+  //   <pikto-FONT-CODE>               any glyph, e.g. <pikto-vozy-246>
+  //   🚌 🚏 🚊 …                      on the BUSE board the emoji becomes the panel pictogram; PID keeps the emoji
+  // Only text inside <main> is touched; <script>, <style>, <code> and <pre> are left alone.
+  cfg.addTransform('pikto', function (content) {
+    if (!String(this.page.outputPath || '').endsWith('.html')) return content;
+    let P; try { P = JSON.parse(fs.readFileSync('src/_data/pikto.json', 'utf8')); } catch { return content; }
+    const a = content.indexOf('<main'), b = content.lastIndexOf('</main>');
+    if (a < 0 || b < 0) return content;
+    const glyph = (font, code, label, hidden) => `<span class="pk pk-${font}"${hidden ? ' aria-hidden="true"' : ` role="img" aria-label="${label}"`}>&#x${(0xe000 + code).toString(16)};</span>`;
+    const fonts = new Set(P.fonts.map((f) => f.id));
+    const emojiRe = /(\p{Extended_Pictographic})\uFE0F?/gu;
+    let skip = 0;
+    const out = content.slice(a, b).split(/(<[^>]+>)/).map((tok) => {
+      if (tok.startsWith('<')) {
+        const t = tok.match(/^<(\/?)([a-z][a-z0-9-]*)\b/i);
+        if (t && /^(script|style|code|pre)$/i.test(t[2])) skip += t[1] ? -1 : 1;
+        if (skip > 0 || !t) return tok;
+        const name = t[2].toLowerCase();
+        const n = P.names[name];
+        if (n) return t[1] ? '' : glyph(n.font, n.code, n.label);
+        const g = name.match(/^pikto-([a-z0-9]+)-(\d+)$/);
+        if (g && fonts.has(g[1])) return t[1] ? '' : glyph(g[1], Number(g[2]), `piktogram ${g[1]} ${g[2]}`);
+        return tok;
+      }
+      if (skip > 0) return tok;
+      return tok.replace(emojiRe, (m, e) => {
+        const n = P.names[P.emoji[e]];
+        return n ? `<span class="emo-pair">${glyph(n.font, n.code, n.label, true)}<span class="emo">${m}</span></span>` : `<span class="emo emo-only">${m}</span>`;
+      });
+    }).join('');
+    return content.slice(0, a) + out + content.slice(b);
+  });
+  cfg.addFilter('hex', (n) => Number(n).toString(16).toUpperCase());
+
   // {% linka "501" %} → a line-number box, styled per look
   cfg.addShortcode('linka', (n) => `<span class="ln">${String(n).replace(/[<>&"]/g, '')}</span>`);
   cfg.addShortcode('warn', () => WARN_SVG);

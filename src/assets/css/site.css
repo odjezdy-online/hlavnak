@@ -6,6 +6,10 @@
 @font-face { font-family: "BUSE Small"; src: url(/assets/fonts/buse-small.woff2) format("woff2"); font-display: swap; }
 @font-face { font-family: "BUSE Normal"; src: url(/assets/fonts/buse-normal.woff2) format("woff2"); font-display: swap; }
 @font-face { font-family: "BUSE Big"; src: url(/assets/fonts/buse-big.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BUSE Vozy"; src: url(/assets/fonts/buse-vozy.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BUSE Pikto"; src: url(/assets/fonts/buse-pikto.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BUSE Pikto 2"; src: url(/assets/fonts/buse-pikto2.woff2) format("woff2"); font-display: swap; }
+@font-face { font-family: "BUSE Brno"; src: url(/assets/fonts/buse-brno.woff2) format("woff2"); font-display: swap; }
 
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -368,3 +372,41 @@ html[data-look="pid"] { background: #000; color-scheme: dark; }
 /* long words (domains, URLs) may break anywhere: the LED font is wide and a phone screen is not */
 [data-look="buse"] body { overflow-wrap: anywhere; }
 .p-host, .p-desc, .proj-row .c-title { overflow-wrap: anywhere; }
+
+/* ---------- pictograms from the BUSE panel fonts (both looks) ---------- */
+.pk { font-style: normal; font-weight: normal; white-space: nowrap; font-synthesis: none; }
+.pk-small { font-family: "BUSE Small"; } .pk-normal { font-family: "BUSE Normal"; } .pk-big { font-family: "BUSE Big"; }
+.pk-vozy { font-family: "BUSE Vozy"; } .pk-pikto { font-family: "BUSE Pikto"; } .pk-pikto2 { font-family: "BUSE Pikto 2"; } .pk-brno { font-family: "BUSE Brno"; }
+/* on the board a pictogram is drawn at the panel's own dot size; the emoji is hidden */
+[data-look="buse"] .pk-small, [data-look="buse"] .pk-normal { font-size: 30px; }
+[data-look="buse"] .pk-big, [data-look="buse"] .pk-vozy { font-size: 57px; line-height: 57px; vertical-align: bottom; }
+[data-look="buse"] .pk-pikto, [data-look="buse"] .pk-pikto2, [data-look="buse"] .pk-brno { font-size: 84px; line-height: 84px; vertical-align: bottom; }
+[data-look="buse"] .emo { display: none; }
+/* PID keeps normal emoji; named tags still draw the panel glyph, scaled to the text */
+[data-look="pid"] .emo-pair .pk { display: none; }
+[data-look="pid"] .pk-small, [data-look="pid"] .pk-normal { font-size: 1.2em; }
+[data-look="pid"] .pk-big, [data-look="pid"] .pk-vozy { font-size: 2em; line-height: 1; vertical-align: -.35em; }
+[data-look="pid"] .pk-pikto, [data-look="pid"] .pk-pikto2, [data-look="pid"] .pk-brno { font-size: 2.8em; line-height: 1; vertical-align: -.6em; }
+
+/* photos in posts: never bigger than the screen, never wider than they are */
+.prose img, .feat img { max-width: 100%; width: auto; height: auto; max-height: min(75vh, 720px); }
+[data-look="buse"] .feat img, [data-look="buse"] .prose img { width: auto; max-width: round(down, 100%, 3px); }
+[data-look="pid"] .feat img, [data-look="pid"] .prose figure img { width: auto; margin-inline: auto; }
+
+/* ---------- /pisma/ specimen ---------- */
+.spec-font { margin: 0 0 24px; }
+.spec-grid { display: flex; flex-wrap: wrap; gap: 12px 18px; list-style: none; margin: 9px 0 0; padding: 0; }
+.spec-grid li { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-width: 42px; }
+.spec-grid .pk { line-height: 1; }
+.spec-code { font: 12px/1.2 ui-monospace, Consolas, monospace; }
+.spec-name { font: 12px/1.2 ui-monospace, Consolas, monospace; }
+[data-look="buse"] .spec-code { color: var(--dim); } [data-look="buse"] .spec-name { color: var(--white); }
+[data-look="pid"] .spec-code { color: #999; } [data-look="pid"] .spec-name { color: #c8d42a; }
+[data-look="pid"] .spec-font { padding: 0 clamp(12px, 3vw, 20px); }
+[data-look="pid"] .spec-font h2 { font-size: 18px; color: #fff; }
+[data-look="buse"] .spec-font h2 { font: 30px/36px "BUSE Normal"; color: var(--amber); margin: 12px 0 3px; }
+.spec-font p { margin: 3px 0; }
+[data-look="buse"] .spec-font p { color: var(--dim); }
+[data-look="pid"] .spec-font p { color: #bbb; font-size: 14px; }
+.spec-names { list-style: none; padding: 0; margin: 9px 0 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 9px 18px; }
+.spec-names li { display: flex; align-items: flex-end; gap: 12px; }
