@@ -8,6 +8,7 @@ permalink: "/tags/{{ cat.slug }}/"
 eleventyComputed:
   title: "{{ cat.name }}"
   boardTitle: "RUBRIKA"
+  robots: "{{ cat.robots }}"
   boardSub: "{{ cat.name }}"
 ---
 <h1 class="list-title">{% if cat.name == 'Uzavírky' %}{% warn %}{% endif %}{{ cat.name }}</h1>

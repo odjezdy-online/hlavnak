@@ -2,51 +2,61 @@
   {
     "name": "Affiliate",
     "slug": "affiliate",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "INFO",
     "slug": "info",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "Radio",
     "slug": "radio",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "Info / Update",
     "slug": "info-updates",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "Uzavírky",
     "slug": "closures",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "Z mého okolí",
     "slug": "from-my-area",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "OMSI",
     "slug": "omsi-things",
-    "description": ""
+    "description": "",
+    "robots": "index, follow"
   },
   {
     "name": "BLOG",
     "slug": "blog",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "Murder Drones",
     "slug": "murder-drones",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   },
   {
     "name": "MHD",
     "slug": "mhd",
-    "description": ""
+    "description": "",
+    "robots": "noindex, follow"
   }
 ]

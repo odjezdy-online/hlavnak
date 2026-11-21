@@ -23,6 +23,7 @@ const stripHtml = (s) => String(s || '').replace(/<[^>]+>/g, ' ');
 export default function (cfg) {
   cfg.addPassthroughCopy({ 'src/assets': 'assets', 'src/media': 'media' });
   cfg.addPassthroughCopy('src/robots.txt');
+  cfg.addPassthroughCopy('src/sitemap.xsl');
   cfg.addWatchTarget('src/assets/');
 
   const byDate = (a, b) => b.date - a.date;
@@ -45,6 +46,33 @@ export default function (cfg) {
   cfg.addFilter('readMin', (html) => Math.max(1, Math.round(stripHtml(html).split(/\s+/).filter(Boolean).length / 200)));
   cfg.addFilter('excerpt', (html, n = 180) => { const t = stripHtml(html).replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n).replace(/\s\S*$/, '') + '…' : t; });
   cfg.addFilter('absUrls', (html, base) => String(html).replace(/(src|href)="\//g, `$1="${base}/`));
+  // ISO date in Prague time with its offset (2024-05-28T17:56:46+02:00), as Publii writes lastmod
+  cfg.addFilter('pragueIso', (d) => {
+    d = new Date(d);
+    const f = Object.fromEntries(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Prague', hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }).formatToParts(d).map((p) => [p.type, p.value]));
+    const local = Date.UTC(+f.year, +f.month - 1, +f.day, +f.hour, +f.minute, +f.second);
+    const off = Math.round((local - Math.floor(d.getTime() / 1000) * 1000) / 60000);
+    const sign = off >= 0 ? '+' : '-', a = Math.abs(off);
+    return `${f.year}-${f.month}-${f.day}T${f.hour}:${f.minute}:${f.second}${sign}${String(Math.floor(a / 60)).padStart(2, '0')}:${String(a % 60).padStart(2, '0')}`;
+  });
+  // images in a post for the image sitemap: [{src, alt}] in page order, featured image first.
+  // Read from the source file (HTML <img> and Markdown ![alt](src)): the sitemap renders before post bodies.
+  cfg.addFilter('imagesIn', (inputPath, base, featured) => {
+    const out = [];
+    if (featured && featured.src) out.push({ src: featured.src, alt: featured.alt || '' });
+    let raw = '';
+    try { raw = fs.readFileSync(inputPath, 'utf8').replace(/^---[\s\S]*?\n---/, ''); } catch {}
+    const unq = (t) => String(t || '').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+    for (const m of raw.matchAll(/<img\b[^>]*>|!\[([^\]]*)\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"]*")?\s*\)/g)) {
+      if (m[0][0] === '<') {
+        const src = (m[0].match(/\ssrc="([^"]+)"/) || [])[1];
+        if (src) out.push({ src: unq(src), alt: unq((m[0].match(/\salt="([^"]*)"/) || [])[1]) });
+      } else out.push({ src: m[2], alt: m[1] });
+    }
+    return out.filter((x, i) => out.findIndex((y) => y.src === x.src) === i).map((x) => ({ ...x, src: x.src.startsWith('/') ? base + x.src : x.src }));
+  });
+  // Publii sorts sitemap entries by slug, so /update/ comes before /update-11102024/
+  cfg.addFilter('sortByUrl', (arr) => [...(arr || [])].sort((a, b) => { const x = a.url.replace(/\/$/, ''), y = b.url.replace(/\/$/, ''); return x < y ? -1 : x > y ? 1 : 0; }));
   cfg.addFilter('head', (arr, n) => (arr || []).slice(0, n));
   cfg.addFilter('isUrl', (s) => /^https?:\/\//.test(String(s || '')));
   cfg.addFilter('host', (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return s; } });

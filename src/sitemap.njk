@@ -2,11 +2,31 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>{{ site.url }}/</loc></url>
-  <url><loc>{{ site.url }}/tags/</loc></url>
-  {%- for item in collections.all %}{% if item.url and not item.data.hidden and item.url != '/' %}
-  <url><loc>{{ site.url }}{{ item.url }}</loc><lastmod>{{ (item.data.updated or item.date) | isoDate }}</lastmod></url>
-  {%- endif %}{% endfor %}
+{#- Same shape as the Publii sitemap: XSL stylesheet, homepage, every post and page (hidden ones too),
+    homepage pages 2+, category pages whose robots say "index"; lastmod in Prague time; post images. -#}
+{%- set entries = [] -%}
+{%- for p in collections.posts %}{% set entries = (entries.push({ url: p.url, lastmod: (p.data.updated or p.date), images: (p.inputPath | imagesIn(site.url, p.data.image)) }), entries) %}{% endfor -%}
+{%- for p in collections.all %}{% if p.url and p.inputPath.indexOf('/pages/') != -1 %}{% set entries = (entries.push({ url: p.url, lastmod: (p.data.updated or p.date), images: (p.inputPath | imagesIn(site.url, p.data.image)) }), entries) %}{% endif %}{% endfor -%}
+{%- for n in range(2, ((collections.home.length + site.perPage - 1) / site.perPage) | int + 1) %}{% set entries = (entries.push({ url: "/page/" + n + "/" }), entries) %}{% endfor -%}
+{%- for c in categoryList %}{% if c.robots.indexOf('noindex') == -1 and (collections.listed | inCategory(c.name)).length %}{% set entries = (entries.push({ url: "/tags/" + c.slug + "/" }), entries) %}{% endif %}{% endfor -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="{{ site.url }}/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>{{ site.url }}/</loc>
+</url>
+{%- for e in entries | sortByUrl %}
+<url>
+<loc>{{ site.url }}{{ e.url }}</loc>
+{%- if e.lastmod %}
+<lastmod>{{ e.lastmod | pragueIso }}</lastmod>
+{%- endif %}
+{%- for img in e.images %}
+<image:image>
+<image:loc>{{ img.src }}</image:loc>
+<image:title><![CDATA[{{ img.alt | safe }}]]></image:title>
+</image:image>
+{%- endfor %}
+</url>
+{%- endfor %}
 </urlset>

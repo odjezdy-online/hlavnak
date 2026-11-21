@@ -1,10 +1,12 @@
 [
   {
     "name": "mxnticek",
-    "username": "mxnticek"
+    "username": "mxnticek",
+    "robots": "noindex, follow"
   },
   {
     "name": "Affiliates",
-    "username": "pits-ad-mxnticek"
+    "username": "pits-ad-mxnticek",
+    "robots": "noindex, follow"
   }
 ]

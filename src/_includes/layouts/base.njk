@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if metaTitle or title %}{{ metaTitle or title }} - {% endif %}{{ site.name }}</title>
 <meta name="description" content="{{ description or lead or site.description }}">
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% if robots %}<meta name="robots" content="{{ robots }}">
+{% endif %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta property="og:title" content="{{ metaTitle or title or site.name }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 {% if image and image.src %}<meta property="og:image" content="{% if image.src | isUrl %}{{ image.src }}{% else %}{{ site.url }}{{ image.src }}{% endif %}">{% endif %}

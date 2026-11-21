@@ -11,7 +11,9 @@ const PUBLII = process.argv[2] || 'C:/Users/plain/Documents/Publii/sites/odjezdy
 const db = new DatabaseSync(path.join(PUBLII, 'db.sqlite'), { readOnly: true });
 
 // only the columns we need (the authors table also holds a password hash; it is never read)
-const tags = db.prepare('SELECT id, name, slug, description FROM tags').all();
+const tags = db.prepare('SELECT id, name, slug, description, additional_data FROM tags').all();
+// robots defaults from the Publii site settings (categories and authors are noindex unless set otherwise)
+const advanced = JSON.parse(fs.readFileSync(path.join(PUBLII, 'config/site.config.json'), 'utf8')).advanced || {};
 const authors = db.prepare('SELECT id, name, username FROM authors').all();
 const posts = db.prepare('SELECT id, title, authors, slug, text, featured_image_id, created_at, modified_at, status FROM posts').all();
 const postTags = db.prepare('SELECT post_id, tag_id FROM posts_tags').all();
@@ -95,6 +97,6 @@ for (const p of posts) {
 const files = path.join(PUBLII, 'media/files');
 if (fs.existsSync(files)) fs.cpSync(files, 'src/media/files', { recursive: true });
 
-fs.writeFileSync('src/_data/categoryList.json', JSON.stringify(tags.map(({ name, slug, description }) => ({ name, slug, description: description || '' })), null, 2) + '\n');
-fs.writeFileSync('src/_data/authors.json', JSON.stringify(authors.map(({ name, username }) => ({ name, username })), null, 2) + '\n');
+fs.writeFileSync('src/_data/categoryList.json', JSON.stringify(tags.map(({ name, slug, description, additional_data }) => ({ name, slug, description: description || '', robots: json(additional_data).metaRobots || advanced.metaRobotsTags || 'index, follow' })), null, 2) + '\n');
+fs.writeFileSync('src/_data/authors.json', JSON.stringify(authors.map(({ name, username }) => ({ name, username, robots: advanced.metaRobotsAuthors || 'index, follow' })), null, 2) + '\n');
 console.log(`imported ${nPosts} posts and ${nPages} pages, skipped ${skipped} (trashed or drafts), ${tags.length} categories, ${authors.length} authors`);
