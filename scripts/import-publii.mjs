@@ -100,3 +100,6 @@ if (fs.existsSync(files)) fs.cpSync(files, 'src/media/files', { recursive: true 
 fs.writeFileSync('src/_data/categoryList.json', JSON.stringify(tags.map(({ name, slug, description, additional_data }) => ({ name, slug, description: description || '', robots: json(additional_data).metaRobots || advanced.metaRobotsTags || 'index, follow' })), null, 2) + '\n');
 fs.writeFileSync('src/_data/authors.json', JSON.stringify(authors.map(({ name, username }) => ({ name, username, robots: advanced.metaRobotsAuthors || 'index, follow' })), null, 2) + '\n');
 console.log(`imported ${nPosts} posts and ${nPages} pages, skipped ${skipped} (trashed or drafts), ${tags.length} categories, ${authors.length} authors`);
+
+// always shrink after copying media, so originals (with camera metadata) never end up in the repo
+await import('./shrink-images.mjs');

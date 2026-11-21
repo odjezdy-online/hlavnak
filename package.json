@@ -4,7 +4,7 @@
   "type": "module",
   "description": "odjezdy.online built with Eleventy, in two looks from odjezdy-system: BUSE and PID tablo",
   "scripts": {
-    "import": "node scripts/import-publii.mjs && node scripts/shrink-images.mjs",
+    "import": "node scripts/import-publii.mjs",
     "images": "node scripts/shrink-images.mjs",
     "fonts": "node scripts/build-led-fonts.mjs",
     "dev": "eleventy --serve",
