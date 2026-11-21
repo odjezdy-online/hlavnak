@@ -3,31 +3,40 @@ layout: base.njk
 permalink: /pisma/
 title: Písma a piktogramy
 boardTitle: "PÍSMA"
-description: "Písma a piktogramy z panelů BUSE, které používá tento web."
+description: "Písma a piktogramy z panelů BUSE: Teplice, Brno, Košice, Ostrava, Děčín a další."
 ---
 {#- glyphs come from the fonts themselves; the list is src/_data/pikto.json (scripts/build-led-fonts.mjs) -#}
 <h1 class="list-title">Písma a piktogramy</h1>
 <div class="prose">
-  <p>Všechno na tomto webu je psané písmy z panelů BUSE. Piktogramy jde vložit do příspěvku značkou, například <code>&lt;logocd&gt;</code> nebo <code>&lt;bus&gt;</code>, a kterýkoli znak také jako <code>&lt;pikto-PÍSMO-KÓD&gt;</code>, třeba <code>&lt;pikto-vozy-246&gt;</code>. Emoji jako 🚌 nebo 🚏 se ve vzhledu BUSE samy promění v piktogram z panelu.</p>
+  <p>Všechno na tomto webu je psané písmy z panelů BUSE: {{ pikto.fonts.length }} písem z panelů z Teplic, Brna, Košic, Ostravy, Děčína a dalších. Piktogramy jde vložit do příspěvku značkou, například <code>&lt;logocd&gt;</code> nebo <code>&lt;bus&gt;</code>, a kterýkoli znak také jako <code>&lt;pikto-PÍSMO-KÓD&gt;</code>, třeba <code>&lt;pikto-vozy-246&gt;</code>. Dopravní emoji se ve vzhledu BUSE samy promění v piktogram z panelu.</p>
 </div>
 
 <section class="spec-font" aria-labelledby="names-h">
   <h2 id="names-h">Značky do příspěvků</h2>
   <ul class="spec-names">
     {%- for name, n in pikto.names %}
-    <li><span class="pk pk-{{ n.font }}" aria-hidden="true">&#{{ 57344 + n.code }};</span><span><span class="spec-name">&lt;{{ name }}&gt;</span><br><span class="spec-code">{{ n.label }}</span></span></li>
+    <li><span class="pk pk-{{ n.font }}" aria-hidden="true">{% for c in n.codes %}&#{{ 57344 + c }};{% endfor %}</span><span><span class="spec-name">&lt;{{ name }}&gt;</span><br><span class="spec-code">{{ n.label }}</span></span></li>
     {%- endfor %}
   </ul>
 </section>
 
+{%- set lastGroup = "" %}
 {%- for f in pikto.fonts %}
+{%- if f.group != lastGroup %}<h2 class="spec-group">{{ f.group }}</h2>{% set lastGroup = f.group %}{% endif %}
 <section class="spec-font" aria-labelledby="f-{{ f.id }}">
-  <h2 id="f-{{ f.id }}">{{ f.family }}</h2>
-  <p>{{ f.note }} · {{ f.codes.length }} znaků · zdroj {{ f.source }}, písmo {{ f.face }}</p>
+  <h3 id="f-{{ f.id }}">{{ f.family }} <span class="spec-code">pikto-{{ f.id }}</span></h3>
+  <p>{{ f.note }} · {{ f.rows }} bodů · {{ f.codes.length }} znaků{% if f.pict.length %} · {{ f.pict.length }} piktogramů{% endif %} · {{ f.kb }} kB · {{ f.source }}</p>
+  {%- if f.letters and not f.curated %}
+  <p class="spec-sample pk pk-{{ f.id }}">Odjezdy.online 0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+  {%- endif %}
+  {%- set list = f.codes if f.curated else f.pict %}
+  {%- if not f.letters and not f.curated %}{% set list = f.codes %}{% endif %}
+  {%- if list.length %}
   <ul class="spec-grid">
-    {%- for c in f.codes %}
+    {%- for c in list %}
     <li><span class="pk pk-{{ f.id }}" aria-hidden="true">&#{{ 57344 + c }};</span><span class="spec-code">{{ c }}</span></li>
     {%- endfor %}
   </ul>
+  {%- endif %}
 </section>
 {%- endfor %}

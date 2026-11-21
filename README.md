@@ -19,11 +19,11 @@ node scripts/font-specimen.mjs <font id> [faces] [--pict-only]   # draw a font's
 
 ## BUSE fonts and pictograms
 
-`data/fonts/*.json` hold every face (0–15) and every code of the gBUSE panel files (font.fnt and the .hex memory images of real panels: Teplice, Brno 2005, Košice 2001, Ostrava, Děčín…). `scripts/build-led-fonts.mjs` turns the faces listed in its `FONTS` table into WOFF2 fonts; every glyph also sits at U+E000 + its BUSE code. In the text faces `<` and `>` are pictograms, so the build draws real chevrons there (the originals stay at `<pikto-normal-60>` / `<pikto-normal-62>`).
+`data/fonts/*.json` hold every face (0–15) and every code of the gBUSE panel files (font.fnt and the .hex memory images of real panels: Teplice, Brno 2005, Košice 2001, Ostrava, Děčín…). `scripts/build-led-fonts.mjs` turns the faces listed in its `FONTS` table into WOFF2 fonts; every glyph also sits at U+E000 + its BUSE code. In the text faces several ASCII codes are pictograms (`<` `>` arrows, `%` the ČD logo, `` ` `` "Praha,", `$`, `\`, `~`) or empty (`@`), so the build draws the real characters there; the originals stay at U+E000+code (`<logocd>`, `<pikto-small-36>` …). Every face of every gBUSE file becomes its own font (`pikto-<panel>-<face>`, e.g. `<pikto-kosice1-7-246>`), deduplicated across files; CSS and font URLs carry a content hash (`?v=`), and `_headers` lets browsers cache `/assets/` for a year.
 
 In posts:
 
-- `<logocd>`, `<bus>`, `<zastavka>`, `<pozor>` … named pictograms (`NAMES` in the build script; all listed with pictures on `/pisma/`)
+- `<logocd>` (ČD logo), `<praha>`, `<bus>`, `<zastavka>`, `<metroa>`, `<idol>`, `<pozor>` … named pictograms (`NAMES` in the build script; all listed with pictures on `/pisma/`)
 - `<pikto-FONT-CODE>` any glyph, e.g. `<pikto-vozy-246>`
 - transport emoji (🚌 🚏 🚊 🚎 🚆 ✈️ ♿ …) become the panel pictogram in BUSE; PID keeps the emoji. Other emoji are hidden in BUSE.
 

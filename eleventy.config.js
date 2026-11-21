@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 
 // short labels for category boxes (PID) and the category column (BUSE)
 const CODES = {
@@ -26,6 +27,7 @@ export default function (cfg) {
   cfg.addPassthroughCopy('src/robots.txt');
   cfg.addPassthroughCopy('src/sitemap.xsl');
   cfg.addPassthroughCopy('src/_redirects'); // Cloudflare Pages: old Publii addresses
+  cfg.addPassthroughCopy('src/_headers'); // Cloudflare Pages: cache rules
   cfg.addWatchTarget('src/assets/');
 
   const byDate = (a, b) => b.date - a.date;
@@ -76,6 +78,8 @@ export default function (cfg) {
   // Publii sorts sitemap entries by slug, so /update/ comes before /update-11102024/
   cfg.addFilter('sortByUrl', (arr) => [...(arr || [])].sort((a, b) => { const x = a.url.replace(/\/$/, ''), y = b.url.replace(/\/$/, ''); return x < y ? -1 : x > y ? 1 : 0; }));
   cfg.addFilter('head', (arr, n) => (arr || []).slice(0, n));
+  // /assets/x → /assets/x?v=<hash of the file>: a changed file gets a new URL, so no stale CSS, JS or fonts
+  cfg.addFilter('v', (url) => { try { return `${url}?v=${crypto.createHash('md5').update(fs.readFileSync('src' + url)).digest('hex').slice(0, 10)}`; } catch { return url; } });
   cfg.addFilter('isUrl', (s) => /^https?:\/\//.test(String(s || '')));
   cfg.addFilter('shortUrl', (s) => String(s || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''));
   cfg.addFilter('host', (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return s; } });
@@ -102,7 +106,7 @@ export default function (cfg) {
         const name = t[2].toLowerCase();
         const n = P.names[name];
         if (n) return t[1] ? '' : glyph(n.font, n.code, n.label);
-        const g = name.match(/^pikto-([a-z0-9]+)-(\d+)$/);
+        const g = name.match(/^pikto-([a-z0-9-]+?)-(\d+)$/); // font ids may contain '-' (kosice1-7, brno-led-0)
         if (g && fonts.has(g[1])) return t[1] ? '' : glyph(g[1], Number(g[2]), `piktogram ${g[1]} ${g[2]}`);
         return tok;
       }

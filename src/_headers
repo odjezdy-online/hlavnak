@@ -1,0 +1,4 @@
+# Cloudflare Pages headers
+# /assets/ URLs carry ?v=<file hash> from the templates, so a changed file always gets a new URL
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

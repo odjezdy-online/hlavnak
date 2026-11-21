@@ -16,9 +16,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400&display=swap">
-<link rel="preload" href="/assets/fonts/buse-small.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/buse-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="preload" href="{{ '/assets/fonts/buse-small.woff2' | v }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/buse-normal.woff2' | v }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/css/pikto-fonts.css' | v }}">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | v }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
 <link rel="alternate" type="application/feed+json" title="{{ site.name }}" href="/feed.json">
 {% if site.thirdParty.seznamVerification %}<meta name="seznam-wmt" content="{{ site.thirdParty.seznamVerification }}">{% endif %}
@@ -69,6 +70,6 @@
   <p id="photo-cap"></p>
   <form method="dialog"><button>Zavřít</button></form>
 </dialog>
-<script src="/assets/js/site.js" defer></script>
+<script src="{{ '/assets/js/site.js' | v }}" defer></script>
 </body>
 </html>
