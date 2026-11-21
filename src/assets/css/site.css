@@ -58,7 +58,8 @@ html[data-look="buse"] {
   font: 30px/36px "BUSE Small", "Fira Sans", monospace;
   font-synthesis: none; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;
 }
-[data-look="buse"] .frame { width: round(down, min(100%, 1002px), 3px); }
+/* full screen width, snapped to whole dots */
+[data-look="buse"] .frame { width: round(down, 100%, 3px); }
 [data-look="buse"] .board { background: #000 var(--dots) 0 0 / 3px 3px; padding: 6px 9px; }
 [data-look="buse"] a { color: var(--white); text-decoration: none; }
 [data-look="buse"] a:focus-visible, [data-look="buse"] button:focus-visible { outline: 3px solid var(--white); outline-offset: 0; }
@@ -187,7 +188,7 @@ html[data-look="buse"] {
    ===================================================================== */
 html[data-look="pid"] { background: #000; color-scheme: dark; }
 [data-look="pid"] body { background: #000; color: #e8e8e8; font: 17px/1.65 "Fira Sans", system-ui, sans-serif; -webkit-tap-highlight-color: transparent; }
-[data-look="pid"] .frame { max-width: 1000px; }
+[data-look="pid"] .frame { width: 100%; }
 [data-look="pid"] .board { background: #1b1b1b; }
 [data-look="pid"] a { color: #e8e8e8; }
 [data-look="pid"] a:focus-visible, [data-look="pid"] button:focus-visible { outline: 2px solid #c8d42a; outline-offset: 2px; }
@@ -270,7 +271,7 @@ html[data-look="pid"] { background: #000; color-scheme: dark; }
 [data-look="pid"] .feat img, [data-look="pid"] .prose figure img { display: block; width: 100%; cursor: zoom-in; }
 [data-look="pid"] figcaption { background: #5f5f5f; color: #eee; padding: 6px 10px; font-size: 14px; display: flex; justify-content: space-between; gap: 4px 12px; flex-wrap: wrap; }
 [data-look="pid"] figcaption small, [data-look="pid"] figcaption a { color: #d0d0d0; font-size: 13px; }
-[data-look="pid"] .prose { color: #ddd; max-width: 70ch; }
+[data-look="pid"] .prose { color: #ddd; max-width: 110ch; }
 [data-look="pid"] .prose > * { margin: 0 0 14px; }
 [data-look="pid"] .prose h1, [data-look="pid"] .prose h2, [data-look="pid"] .prose h3 { font-weight: 600; color: #fff; line-height: 1.25; margin-top: 26px; }
 [data-look="pid"] .prose h2 { font-size: 22px; background: #5f5f5f; padding: 4px 10px; }
