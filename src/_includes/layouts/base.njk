@@ -31,7 +31,7 @@
 <div class="frame">
   <header class="board site-head">
     <a class="brand" href="/"><span class="b-cap">O</span><span class="b-low">o</span>djezdy<span class="b-tld">.online</span></a>
-    <div class="head-mid"><b>{{ boardTitle or "PŘÍSPĚVKY" }}</b><span>{{ boardSub or site.tagline }}</span></div>
+    <div class="head-mid"><b>{{ boardTitle or "PŘÍSPĚVKY" }}</b>{% if boardSub %}<span>{{ boardSub }}</span>{% endif %}</div>
     <div class="head-clock"><b class="clk" aria-hidden="true">--:--</b><span class="dte" aria-hidden="true"></span></div>
   </header>
   <nav class="board site-nav" aria-label="Hlavní menu">
@@ -43,8 +43,17 @@
   <footer class="board site-foot">
     <section class="supporters" aria-labelledby="sup-h">
       <h2 id="sup-h">Podporovatelé</h2>
-      <iframe class="donos" title="Podporovatelé odjezdy.online" loading="lazy" src="{{ site.donationsEmbed }}&accent=%23ff8800" data-base="{{ site.donationsEmbed }}"></iframe>
-      <p><a href="https://donate.odjezdy.online/">Podpořit projekt</a></p>
+      {#- filled from the donations feed by site.js; without JavaScript the empty state and the links stay #}
+      <div class="sup" data-feed="{{ site.supporters.feed }}">
+        <div class="sup-col" data-list="top"><h3>Nejvíce</h3><p class="sup-empty">Zatím žádní podporovatelé. Buďte první!</p></div>
+        <div class="sup-col" data-list="recent" hidden><h3>Nedávno</h3></div>
+      </div>
+      <p class="sup-links"><span>Podpořit:</span>
+        <a href="{{ site.supporters.links.patreon }}" data-link="patreon" rel="noopener">Patreon</a>
+        <a href="{{ site.supporters.links.kofi }}" data-link="kofi" rel="noopener">Ko-fi</a>
+        <a href="#" data-link="crypto" rel="noopener" hidden>Krypto</a>
+        <a href="https://donate.odjezdy.online/">Všechny projekty</a>
+      </p>
     </section>
     <div class="look-switch" role="group" aria-label="Vzhled webu">
       <span>Vzhled:</span>

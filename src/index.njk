@@ -12,8 +12,8 @@ eleventyComputed:
 {% include "post-list.njk" %}
 {% if pagination.pages.length > 1 %}
 <nav class="pager" aria-label="Stránkování">
-  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev">&lt; Novější</a>{% else %}<span></span>{% endif %}
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev"><span class="arr arr-l" aria-hidden="true">&gt;</span> Novější</a>{% else %}<span></span>{% endif %}
   <span class="pg">{{ pagination.pageNumber + 1 }}/{{ pagination.pages.length }}</span>
-  {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next">Starší &gt;</a>{% else %}<span></span>{% endif %}
+  {% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next">Starší <span class="arr" aria-hidden="true">&gt;</span></a>{% else %}<span></span>{% endif %}
 </nav>
 {% endif %}

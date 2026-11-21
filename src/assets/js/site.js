@@ -2,16 +2,11 @@
 (() => {
   const root = document.documentElement;
   const LOOKS = ['buse', 'pid'];
-  const ACCENT = { buse: '%23ff8800', pid: '%23c8d42a' };
 
   function applyLook(look) {
     if (!LOOKS.includes(look)) look = 'buse';
     root.dataset.look = look;
     document.querySelectorAll('[data-switch]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.switch === look)));
-    document.querySelectorAll('iframe.donos').forEach((f) => {
-      const src = `${f.dataset.base}&accent=${ACCENT[look]}`;
-      if (f.getAttribute('src') !== src) f.setAttribute('src', src);
-    });
     tick();
   }
   document.addEventListener('click', (ev) => {
@@ -44,6 +39,46 @@
     try { dlg.showModal(); } catch (_) { dlg.setAttribute('open', ''); }
   });
   if (dlg) dlg.addEventListener('click', (ev) => { if (ev.target === dlg) dlg.close(); });
+
+  // supporters: public feed from the donations API (CORS, cached 60 s), drawn in the current look.
+  // Every record keeps its own currency; amounts are never converted.
+  const SOURCES = { patreon: 'Patreon', kofi: 'Ko-fi', crypto: 'Krypto' };
+  const money = (cents, cur) => {
+    // '$' is a pictogram in the BUSE font, so dollars are written as "USD"
+    try { return new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: cur || 'USD', currencyDisplay: /^(USD|CAD|AUD)$/.test(cur || 'USD') ? 'code' : 'symbol', minimumFractionDigits: cents % 100 ? 2 : 0 }).format(cents / 100); }
+    catch (_) { return `${(cents / 100).toFixed(2)} ${cur || ''}`; }
+  };
+  function renderSupporters(box, data) {
+    const fill = (key, rows) => {
+      const col = box.querySelector(`[data-list="${key}"]`);
+      if (!col) return;
+      col.querySelectorAll('ol, .sup-empty').forEach((n) => n.remove());
+      if (!rows || !rows.length) {
+        if (key === 'recent') { col.hidden = true; return; }
+        const p = document.createElement('p'); p.className = 'sup-empty'; p.textContent = 'Zatím žádní podporovatelé. Buďte první!'; col.append(p); return;
+      }
+      col.hidden = false;
+      const ol = document.createElement('ol'); ol.className = 'sup-list';
+      for (const r of rows) {
+        const li = document.createElement('li');
+        const name = document.createElement('span'); name.className = 'sup-name'; name.textContent = r.displayName || 'Anonym';
+        const src = document.createElement('span'); src.className = 'sup-src'; src.textContent = SOURCES[r.source] || r.source || '';
+        const amt = document.createElement('span'); amt.className = 'sup-amt'; amt.textContent = r.amountCents > 0 ? money(r.amountCents, r.currency) : '';
+        li.append(name, src, amt); ol.append(li);
+      }
+      col.append(ol);
+    };
+    fill('top', data.top); fill('recent', data.recent);
+    const links = data.links || {};
+    document.querySelectorAll('.sup-links [data-link]').forEach((a) => {
+      const url = links[a.dataset.link];
+      if (url) { a.href = url; a.hidden = false; } else if (a.dataset.link === 'crypto') a.hidden = true;
+    });
+  }
+  document.querySelectorAll('.sup[data-feed]').forEach((box) => {
+    fetch(box.dataset.feed).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((d) => renderSupporters(box, d)).catch(() => {});
+  });
+  window.odjezdySupporters = renderSupporters; // for previewing with sample data
 
   let saved = '';
   try { saved = localStorage.getItem('odjezdy-look') || ''; } catch (_) {}

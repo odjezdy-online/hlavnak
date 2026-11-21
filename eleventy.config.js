@@ -13,7 +13,8 @@ const WARN = ['0', '6000', 'f000', '1f800', '39c00', '70e00', 'e6700', '1c6380',
 const WARN_SVG = (() => {
   let r = '';
   WARN.forEach((h, y) => { const v = parseInt(h, 16); for (let x = 0; x < 28; x++) if ((v >> (27 - x)) & 1) r += `<rect x="${x + 0.1}" y="${y + 0.1}" width=".8" height=".8"/>`; });
-  return `<svg class="warn" viewBox="0 1 28 16" role="img" aria-label="Uzavírka"><title>Uzavírka</title><g fill="currentColor">${r}</g></svg>`;
+  return `<svg class="warn warn-led" viewBox="0 1 28 16" role="img" aria-label="Uzavírka"><title>Uzavírka</title><g fill="currentColor">${r}</g></svg>`
+    + '<svg class="warn warn-std" viewBox="0 0 24 22" role="img" aria-label="Uzavírka"><title>Uzavírka</title><path d="M12 1.5 23 20.5H1Z" fill="#f9b21f" stroke="#f9b21f" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 8v6.2" stroke="#111" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.45" fill="#111"/></svg>';
 })();
 
 let catCache = null;
