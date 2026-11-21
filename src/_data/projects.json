@@ -1,66 +1,210 @@
 {
   "donate": [
-    { "name": "Patreon", "url": "https://www.patreon.com/mxnticek", "desc": "Měsíční podpora" },
-    { "name": "Ko-fi", "url": "https://ko-fi.com/vlastimilnovotny", "desc": "Jednorázově, kupte mi kávu" },
-    { "name": "PayPal", "url": "https://paypal.me/mxnticek", "desc": "Rychlá platba přes PayPal" }
+    {
+      "name": "Patreon",
+      "url": "https://www.patreon.com/mxnticek",
+      "desc": "Měsíční podpora"
+    },
+    {
+      "name": "Ko-fi",
+      "url": "https://ko-fi.com/vlastimilnovotny",
+      "desc": "Jednorázově, kupte mi kávu"
+    },
+    {
+      "name": "PayPal",
+      "url": "https://paypal.me/mxnticek",
+      "desc": "Rychlá platba přes PayPal"
+    }
   ],
   "crypto": [
-    { "name": "Polygon (MATIC)", "address": "0xF162f380a24D9fB844f75920922690E5d9DC7c52" }
+    {
+      "name": "Polygon (MATIC)",
+      "address": "0xF162f380a24D9fB844f75920922690E5d9DC7c52"
+    },
+    {
+      "name": "Solana (SOL)",
+      "address": "Et3pFEettiE81wRmShB98ntXHvF5BULV2LrfhT2GzH9x"
+    }
   ],
   "groups": [
     {
       "title": "Doprava",
       "code": "MHD",
       "items": [
-        { "name": "Odjezdy Online", "url": "https://app.odjezdy.online", "desc": "Živé odjezdy a mapa vozidel v reálném čase (PID, DÚK, IDOL, ČD/SŽ a další), mimořádnosti s krátkým shrnutím, vizitky vozidel a oběhy. Nahrazuje ARRIVA tracker a DelayTrackery pro Bílinu a Most.", "status": "live" },
-        { "name": "Nový vzhled mapy", "url": "https://app.odjezdy.online/n", "desc": "Nová podoba mapy vozidel; původní zůstává na hlavní adrese.", "status": "beta" },
-        { "name": "Veřejné API", "url": "https://app.odjezdy.online/api/v2/", "desc": "Jen čtení, bez klíče, 150 dotazů za minutu z jedné IP. Návod pro AI v /llms.txt.", "status": "live" },
-        { "name": "MCP server pro AI agenty", "url": "https://app.odjezdy.online/mcp", "desc": "Hledání zastávek, odjezdů, spojů a vozidel pro AI asistenty.", "status": "live" },
-        { "name": "O projektu a plány", "url": "https://app.odjezdy.online/about", "desc": "Zdroje dat a roadmapa aplikace.", "status": "live" },
-        { "name": "Odjezdy OS", "url": "https://github.com/odjezdy-online/odjezdy-system", "desc": "Počítač, který nabootuje rovnou do LED odjezdové tabule. Odtud pochází vzhled tohoto webu.", "status": "vývoj" },
-        { "name": "seznam.odjezdy.online", "url": "https://seznam.odjezdy.online", "desc": "Proxy.", "status": "live" }
+        {
+          "name": "Odjezdy Online",
+          "url": "https://app.odjezdy.online",
+          "desc": "Živé odjezdy a mapa vozidel v reálném čase (PID, DÚK, IDOL, ČD/SŽ a další), mimořádnosti s krátkým shrnutím, vizitky vozidel a oběhy. Nahrazuje ARRIVA tracker a DelayTrackery pro Bílinu a Most.",
+          "status": "live"
+        },
+        {
+          "name": "Nový vzhled mapy",
+          "url": "https://app.odjezdy.online/n",
+          "desc": "Nová podoba mapy vozidel; původní zůstává na hlavní adrese.",
+          "status": "beta"
+        },
+        {
+          "name": "Veřejné API",
+          "url": "https://app.odjezdy.online/api/v2/",
+          "desc": "Jen čtení, bez klíče, 150 dotazů za minutu z jedné IP. Návod pro AI v /llms.txt.",
+          "status": "live"
+        },
+        {
+          "name": "MCP server pro AI agenty",
+          "url": "https://app.odjezdy.online/mcp",
+          "desc": "Hledání zastávek, odjezdů, spojů a vozidel pro AI asistenty.",
+          "status": "live"
+        },
+        {
+          "name": "O projektu a plány",
+          "url": "https://app.odjezdy.online/about",
+          "desc": "Zdroje dat a roadmapa aplikace.",
+          "status": "live"
+        },
+        {
+          "name": "Odjezdy OS",
+          "url": "https://github.com/odjezdy-online/odjezdy-system",
+          "desc": "Počítač, který nabootuje rovnou do LED odjezdové tabule. Odtud pochází vzhled tohoto webu.",
+          "status": "vývoj"
+        },
+        {
+          "name": "seznam.odjezdy.online",
+          "url": "https://seznam.odjezdy.online",
+          "desc": "Proxy.",
+          "status": "live"
+        }
       ]
     },
     {
       "title": "Euroklíč Mapa",
       "code": "WC",
       "items": [
-        { "name": "Euroklíč Mapa", "url": "https://euroklic.odjezdy.online", "desc": "Mapa WC na Euroklíč v Česku, na Slovensku, v Německu, Rakousku a Švýcarsku. Data z OSM, ČD, SŽ a od komunity.", "status": "live" },
-        { "name": "Aplikace pro Android a iOS", "url": "https://euroklic.odjezdy.online/app", "desc": "Stažení APK, iOS přes SideStore nebo AltStore, změny verzí.", "status": "live" },
-        { "name": "Otevřená data a API", "url": "https://euroklic.odjezdy.online/otevrena-data", "desc": "Popis dat a API.", "status": "live" },
-        { "name": "Zdrojový kód aplikace", "url": "https://github.com/VlastikYoutubeKo/euroklic-mapa-app", "desc": "Repozitář a vydání s APK a IPA.", "status": "live" }
+        {
+          "name": "Euroklíč Mapa",
+          "url": "https://euroklic.odjezdy.online",
+          "desc": "Mapa WC na Euroklíč v Česku, na Slovensku, v Německu, Rakousku a Švýcarsku. Data z OSM, ČD, SŽ a od komunity.",
+          "status": "live"
+        },
+        {
+          "name": "Aplikace pro Android a iOS",
+          "url": "https://euroklic.odjezdy.online/app",
+          "desc": "Stažení APK, iOS přes SideStore nebo AltStore, změny verzí.",
+          "status": "live"
+        },
+        {
+          "name": "Otevřená data a API",
+          "url": "https://euroklic.odjezdy.online/otevrena-data",
+          "desc": "Popis dat a API.",
+          "status": "live"
+        },
+        {
+          "name": "Zdrojový kód aplikace",
+          "url": "https://github.com/VlastikYoutubeKo/euroklic-mapa-app",
+          "desc": "Repozitář a vydání s APK a IPA.",
+          "status": "live"
+        }
       ]
     },
     {
       "title": "Nástroje",
       "code": "URL",
       "items": [
-        { "name": "cyn.cz", "url": "https://cyn.cz", "desc": "Hlavní zkracovač odkazů.", "status": "live" },
-        { "name": "go.odjezdy.online", "url": "https://go.odjezdy.online", "desc": "Krátké odkazy.", "status": "live" },
-        { "name": "List IPTV odběrů", "url": "https://amz.odjezdy.online/iptv/list", "desc": "", "status": "live" },
-        { "name": "YABS výsledky", "url": "https://amz.odjezdy.online/yabs", "desc": "Výsledky benchmarků serverů.", "status": "live" }
+        {
+          "name": "cyn.cz",
+          "url": "https://cyn.cz",
+          "desc": "Hlavní zkracovač odkazů.",
+          "status": "live"
+        },
+        {
+          "name": "go.odjezdy.online",
+          "url": "https://go.odjezdy.online",
+          "desc": "Krátké odkazy.",
+          "status": "live"
+        },
+        {
+          "name": "YABS výsledky",
+          "url": "https://amz.odjezdy.online/yabs",
+          "desc": "Výsledky benchmarků serveru amz.odjezdy.online (server od hejcpi).",
+          "status": "live"
+        }
       ]
     },
     {
       "title": "Zábava a komunita",
       "code": "FUN",
       "items": [
-        { "name": "Discord server Cyn Lab", "url": "https://cyn.cz/cyn-lab", "desc": "", "status": "live" },
-        { "name": "FOS-FM List", "url": "https://fos-fm.mxnticek.eu", "desc": "Seznam rádií pro ETS2 a ATS.", "status": "live" },
-        { "name": "Moje rádia", "url": "https://radio.mxnticek.eu", "desc": "", "status": "live" },
-        { "name": "Phonk Nation Radio", "url": "https://phonk.mxnticek.eu", "desc": "", "status": "live" },
-        { "name": "Cyn-Bot", "url": "https://cyn-bot.mxnticek.eu", "desc": "Discord bot v Murder Drones stylu.", "status": "live" },
-        { "name": "Cyn-Coin", "url": "https://coin.cyn.cz", "desc": "", "status": "live" }
+        {
+          "name": "Discord server Cyn Lab",
+          "url": "https://cyn.cz/cyn-lab",
+          "desc": "",
+          "status": "live"
+        },
+        {
+          "name": "FOS-FM List",
+          "url": "https://fos-fm.mxnticek.eu",
+          "desc": "Seznam rádií pro ETS2 a ATS.",
+          "status": "live"
+        },
+        {
+          "name": "Moje rádia",
+          "url": "https://radio.mxnticek.eu",
+          "desc": "",
+          "status": "live"
+        },
+        {
+          "name": "Phonk Nation Radio",
+          "url": "https://phonk.mxnticek.eu",
+          "desc": "",
+          "status": "live"
+        },
+        {
+          "name": "Cyn-Bot",
+          "url": "https://cyn-bot.mxnticek.eu",
+          "desc": "Discord bot v Murder Drones stylu.",
+          "status": "live"
+        },
+        {
+          "name": "Cyntreon",
+          "url": "https://patreon.odjezdy.online",
+          "desc": "Bot, který podle Patreonu přiděluje role na Discordu.",
+          "status": "live"
+        },
+        {
+          "name": "Cyn-Coin",
+          "url": "https://coin.cyn.cz",
+          "desc": "",
+          "status": "live"
+        }
       ]
     },
     {
       "title": "Info",
       "code": "INFO",
       "items": [
-        { "name": "Bio", "url": "https://mxnticek.eu", "desc": "", "status": "live" },
-        { "name": "GitHub stránka", "url": "https://github.odjezdy.online", "desc": "", "status": "live" },
-        { "name": "Status page", "url": "https://status.odjezdy.online", "desc": "Stav služeb.", "status": "live" },
-        { "name": "Podporovatelé (Donos)", "url": "https://donos.mxnticek.eu/embed.json", "desc": "Veřejný seznam podporovatelů, ze kterého čte i tento web.", "status": "live" }
+        {
+          "name": "Bio",
+          "url": "https://mxnticek.eu",
+          "desc": "",
+          "status": "live"
+        },
+        {
+          "name": "GitHub stránka",
+          "url": "https://github.odjezdy.online",
+          "desc": "",
+          "status": "live"
+        },
+        {
+          "name": "Status page",
+          "url": "https://status.odjezdy.online",
+          "desc": "Stav služeb.",
+          "status": "live"
+        },
+        {
+          "name": "Podporovatelé (Donos)",
+          "url": "https://donos.mxnticek.eu/embed.json",
+          "desc": "Veřejný seznam podporovatelů, ze kterého čte i tento web.",
+          "status": "live"
+        }
       ]
     }
   ]
